@@ -1,0 +1,7 @@
+(4) PythonRDD[11] at collect at src/part2_rdd.py:18 []
+ |  MapPartitionsRDD[10] at mapPartitions at PythonRDD.scala:160 []
+ |  ShuffledRDD[9] at partitionBy at <unknown>:0 []
+ +-(4) PairwiseRDD[8] at reduceByKey at src/part2_rdd.py:17 []
+    |  PythonRDD[7] at reduceByKey at src/part2_rdd.py:17 []
+    |  s3a://lake/bronze/history/orders_history.jsonl MapPartitionsRDD[1] at textFile at <unknown>:0 []
+    |  s3a://lake/bronze/history/orders_history.jsonl HadoopRDD[0] at textFile at <unknown>:0 []

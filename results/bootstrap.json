@@ -1,0 +1,83 @@
+{
+  "bucket": "lake",
+  "topic": "orders",
+  "partitions": 3,
+  "objects": [
+    {
+      "key": "bronze/history/generation_manifest.json",
+      "bytes": 629
+    },
+    {
+      "key": "bronze/history/orders_history.jsonl",
+      "bytes": 12287363
+    },
+    {
+      "key": "bronze/reference/restaurants.json",
+      "bytes": 30634
+    },
+    {
+      "key": "silver/orders_history/_SUCCESS",
+      "bytes": 0
+    },
+    {
+      "key": "silver/orders_history/city=Casablanca/part-00000-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 85923
+    },
+    {
+      "key": "silver/orders_history/city=Casablanca/part-00001-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 84652
+    },
+    {
+      "key": "silver/orders_history/city=Casablanca/part-00002-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 76116
+    },
+    {
+      "key": "silver/orders_history/city=Fes/part-00000-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 85858
+    },
+    {
+      "key": "silver/orders_history/city=Fes/part-00001-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 87178
+    },
+    {
+      "key": "silver/orders_history/city=Fes/part-00002-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 81618
+    },
+    {
+      "key": "silver/orders_history/city=Marrakech/part-00000-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 86675
+    },
+    {
+      "key": "silver/orders_history/city=Marrakech/part-00001-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 82010
+    },
+    {
+      "key": "silver/orders_history/city=Marrakech/part-00002-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 82616
+    },
+    {
+      "key": "silver/orders_history/city=Rabat/part-00000-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 85244
+    },
+    {
+      "key": "silver/orders_history/city=Rabat/part-00001-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 86346
+    },
+    {
+      "key": "silver/orders_history/city=Rabat/part-00002-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 80444
+    },
+    {
+      "key": "silver/orders_history/city=Tanger/part-00000-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 82196
+    },
+    {
+      "key": "silver/orders_history/city=Tanger/part-00001-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 86257
+    },
+    {
+      "key": "silver/orders_history/city=Tanger/part-00002-07f8a8f5-a0bf-4217-8e69-d1dddb45ecd3.c000.snappy.parquet",
+      "bytes": 77503
+    }
+  ]
+}

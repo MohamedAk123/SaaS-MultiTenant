@@ -1,0 +1,16 @@
+{
+  "source": "synthetic replacement created for this project; not official course data",
+  "seed": 2026,
+  "events": 50000,
+  "restaurants": 200,
+  "unique_order_status": 49000,
+  "duplicate_rows": 1000,
+  "late_original_events": 2480,
+  "late_original_ratio": 0.05061224489795919,
+  "max_simulated_delay_seconds": 900,
+  "note": "Line order simulates arrival; event_time is business time. Delays are not extra columns.",
+  "sha256": {
+    "restaurants.json": "5faacdaa65f5a76e2e08867f6fd6400f6f71031117e4d98bebe8390520da0fc7",
+    "orders_history.jsonl": "51046ca0274fb30af5d84803209de4647b7df40040684a02f7a34cf7e52881a1"
+  }
+}

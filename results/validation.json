@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "oracle": "Python standard library, independent of Spark",
+  "checks": [
+    "50000 events and 200 restaurants",
+    "1000 exact order/status duplicate rows",
+    "Referential integrity and city consistency",
+    "RDD = DataFrame = SQL = independent revenue totals",
+    "Counts and average baskets",
+    "Top 5 restaurants with deterministic tie breaking",
+    "Category/city revenue",
+    "Distance band counts",
+    "Parquet read-back count and revenue (Spark assertions)"
+  ],
+  "delivered_events": 15259,
+  "revenue_mad": 2852691.92
+}

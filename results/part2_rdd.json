@@ -1,0 +1,66 @@
+{
+  "application_id": "app-20261106120843-0008",
+  "input_events": 50000,
+  "delivered_events": 15259,
+  "cities": [
+    {
+      "city": "Casablanca",
+      "revenue_cents": 56036022,
+      "revenue_mad": 560360.22,
+      "delivered_events": 2997,
+      "average_mad": 186.9737137137137
+    },
+    {
+      "city": "Fes",
+      "revenue_cents": 57725665,
+      "revenue_mad": 577256.65,
+      "delivered_events": 3100,
+      "average_mad": 186.21182258064516
+    },
+    {
+      "city": "Marrakech",
+      "revenue_cents": 58013675,
+      "revenue_mad": 580136.75,
+      "delivered_events": 3106,
+      "average_mad": 186.7793786220219
+    },
+    {
+      "city": "Rabat",
+      "revenue_cents": 57218657,
+      "revenue_mad": 572186.57,
+      "delivered_events": 3064,
+      "average_mad": 186.7449640992167
+    },
+    {
+      "city": "Tanger",
+      "revenue_cents": 56275173,
+      "revenue_mad": 562751.73,
+      "delivered_events": 2992,
+      "average_mad": 188.0854712566845
+    }
+  ],
+  "top5_restaurants": [
+    {
+      "restaurant_id": "R-032",
+      "delivered_events": 101
+    },
+    {
+      "restaurant_id": "R-070",
+      "delivered_events": 97
+    },
+    {
+      "restaurant_id": "R-059",
+      "delivered_events": 95
+    },
+    {
+      "restaurant_id": "R-187",
+      "delivered_events": 95
+    },
+    {
+      "restaurant_id": "R-097",
+      "delivered_events": 94
+    }
+  ],
+  "first_revenue_action_seconds": 9.989625865999642,
+  "counting_policy": "DELIVERED events, including injected duplicates, as requested in part 2. Not unique-order revenue."
+}

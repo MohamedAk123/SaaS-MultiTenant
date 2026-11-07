@@ -1,0 +1,202 @@
+{
+  "application_id": "app-20261106120913-0009",
+  "input_events": 50000,
+  "restaurant_rows": 200,
+  "joined_rows": 50000,
+  "silver_rows": 50000,
+  "revenue_cents_dataframe": {
+    "Tanger": 56275173,
+    "Fes": 57725665,
+    "Rabat": 57218657,
+    "Marrakech": 58013675,
+    "Casablanca": 56036022
+  },
+  "revenue_cents_sql": {
+    "Tanger": 56275173,
+    "Fes": 57725665,
+    "Marrakech": 58013675,
+    "Rabat": 57218657,
+    "Casablanca": 56036022
+  },
+  "revenue_by_category": [
+    {
+      "city": "Casablanca",
+      "category": "burger",
+      "revenue_mad": "112716.08"
+    },
+    {
+      "city": "Casablanca",
+      "category": "marocain",
+      "revenue_mad": "116921.72"
+    },
+    {
+      "city": "Casablanca",
+      "category": "pizza",
+      "revenue_mad": "114729.30"
+    },
+    {
+      "city": "Casablanca",
+      "category": "sushi",
+      "revenue_mad": "100013.67"
+    },
+    {
+      "city": "Casablanca",
+      "category": "tacos",
+      "revenue_mad": "115979.45"
+    },
+    {
+      "city": "Fes",
+      "category": "burger",
+      "revenue_mad": "115291.72"
+    },
+    {
+      "city": "Fes",
+      "category": "marocain",
+      "revenue_mad": "117729.42"
+    },
+    {
+      "city": "Fes",
+      "category": "pizza",
+      "revenue_mad": "121641.97"
+    },
+    {
+      "city": "Fes",
+      "category": "sushi",
+      "revenue_mad": "118309.95"
+    },
+    {
+      "city": "Fes",
+      "category": "tacos",
+      "revenue_mad": "104283.59"
+    },
+    {
+      "city": "Marrakech",
+      "category": "burger",
+      "revenue_mad": "120508.70"
+    },
+    {
+      "city": "Marrakech",
+      "category": "marocain",
+      "revenue_mad": "117279.99"
+    },
+    {
+      "city": "Marrakech",
+      "category": "pizza",
+      "revenue_mad": "107086.31"
+    },
+    {
+      "city": "Marrakech",
+      "category": "sushi",
+      "revenue_mad": "111384.25"
+    },
+    {
+      "city": "Marrakech",
+      "category": "tacos",
+      "revenue_mad": "123877.50"
+    },
+    {
+      "city": "Rabat",
+      "category": "burger",
+      "revenue_mad": "115266.10"
+    },
+    {
+      "city": "Rabat",
+      "category": "marocain",
+      "revenue_mad": "111478.93"
+    },
+    {
+      "city": "Rabat",
+      "category": "pizza",
+      "revenue_mad": "114593.88"
+    },
+    {
+      "city": "Rabat",
+      "category": "sushi",
+      "revenue_mad": "112516.83"
+    },
+    {
+      "city": "Rabat",
+      "category": "tacos",
+      "revenue_mad": "118330.83"
+    },
+    {
+      "city": "Tanger",
+      "category": "burger",
+      "revenue_mad": "108976.15"
+    },
+    {
+      "city": "Tanger",
+      "category": "marocain",
+      "revenue_mad": "113124.63"
+    },
+    {
+      "city": "Tanger",
+      "category": "pizza",
+      "revenue_mad": "117143.42"
+    },
+    {
+      "city": "Tanger",
+      "category": "sushi",
+      "revenue_mad": "107363.02"
+    },
+    {
+      "city": "Tanger",
+      "category": "tacos",
+      "revenue_mad": "116144.51"
+    }
+  ],
+  "distance_band_counts": {
+    "long": 32825,
+    "moyen": 10695,
+    "court": 6480
+  },
+  "boundary_checks_passed": true,
+  "benchmarks": {
+    "RDD": {
+      "seconds": [
+        0.6910431630003586,
+        0.6008660120000968,
+        0.5955859699997745
+      ],
+      "median_seconds": 0.6008660120000968
+    },
+    "DataFrame": {
+      "seconds": [
+        0.5243064629999026,
+        0.5558201210001243,
+        0.34709843700011334
+      ],
+      "median_seconds": 0.5243064629999026
+    },
+    "SQL": {
+      "seconds": [
+        0.5267026330002409,
+        0.42827774099987437,
+        0.3463616369999727
+      ],
+      "median_seconds": 0.42827774099987437
+    },
+    "UDF": {
+      "seconds": [
+        0.6099800869997125,
+        0.5349467549999645,
+        0.49761811899998065
+      ],
+      "median_seconds": 0.5349467549999645
+    },
+    "Native": {
+      "seconds": [
+        0.5004462150000109,
+        0.4867801909999798,
+        0.4504111680003007
+      ],
+      "median_seconds": 0.4867801909999798
+    }
+  },
+  "first_dataframe_action_seconds": 15.20908366499998,
+  "benchmark_protocol": "Same JSON input, 4 total executor cores, no explicit cache; one warm-up, three timed actions, rotated order. OS/JVM/S3 caches may remain warm. Small local dataset.",
+  "silver_path": "s3a://lake/silver/orders_history/",
+  "partition_column": "city",
+  "duplicate_policy": "Preserved to keep part 2/3 results comparable. Streaming deduplication belongs to part 5.",
+  "join_strategy": "BroadcastHashJoin (explicit broadcast of 200 restaurants)"
+}
