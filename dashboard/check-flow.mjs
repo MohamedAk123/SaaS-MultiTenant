@@ -56,6 +56,12 @@ try {
   const other = await (await request('/api/dashboard', { cookie: second })).json();
   assert.equal(other.tenant, 'tenant-2');
   assert(!other.activity.events.some(row => events.some(sent => sent.id === row.id)));
+  assert(!other.trace.some(row => events.some(sent => sent.id === row.id)));
+  const own = await (await request('/api/dashboard', { cookie: first })).json();
+  for (const sent of events) {
+    const row = own.trace.find(item => item.id === sent.id);
+    assert(row?.published_at && new Date(row.published_at) >= new Date(row.created_at));
+  }
   assert(other.accessGraph.nodes.every(node => node.tenant_id === 'tenant-2'));
   const { rows } = await pool.query(`SELECT count(*)::integer AS total FROM activity a JOIN outbox o ON o.event_id = a.id
     WHERE a.tenant_id = 'tenant-1' AND o.published_at IS NOT NULL AND a.id = ANY($1::uuid[])`, [events.map(event => event.id)]);

@@ -58,6 +58,30 @@ th{color:var(--muted)}
 .ranking-track>div{height:100%;border-radius:inherit}
 .group-label,.graph-node text{font-weight:650}
 .graph-node text{font-size:12px;fill:#102c35}
+.showcase{border-top:3px solid #187758}
+.showcase-heading{display:flex;align-items:baseline;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.showcase-heading h3{font-size:1.1rem;margin:0}
+.showcase-heading>span{color:var(--muted);font-size:.78rem}
+.demo-fields,.comparison,.trace-steps{display:grid;gap:.75rem;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:1rem}
+.demo-fields{grid-template-columns:repeat(2,minmax(0,1fr));max-width:610px}
+.demo-fields label,.trace-choice{font-size:.82rem;font-weight:600}
+.trace-choice{display:block;margin-top:1rem;max-width:360px}
+.comparison>div,.trace-steps li{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.8rem}
+.comparison span,.comparison small,.trace-steps span{display:block;color:var(--muted);font-size:.8rem}
+.comparison strong{display:block;font-size:1.4rem;margin:.25rem 0;font-variant-numeric:tabular-nums}
+.comparison strong.up{color:var(--accent)}
+.comparison strong.down{color:#9e3d24}
+.trace-steps{list-style:none;padding:0;counter-reset:stage}
+.trace-steps li{counter-increment:stage;margin:0;border-left:3px solid #a8b6b2}
+.trace-steps li[data-done="true"]{border-left-color:#187758;background:#eaf5ee}
+.trace-steps strong:before{content:counter(stage) ". ";color:var(--muted)}
+.trace-steps span{margin-top:.4rem}
+.access-path{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:1rem 0}
+.access-path>b,.access-path div>span{padding:.45rem .6rem;border-radius:5px;background:#e3f1fd;font-size:.84rem}
+.access-path>b:last-child{background:#fff0dd}
+.access-path>div{display:flex;gap:.35rem;flex-wrap:wrap}
+.access-path div>span{background:#def4e9}
+@media(max-width:610px){.comparison,.trace-steps{grid-template-columns:minmax(0,1fr)}}
 li{margin:.5rem 0;overflow-wrap:anywhere}
 .login{max-width:430px;margin:11vh auto;padding:1rem}
 .login label{display:block;margin:1rem 0}

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { AccessGraph, Ranking, Trend } from './charts.js';
+import { AccessExplanation, EventTrace, WindowComparison } from './demo.js';
 
 const number = new Intl.NumberFormat('fr-FR');
 const labels = { ACTION: 'Action', ERROR: 'Erreur', ACCESS: 'Accès' };
@@ -13,6 +14,8 @@ export default function Dashboard() {
   const [notice, setNotice] = useState('');
   const [latency, setLatency] = useState(null);
   const pending = useRef(new Map());
+  const observed = useRef(new Map());
+  const [latestId, setLatestId] = useState('');
   const refreshVersion = useRef(0);
   const [waiting, setWaiting] = useState(false);
 
@@ -27,7 +30,12 @@ export default function Dashboard() {
     const next = await response.json();
     if (version !== refreshVersion.current) return;
     for (const event of next.activity.events) {
-      if (pending.current.delete(event.id)) setLatency(Math.max(0, Date.now() - new Date(event.eventTime).getTime()));
+      if (pending.current.delete(event.id)) {
+        const elapsed = Math.max(0, Date.now() - new Date(event.eventTime).getTime());
+        observed.current.set(event.id, elapsed);
+        if (observed.current.size > 30) observed.current.delete(observed.current.keys().next().value);
+        setLatency(elapsed);
+      }
     }
     setData(next);
     setWaiting(pending.current.size > 0);
@@ -61,6 +69,7 @@ export default function Dashboard() {
       if (!response.ok) throw new Error('Événement non enregistré.');
       const { id } = await response.json();
       pending.current.set(id, true);
+      setLatestId(id);
       setWaiting(true);
     } catch (error) { setNotice(error.message); }
   }
@@ -72,6 +81,8 @@ export default function Dashboard() {
     } catch { setNotice('Déconnexion indisponible.'); return; }
     refreshVersion.current++;
     pending.current.clear();
+    observed.current.clear();
+    setLatestId('');
     setWaiting(false);
     setLatency(null);
     setData(null);
@@ -102,7 +113,7 @@ export default function Dashboard() {
   return <>
     <header><a className="brand" href="/"><span>◈</span> SaaS Multi-Tenant</a><nav aria-label="Sections"><a href="#activity">Activité</a><a href="#orders">Commandes</a><a href="#graph">Graphe</a></nav><button onClick={signOut}>Déconnexion</button></header>
     <main className="workspace">
-      <div className="intro"><div><p className="eyebrow">{data.tenant} · {data.market}</p><h1>Vue d’ensemble</h1></div><span className="status">{activity.updatedAt ? '● Flux actif' : '○ En attente d’événements'}</span></div>
+      <div className="intro"><div><p className="eyebrow">{data.tenant} · {data.market}</p><h1>Observatoire des commandes</h1></div><span className="status">{activity.updatedAt ? `Dernier calcul · ${clock(activity.updatedAt)} UTC` : 'En attente du premier calcul'}</span></div>
       <section id="activity">
         <h2>Activité de l’application</h2>
         <div className="cards"><Metric label="Actions" value={actions}/><Metric label="Accès aux ressources" value={access}/><Metric label="Erreurs" value={errors}/><Metric label="Part des erreurs" value={new Intl.NumberFormat('fr-FR', {style:'percent', maximumFractionDigits:1}).format(errorRate)}/></div>
@@ -115,12 +126,14 @@ export default function Dashboard() {
           <p className="muted" role="status">{notice || (waiting ? 'Événement enregistré. En attente du calcul Spark…' : latency !== null ? `Visible après ${(latency/1000).toFixed(2)} s depuis l’enregistrement.` : 'La vue se rafraîchit toutes les trois secondes.')}</p>
           {activity.events.length ? <div className="scroll"><table><thead><tr><th>Heure UTC</th><th>Type</th><th>Ressource</th></tr></thead><tbody>{activity.events.slice(0,8).map(row => <tr key={row.id}><td>{clock(row.eventTime)}</td><td>{labels[row.kind]}</td><td>{row.resource}</td></tr>)}</tbody></table></div> : <p className="empty">Les événements traités par Spark apparaîtront ici.</p>}
         </div>
+        <EventTrace key={latestId} trace={data.trace} events={activity.events} observed={observed.current} latestId={latestId}/>
       </section>
       <section id="orders"><h2>Commandes · historique DoorDash</h2>
         <div className="paired-charts">
           <Trend title="Chiffre d’affaires" unit="USD" rows={orderWindows} series={[{key:'revenue', label:'Chiffre d’affaires'}]}/>
           <Trend title="Volume de commandes" unit="Commandes" rows={orderWindows} series={[{key:'delivered', label:'Livrées'}, {key:'created', label:'Créées'}]}/>
         </div>
+        <WindowComparison rows={orderWindows}/>
       </section>
       <section id="graph"><h2>Graphe des accès</h2>
         {graph && <div className="cards"><Metric label="Sommets" value={graph.vertices}/><Metric label="Arêtes" value={graph.edges}/><Metric label="Ressources" value={graph.resources}/><Metric label="Alertes de simulation" value={alerts.length}/></div>}
@@ -129,6 +142,7 @@ export default function Dashboard() {
           <AccessGraph graph={data.accessGraph}/>
           <Ranking title="Sommets les plus centraux · PageRank" rows={data.rankings} name={row => row.id.replace(data.tenant + ':','')} value={row => row.pagerank} color="#4266af"/>
         </div>
+        <AccessExplanation graph={data.accessGraph}/>
       </section>
     </main>
   </>;
