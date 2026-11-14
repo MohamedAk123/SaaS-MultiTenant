@@ -12,6 +12,6 @@
     "Distance band counts",
     "Parquet read-back count and revenue (Spark assertions)"
   ],
-  "delivered_events": 15259,
-  "revenue_mad": 2852691.92
+  "delivered_events": 25004,
+  "revenue_usd": 688952.3
 }

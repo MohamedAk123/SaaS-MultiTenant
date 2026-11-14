@@ -16,8 +16,8 @@ def run():
         # (sum, count) computes the average with one reduceByKey, no groupByKey.
         stats = delivered.map(lambda r: (r["city"], (cents(r), 1))).reduceByKey(add_pair)
         aggregates = sorted(stats.collect())
-        city_rows = [{"city": city, "revenue_cents": amount, "revenue_mad": amount / 100,
-                      "delivered_events": count, "average_mad": amount / count / 100}
+        city_rows = [{"city": city, "revenue_cents": amount, "revenue_usd": amount / 100,
+                      "delivered_events": count, "average_usd": amount / count / 100}
                      for city, (amount, count) in aggregates]
         assert all(totals[r["city"]] == r["revenue_cents"] for r in city_rows)
         sc.setJobGroup("p2-top5", "RDD: top 5 restaurants")

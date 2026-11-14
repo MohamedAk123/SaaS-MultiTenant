@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "matched_vertices": 290,
+  "degree_mismatches": 0,
+  "components_match_independent_DFS": true,
+  "components": 6,
+  "tenants": 6,
+  "pagerank_positive": true,
+  "note": "Degrees compared on identical directed multigraphs; connected components independently checked as weak connectivity."
+}

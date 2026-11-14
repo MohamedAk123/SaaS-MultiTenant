@@ -1,0 +1,409 @@
+[
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 2,
+    "orders_delivered": 2,
+    "revenue_usd": "31.24"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 10,
+    "orders_delivered": 7,
+    "revenue_usd": "161.15"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 15,
+    "orders_delivered": 15,
+    "revenue_usd": "285.90"
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 0,
+    "orders_delivered": 1,
+    "revenue_usd": "77.23"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 104,
+    "orders_delivered": 106,
+    "revenue_usd": "2554.19"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 7,
+    "orders_delivered": 15,
+    "revenue_usd": "402.92"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 8,
+    "orders_delivered": 8,
+    "revenue_usd": "258.32"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 31,
+    "orders_delivered": 21,
+    "revenue_usd": "673.58"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 10,
+    "orders_delivered": 9,
+    "revenue_usd": "142.75"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 131,
+    "orders_delivered": 127,
+    "revenue_usd": "3803.05"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 22,
+    "orders_delivered": 16,
+    "revenue_usd": "489.30"
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 1,
+    "orders_delivered": 4,
+    "revenue_usd": "114.13"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 21,
+    "orders_delivered": 37,
+    "revenue_usd": "1311.60"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 5,
+    "orders_delivered": 10,
+    "revenue_usd": "232.53"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 5,
+    "orders_delivered": 3,
+    "revenue_usd": "46.12"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 9,
+    "orders_delivered": 2,
+    "revenue_usd": "38.98"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 152,
+    "orders_delivered": 166,
+    "revenue_usd": "3676.88"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 13,
+    "orders_delivered": 17,
+    "revenue_usd": "442.53"
+  },
+  {
+    "tenant_id": "__control__",
+    "city": "__control__",
+    "window": {
+      "start": "2026-11-14 13:20:00",
+      "end": "2026-11-14 13:30:00"
+    },
+    "orders_created": 1,
+    "orders_delivered": 0,
+    "revenue_usd": "0.00"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 138,
+    "orders_delivered": 121,
+    "revenue_usd": "4293.35"
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:50:00",
+      "end": "2026-11-14 13:00:00"
+    },
+    "orders_created": 4,
+    "orders_delivered": 0,
+    "revenue_usd": "0.00"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 9,
+    "orders_delivered": 8,
+    "revenue_usd": "152.22"
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 3,
+    "orders_delivered": 2,
+    "revenue_usd": "41.85"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 7,
+    "orders_delivered": 11,
+    "revenue_usd": "247.33"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 3,
+    "orders_delivered": 2,
+    "revenue_usd": "23.88"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 142,
+    "orders_delivered": 92,
+    "revenue_usd": "3163.04"
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 5,
+    "orders_delivered": 7,
+    "revenue_usd": "171.06"
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 20,
+    "orders_delivered": 7,
+    "revenue_usd": "252.60"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 192,
+    "orders_delivered": 125,
+    "revenue_usd": "3637.01"
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "orders_created": 3,
+    "orders_delivered": 0,
+    "revenue_usd": "0.00"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 114,
+    "orders_delivered": 81,
+    "revenue_usd": "1865.10"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 85,
+    "orders_delivered": 160,
+    "revenue_usd": "4948.93"
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "orders_created": 6,
+    "orders_delivered": 3,
+    "revenue_usd": "88.38"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "orders_created": 167,
+    "orders_delivered": 167,
+    "revenue_usd": "3267.16"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:40:00",
+      "end": "2026-11-14 12:50:00"
+    },
+    "orders_created": 101,
+    "orders_delivered": 158,
+    "revenue_usd": "4278.22"
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 147,
+    "orders_delivered": 127,
+    "revenue_usd": "3570.76"
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "orders_created": 157,
+    "orders_delivered": 114,
+    "revenue_usd": "2527.50"
+  }
+]

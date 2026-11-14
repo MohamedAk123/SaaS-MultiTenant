@@ -2,10 +2,10 @@
   "url": "spark://spark-master:7077",
   "workers": [
     {
-      "id": "worker-20261106115140-172.22.0.6-45795",
-      "host": "172.22.0.6",
-      "port": 45795,
-      "webuiaddress": "http://172.22.0.6:8081",
+      "id": "worker-20261114105544-172.22.0.7-40671",
+      "host": "172.22.0.7",
+      "port": 40671,
+      "webuiaddress": "http://172.22.0.7:8081",
       "cores": 2,
       "coresused": 2,
       "coresfree": 0,
@@ -16,12 +16,12 @@
       "resourcesused": {},
       "resourcesfree": {},
       "state": "ALIVE",
-      "lastheartbeat": 1793966876235
+      "lastheartbeat": 1794653865787
     },
     {
-      "id": "worker-20261106115140-172.22.0.8-36409",
+      "id": "worker-20261114105544-172.22.0.8-37595",
       "host": "172.22.0.8",
-      "port": 36409,
+      "port": 37595,
       "webuiaddress": "http://172.22.0.8:8081",
       "cores": 2,
       "coresused": 2,
@@ -33,7 +33,7 @@
       "resourcesused": {},
       "resourcesfree": {},
       "state": "ALIVE",
-      "lastheartbeat": 1793966876315
+      "lastheartbeat": 1794653865761
     }
   ],
   "aliveworkers": 2,
@@ -51,8 +51,8 @@
   ],
   "activeapps": [
     {
-      "id": "app-20261106120749-0007",
-      "starttime": 1793966869800,
+      "id": "app-20261114105747-0000",
+      "starttime": 1794653867113,
       "name": "Jalon1-Partie1-Cluster",
       "cores": 4,
       "user": "spark",
@@ -60,111 +60,12 @@
       "memoryperslave": 1024,
       "resourcesperexecutor": [],
       "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 12:07:49 UTC 2026",
+      "submitdate": "Sat Nov 14 10:57:47 UTC 2026",
       "state": "RUNNING",
-      "duration": 7307
+      "duration": 9404
     }
   ],
-  "completedapps": [
-    {
-      "id": "app-20261106115150-0000",
-      "starttime": 1793965910002,
-      "name": "Jalon1-Partie1-Cluster",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:51:50 UTC 2026",
-      "state": "FINISHED",
-      "duration": 7702
-    },
-    {
-      "id": "app-20261106115624-0001",
-      "starttime": 1793966184893,
-      "name": "Jalon1-Partie1-Cluster",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:56:24 UTC 2026",
-      "state": "FINISHED",
-      "duration": 7943
-    },
-    {
-      "id": "app-20261106115640-0002",
-      "starttime": 1793966200424,
-      "name": "Jalon1-Partie2-RDD",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:56:40 UTC 2026",
-      "state": "FINISHED",
-      "duration": 14048
-    },
-    {
-      "id": "app-20261106115702-0003",
-      "starttime": 1793966222130,
-      "name": "Jalon1-Partie3-DataFrames-SQL",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:57:02 UTC 2026",
-      "state": "FINISHED",
-      "duration": 60204
-    },
-    {
-      "id": "app-20261106115910-0004",
-      "starttime": 1793966350652,
-      "name": "Jalon1-Partie1-Cluster",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:59:10 UTC 2026",
-      "state": "FINISHED",
-      "duration": 8943
-    },
-    {
-      "id": "app-20261106115926-0005",
-      "starttime": 1793966366411,
-      "name": "Jalon1-Partie2-RDD",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:59:26 UTC 2026",
-      "state": "FINISHED",
-      "duration": 13957
-    },
-    {
-      "id": "app-20261106115947-0006",
-      "starttime": 1793966387707,
-      "name": "Jalon1-Partie3-DataFrames-SQL",
-      "cores": 4,
-      "user": "spark",
-      "memoryperexecutor": 1024,
-      "memoryperslave": 1024,
-      "resourcesperexecutor": [],
-      "resourcesperslave": [],
-      "submitdate": "Fri Nov 06 11:59:47 UTC 2026",
-      "state": "FINISHED",
-      "duration": 53970
-    }
-  ],
+  "completedapps": [],
   "activedrivers": [],
   "completeddrivers": [],
   "status": "ALIVE"

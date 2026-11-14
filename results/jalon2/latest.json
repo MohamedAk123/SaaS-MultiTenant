@@ -1,0 +1,31 @@
+{
+  "run_id": "run-kaggle-01",
+  "status": "PASS",
+  "dataset_events": 3600,
+  "sent_including_tests": 3623,
+  "bronze_rows": 3623,
+  "silver_rows": 3602,
+  "injected_duplicates": 20,
+  "late_probe_in_bronze": 1,
+  "late_probe_in_silver": 0,
+  "before_stop": 600,
+  "after_restart": 3000,
+  "producer_pause_test_seconds": 120,
+  "no_loss_or_duplicates_on_recovery": true,
+  "gold_matches_batch_oracle": true,
+  "gold_rows": 36,
+  "delta_versions": 2,
+  "paths": {
+    "bronze": "s3a://lake/bronze/orders_raw/run-kaggle-01",
+    "silver": "s3a://lake/silver/orders_clean/run-kaggle-01",
+    "gold": "s3a://lake/gold/kpi_city_10min/run-kaggle-01",
+    "sliding": "s3a://lake/gold/cancellation_sliding/run-kaggle-01",
+    "sessions": "s3a://lake/gold/courier_sessions/run-kaggle-01",
+    "cp": "s3a://lake/checkpoints/run-kaggle-01"
+  },
+  "application_id": "app-20261114110009-0003",
+  "currency": "USD",
+  "replay_clock": "one second per source event; original timestamp retained in source_event_time",
+  "sliding_rows": 49,
+  "session_rows": 152
+}

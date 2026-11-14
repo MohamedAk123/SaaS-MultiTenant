@@ -1,0 +1,51 @@
+{
+  "bronze": {
+    "batches": 22,
+    "nonempty_batches": 21,
+    "max_trigger_ms": 11724,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  },
+  "silver": {
+    "batches": 25,
+    "nonempty_batches": 19,
+    "max_trigger_ms": 17882,
+    "rows_dropped_by_watermark": 1,
+    "duplicates_dropped": 20
+  },
+  "raw_console": {
+    "batches": 6,
+    "nonempty_batches": 4,
+    "max_trigger_ms": 8999,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  },
+  "counts_console": {
+    "batches": 6,
+    "nonempty_batches": 5,
+    "max_trigger_ms": 15170,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  },
+  "gold": {
+    "batches": 3,
+    "nonempty_batches": 1,
+    "max_trigger_ms": 23234,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  },
+  "sliding": {
+    "batches": 3,
+    "nonempty_batches": 1,
+    "max_trigger_ms": 25148,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  },
+  "sessions": {
+    "batches": 3,
+    "nonempty_batches": 1,
+    "max_trigger_ms": 25279,
+    "rows_dropped_by_watermark": 0,
+    "duplicates_dropped": 0
+  }
+}

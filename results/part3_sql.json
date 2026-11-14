@@ -1,199 +1,469 @@
 {
-  "application_id": "app-20261106120913-0009",
+  "application_id": "app-20261114105828-0002",
   "input_events": 50000,
   "restaurant_rows": 200,
   "joined_rows": 50000,
   "silver_rows": 50000,
   "revenue_cents_dataframe": {
-    "Tanger": 56275173,
-    "Fes": 57725665,
-    "Rabat": 57218657,
-    "Marrakech": 58013675,
-    "Casablanca": 56036022
+    "Market-4": 29056648,
+    "Market-5": 924622,
+    "Market-2": 31459475,
+    "Market-1": 5275836,
+    "Market-6": 1456181,
+    "Market-3": 722468
   },
   "revenue_cents_sql": {
-    "Tanger": 56275173,
-    "Fes": 57725665,
-    "Marrakech": 58013675,
-    "Rabat": 57218657,
-    "Casablanca": 56036022
+    "Market-4": 29056648,
+    "Market-5": 924622,
+    "Market-2": 31459475,
+    "Market-6": 1456181,
+    "Market-1": 5275836,
+    "Market-3": 722468
   },
   "revenue_by_category": [
     {
-      "city": "Casablanca",
+      "city": "Market-1",
+      "category": "american",
+      "revenue_usd": "13427.18"
+    },
+    {
+      "city": "Market-1",
+      "category": "barbecue",
+      "revenue_usd": "2247.00"
+    },
+    {
+      "city": "Market-1",
+      "category": "breakfast",
+      "revenue_usd": "2347.56"
+    },
+    {
+      "city": "Market-1",
       "category": "burger",
-      "revenue_mad": "112716.08"
+      "revenue_usd": "2708.12"
     },
     {
-      "city": "Casablanca",
-      "category": "marocain",
-      "revenue_mad": "116921.72"
+      "city": "Market-1",
+      "category": "chinese",
+      "revenue_usd": "4040.50"
     },
     {
-      "city": "Casablanca",
+      "city": "Market-1",
+      "category": "italian",
+      "revenue_usd": "2809.86"
+    },
+    {
+      "city": "Market-1",
+      "category": "mediterranean",
+      "revenue_usd": "4974.78"
+    },
+    {
+      "city": "Market-1",
       "category": "pizza",
-      "revenue_mad": "114729.30"
+      "revenue_usd": "17510.74"
     },
     {
-      "city": "Casablanca",
-      "category": "sushi",
-      "revenue_mad": "100013.67"
+      "city": "Market-1",
+      "category": "sandwich",
+      "revenue_usd": "503.20"
     },
     {
-      "city": "Casablanca",
-      "category": "tacos",
-      "revenue_mad": "115979.45"
+      "city": "Market-1",
+      "category": "thai",
+      "revenue_usd": "2189.42"
     },
     {
-      "city": "Fes",
+      "city": "Market-2",
+      "category": "alcohol",
+      "revenue_usd": "2701.06"
+    },
+    {
+      "city": "Market-2",
+      "category": "american",
+      "revenue_usd": "38526.11"
+    },
+    {
+      "city": "Market-2",
+      "category": "asian",
+      "revenue_usd": "3684.62"
+    },
+    {
+      "city": "Market-2",
+      "category": "barbecue",
+      "revenue_usd": "11190.24"
+    },
+    {
+      "city": "Market-2",
+      "category": "breakfast",
+      "revenue_usd": "5042.25"
+    },
+    {
+      "city": "Market-2",
       "category": "burger",
-      "revenue_mad": "115291.72"
+      "revenue_usd": "24792.11"
     },
     {
-      "city": "Fes",
-      "category": "marocain",
-      "revenue_mad": "117729.42"
+      "city": "Market-2",
+      "category": "cafe",
+      "revenue_usd": "1211.86"
     },
     {
-      "city": "Fes",
+      "city": "Market-2",
+      "category": "chinese",
+      "revenue_usd": "6438.59"
+    },
+    {
+      "city": "Market-2",
+      "category": "dessert",
+      "revenue_usd": "28666.91"
+    },
+    {
+      "city": "Market-2",
+      "category": "greek",
+      "revenue_usd": "17339.85"
+    },
+    {
+      "city": "Market-2",
+      "category": "hawaiian",
+      "revenue_usd": "2943.23"
+    },
+    {
+      "city": "Market-2",
+      "category": "indian",
+      "revenue_usd": "8044.14"
+    },
+    {
+      "city": "Market-2",
+      "category": "italian",
+      "revenue_usd": "14863.39"
+    },
+    {
+      "city": "Market-2",
+      "category": "japanese",
+      "revenue_usd": "2684.78"
+    },
+    {
+      "city": "Market-2",
+      "category": "korean",
+      "revenue_usd": "3347.83"
+    },
+    {
+      "city": "Market-2",
+      "category": "mediterranean",
+      "revenue_usd": "1751.94"
+    },
+    {
+      "city": "Market-2",
+      "category": "mexican",
+      "revenue_usd": "45080.53"
+    },
+    {
+      "city": "Market-2",
+      "category": "middle-eastern",
+      "revenue_usd": "2408.36"
+    },
+    {
+      "city": "Market-2",
+      "category": "other",
+      "revenue_usd": "4093.00"
+    },
+    {
+      "city": "Market-2",
+      "category": "pasta",
+      "revenue_usd": "3099.70"
+    },
+    {
+      "city": "Market-2",
       "category": "pizza",
-      "revenue_mad": "121641.97"
+      "revenue_usd": "27505.56"
     },
     {
-      "city": "Fes",
+      "city": "Market-2",
+      "category": "salad",
+      "revenue_usd": "1503.97"
+    },
+    {
+      "city": "Market-2",
+      "category": "sandwich",
+      "revenue_usd": "14081.46"
+    },
+    {
+      "city": "Market-2",
+      "category": "seafood",
+      "revenue_usd": "6176.94"
+    },
+    {
+      "city": "Market-2",
+      "category": "steak",
+      "revenue_usd": "7084.72"
+    },
+    {
+      "city": "Market-2",
       "category": "sushi",
-      "revenue_mad": "118309.95"
+      "revenue_usd": "13513.00"
     },
     {
-      "city": "Fes",
-      "category": "tacos",
-      "revenue_mad": "104283.59"
+      "city": "Market-2",
+      "category": "thai",
+      "revenue_usd": "10923.95"
     },
     {
-      "city": "Marrakech",
+      "city": "Market-2",
+      "category": "vietnamese",
+      "revenue_usd": "5894.65"
+    },
+    {
+      "city": "Market-3",
+      "category": "pizza",
+      "revenue_usd": "4092.86"
+    },
+    {
+      "city": "Market-3",
+      "category": "salad",
+      "revenue_usd": "3131.82"
+    },
+    {
+      "city": "Market-4",
+      "category": "NA",
+      "revenue_usd": "2174.66"
+    },
+    {
+      "city": "Market-4",
+      "category": "alcohol",
+      "revenue_usd": "2640.33"
+    },
+    {
+      "city": "Market-4",
+      "category": "american",
+      "revenue_usd": "7251.35"
+    },
+    {
+      "city": "Market-4",
+      "category": "asian",
+      "revenue_usd": "3112.28"
+    },
+    {
+      "city": "Market-4",
+      "category": "bubble-tea",
+      "revenue_usd": "2499.25"
+    },
+    {
+      "city": "Market-4",
       "category": "burger",
-      "revenue_mad": "120508.70"
+      "revenue_usd": "19227.91"
     },
     {
-      "city": "Marrakech",
-      "category": "marocain",
-      "revenue_mad": "117279.99"
+      "city": "Market-4",
+      "category": "catering",
+      "revenue_usd": "7768.99"
     },
     {
-      "city": "Marrakech",
+      "city": "Market-4",
+      "category": "chinese",
+      "revenue_usd": "18118.21"
+    },
+    {
+      "city": "Market-4",
+      "category": "dessert",
+      "revenue_usd": "23539.12"
+    },
+    {
+      "city": "Market-4",
+      "category": "dim-sum",
+      "revenue_usd": "7483.75"
+    },
+    {
+      "city": "Market-4",
+      "category": "greek",
+      "revenue_usd": "9621.21"
+    },
+    {
+      "city": "Market-4",
+      "category": "hawaiian",
+      "revenue_usd": "1557.42"
+    },
+    {
+      "city": "Market-4",
+      "category": "indian",
+      "revenue_usd": "15624.31"
+    },
+    {
+      "city": "Market-4",
+      "category": "italian",
+      "revenue_usd": "4407.61"
+    },
+    {
+      "city": "Market-4",
+      "category": "japanese",
+      "revenue_usd": "10809.51"
+    },
+    {
+      "city": "Market-4",
+      "category": "korean",
+      "revenue_usd": "3626.33"
+    },
+    {
+      "city": "Market-4",
+      "category": "mediterranean",
+      "revenue_usd": "16945.75"
+    },
+    {
+      "city": "Market-4",
+      "category": "mexican",
+      "revenue_usd": "16682.12"
+    },
+    {
+      "city": "Market-4",
+      "category": "middle-eastern",
+      "revenue_usd": "3459.90"
+    },
+    {
+      "city": "Market-4",
+      "category": "nepalese",
+      "revenue_usd": "3458.57"
+    },
+    {
+      "city": "Market-4",
+      "category": "other",
+      "revenue_usd": "12832.95"
+    },
+    {
+      "city": "Market-4",
+      "category": "pasta",
+      "revenue_usd": "4906.74"
+    },
+    {
+      "city": "Market-4",
       "category": "pizza",
-      "revenue_mad": "107086.31"
+      "revenue_usd": "22827.98"
     },
     {
-      "city": "Marrakech",
+      "city": "Market-4",
+      "category": "salad",
+      "revenue_usd": "17179.53"
+    },
+    {
+      "city": "Market-4",
+      "category": "sandwich",
+      "revenue_usd": "2637.15"
+    },
+    {
+      "city": "Market-4",
+      "category": "seafood",
+      "revenue_usd": "8919.89"
+    },
+    {
+      "city": "Market-4",
       "category": "sushi",
-      "revenue_mad": "111384.25"
+      "revenue_usd": "7907.05"
     },
     {
-      "city": "Marrakech",
-      "category": "tacos",
-      "revenue_mad": "123877.50"
+      "city": "Market-4",
+      "category": "thai",
+      "revenue_usd": "17878.81"
     },
     {
-      "city": "Rabat",
-      "category": "burger",
-      "revenue_mad": "115266.10"
+      "city": "Market-4",
+      "category": "vietnamese",
+      "revenue_usd": "15467.80"
     },
     {
-      "city": "Rabat",
-      "category": "marocain",
-      "revenue_mad": "111478.93"
+      "city": "Market-5",
+      "category": "chinese",
+      "revenue_usd": "4020.23"
     },
     {
-      "city": "Rabat",
+      "city": "Market-5",
+      "category": "indian",
+      "revenue_usd": "4116.23"
+    },
+    {
+      "city": "Market-5",
+      "category": "vietnamese",
+      "revenue_usd": "1109.76"
+    },
+    {
+      "city": "Market-6",
+      "category": "american",
+      "revenue_usd": "2228.38"
+    },
+    {
+      "city": "Market-6",
+      "category": "dessert",
+      "revenue_usd": "1660.37"
+    },
+    {
+      "city": "Market-6",
+      "category": "greek",
+      "revenue_usd": "1392.34"
+    },
+    {
+      "city": "Market-6",
+      "category": "mexican",
+      "revenue_usd": "2893.97"
+    },
+    {
+      "city": "Market-6",
+      "category": "other",
+      "revenue_usd": "1185.64"
+    },
+    {
+      "city": "Market-6",
       "category": "pizza",
-      "revenue_mad": "114593.88"
+      "revenue_usd": "3061.78"
     },
     {
-      "city": "Rabat",
-      "category": "sushi",
-      "revenue_mad": "112516.83"
-    },
-    {
-      "city": "Rabat",
-      "category": "tacos",
-      "revenue_mad": "118330.83"
-    },
-    {
-      "city": "Tanger",
-      "category": "burger",
-      "revenue_mad": "108976.15"
-    },
-    {
-      "city": "Tanger",
-      "category": "marocain",
-      "revenue_mad": "113124.63"
-    },
-    {
-      "city": "Tanger",
-      "category": "pizza",
-      "revenue_mad": "117143.42"
-    },
-    {
-      "city": "Tanger",
-      "category": "sushi",
-      "revenue_mad": "107363.02"
-    },
-    {
-      "city": "Tanger",
-      "category": "tacos",
-      "revenue_mad": "116144.51"
+      "city": "Market-6",
+      "category": "sandwich",
+      "revenue_usd": "2139.33"
     }
   ],
   "distance_band_counts": {
-    "long": 32825,
-    "moyen": 10695,
-    "court": 6480
+    "null": 50000
   },
   "boundary_checks_passed": true,
   "benchmarks": {
     "RDD": {
       "seconds": [
-        0.6910431630003586,
-        0.6008660120000968,
-        0.5955859699997745
+        0.9216358339999715,
+        0.9718652719999454,
+        0.6457445259999304
       ],
-      "median_seconds": 0.6008660120000968
+      "median_seconds": 0.9216358339999715
     },
     "DataFrame": {
       "seconds": [
-        0.5243064629999026,
-        0.5558201210001243,
-        0.34709843700011334
+        1.059342628999957,
+        0.5745723130000897,
+        0.3987630149999859
       ],
-      "median_seconds": 0.5243064629999026
+      "median_seconds": 0.5745723130000897
     },
     "SQL": {
       "seconds": [
-        0.5267026330002409,
-        0.42827774099987437,
-        0.3463616369999727
+        0.7587265799999159,
+        0.4722993799999813,
+        1.3223715670000047
       ],
-      "median_seconds": 0.42827774099987437
+      "median_seconds": 0.7587265799999159
     },
     "UDF": {
       "seconds": [
-        0.6099800869997125,
-        0.5349467549999645,
-        0.49761811899998065
+        0.892926667000097,
+        0.8683369240000047,
+        0.6047341479999204
       ],
-      "median_seconds": 0.5349467549999645
+      "median_seconds": 0.8683369240000047
     },
     "Native": {
       "seconds": [
-        0.5004462150000109,
-        0.4867801909999798,
-        0.4504111680003007
+        0.5916769369999884,
+        0.8816553560000102,
+        0.5301387649999469
       ],
-      "median_seconds": 0.4867801909999798
+      "median_seconds": 0.5916769369999884
     }
   },
-  "first_dataframe_action_seconds": 15.20908366499998,
+  "first_dataframe_action_seconds": 17.46215511799994,
   "benchmark_protocol": "Same JSON input, 4 total executor cores, no explicit cache; one warm-up, three timed actions, rotated order. OS/JVM/S3 caches may remain warm. Small local dataset.",
   "silver_path": "s3a://lake/silver/orders_history/",
   "partition_column": "city",

@@ -1,78 +1,114 @@
 [
   {
     "key": "bronze/history/generation_manifest.json",
-    "bytes": 629
+    "bytes": 1487
   },
   {
     "key": "bronze/history/orders_history.jsonl",
-    "bytes": 12287363
+    "bytes": 24936153
   },
   {
     "key": "bronze/reference/restaurants.json",
-    "bytes": 30634
+    "bytes": 30482
   },
   {
     "key": "silver/orders_history/_SUCCESS",
     "bytes": 0
   },
   {
-    "key": "silver/orders_history/city=Casablanca/part-00000-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 85923
+    "key": "silver/orders_history/city=Market-1/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 41806
   },
   {
-    "key": "silver/orders_history/city=Casablanca/part-00001-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 84652
+    "key": "silver/orders_history/city=Market-1/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 43405
   },
   {
-    "key": "silver/orders_history/city=Casablanca/part-00002-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 76116
+    "key": "silver/orders_history/city=Market-1/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 38368
   },
   {
-    "key": "silver/orders_history/city=Fes/part-00000-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 85858
+    "key": "silver/orders_history/city=Market-1/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 21530
   },
   {
-    "key": "silver/orders_history/city=Fes/part-00001-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 87178
+    "key": "silver/orders_history/city=Market-2/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 256790
   },
   {
-    "key": "silver/orders_history/city=Fes/part-00002-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 81618
+    "key": "silver/orders_history/city=Market-2/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 246662
   },
   {
-    "key": "silver/orders_history/city=Marrakech/part-00000-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 86675
+    "key": "silver/orders_history/city=Market-2/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 271436
   },
   {
-    "key": "silver/orders_history/city=Marrakech/part-00001-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 82010
+    "key": "silver/orders_history/city=Market-2/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 113442
   },
   {
-    "key": "silver/orders_history/city=Marrakech/part-00002-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 82616
+    "key": "silver/orders_history/city=Market-3/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 11664
   },
   {
-    "key": "silver/orders_history/city=Rabat/part-00000-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 85244
+    "key": "silver/orders_history/city=Market-3/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 12573
   },
   {
-    "key": "silver/orders_history/city=Rabat/part-00001-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 86346
+    "key": "silver/orders_history/city=Market-3/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 11730
   },
   {
-    "key": "silver/orders_history/city=Rabat/part-00002-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 80444
+    "key": "silver/orders_history/city=Market-3/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 8871
   },
   {
-    "key": "silver/orders_history/city=Tanger/part-00000-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 82196
+    "key": "silver/orders_history/city=Market-4/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 209236
   },
   {
-    "key": "silver/orders_history/city=Tanger/part-00001-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 86257
+    "key": "silver/orders_history/city=Market-4/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 218410
   },
   {
-    "key": "silver/orders_history/city=Tanger/part-00002-3304acbc-21cc-4a2d-baac-e0c4dc05ac61.c000.snappy.parquet",
-    "bytes": 77503
+    "key": "silver/orders_history/city=Market-4/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 198158
+  },
+  {
+    "key": "silver/orders_history/city=Market-4/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 91962
+  },
+  {
+    "key": "silver/orders_history/city=Market-5/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 14989
+  },
+  {
+    "key": "silver/orders_history/city=Market-5/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 15097
+  },
+  {
+    "key": "silver/orders_history/city=Market-5/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 14133
+  },
+  {
+    "key": "silver/orders_history/city=Market-5/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 12140
+  },
+  {
+    "key": "silver/orders_history/city=Market-6/part-00000-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 19838
+  },
+  {
+    "key": "silver/orders_history/city=Market-6/part-00001-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 19633
+  },
+  {
+    "key": "silver/orders_history/city=Market-6/part-00002-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 19602
+  },
+  {
+    "key": "silver/orders_history/city=Market-6/part-00003-0442d8a6-8675-44bd-a11a-578c84486991.c000.snappy.parquet",
+    "bytes": 16036
   }
 ]

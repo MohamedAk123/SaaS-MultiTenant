@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499" height="220" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 220" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499" height="220"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-220)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="499" height="220" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="12" y="201" style="font-family: Helvetica-Bold; font-size: 10px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,402) scale(1,-1)">Sous-graphe tenant-1 : politique simulee, ressources Kaggle</text>
+			<path d="M 127,103 L 176,163 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="177 163, 171 166, 171 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 127,103 L 176,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="177 103, 171 106, 171 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 127,103 L 176,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="177 43, 171 46, 171 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,163 L 356,163 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 163, 351 166, 351 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,103 L 356,163 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 163, 351 166, 351 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,43 L 356,163 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 163, 351 166, 351 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,163 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,103 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,43 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,163 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,103 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<path d="M 295,43 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
+			<rect x="12" y="90" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,91%,97%); fill-rule: evenodd;"/>
+			<text x="19" y="100" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,200) scale(1,-1)">SIM-operator-0</text>
+			<rect x="180" y="150" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,93%,92%); fill-rule: evenodd;"/>
+			<text x="187" y="160" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">analyst</text>
+			<rect x="180" y="90" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,93%,92%); fill-rule: evenodd;"/>
+			<text x="187" y="100" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,200) scale(1,-1)">dispatcher</text>
+			<rect x="180" y="30" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,93%,92%); fill-rule: evenodd;"/>
+			<text x="187" y="40" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,80) scale(1,-1)">manager</text>
+			<rect x="360" y="150" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(98%,90%,76%); fill-rule: evenodd;"/>
+			<text x="367" y="160" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,320) scale(1,-1)">DD-1-1145</text>
+			<rect x="360" y="90" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(98%,90%,76%); fill-rule: evenodd;"/>
+			<text x="367" y="100" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,200) scale(1,-1)">DD-1-1469</text>
+			<rect x="360" y="30" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(98%,90%,76%); fill-rule: evenodd;"/>
+			<text x="367" y="40" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,19%,30%); stroke:none;" transform="translate(0,80) scale(1,-1)">DD-1-2438</text>
+			<text x="130" y="16" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,51%,56%); stroke:none;" transform="translate(0,32) scale(1,-1)">HAS_ROLE</text>
+			<text x="285" y="16" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,51%,56%); stroke:none;" transform="translate(0,32) scale(1,-1)">CAN_ACCESS</text>
+		</g>
+	</g>
+</svg>

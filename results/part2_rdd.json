@@ -1,66 +1,73 @@
 {
-  "application_id": "app-20261106120843-0008",
+  "application_id": "app-20261114105804-0001",
   "input_events": 50000,
-  "delivered_events": 15259,
+  "delivered_events": 25004,
   "cities": [
     {
-      "city": "Casablanca",
-      "revenue_cents": 56036022,
-      "revenue_mad": 560360.22,
-      "delivered_events": 2997,
-      "average_mad": 186.9737137137137
+      "city": "Market-1",
+      "revenue_cents": 5275836,
+      "revenue_usd": 52758.36,
+      "delivered_events": 1667,
+      "average_usd": 31.64868626274745
     },
     {
-      "city": "Fes",
-      "revenue_cents": 57725665,
-      "revenue_mad": 577256.65,
-      "delivered_events": 3100,
-      "average_mad": 186.21182258064516
+      "city": "Market-2",
+      "revenue_cents": 31459475,
+      "revenue_usd": 314594.75,
+      "delivered_events": 12284,
+      "average_usd": 25.61012292412895
     },
     {
-      "city": "Marrakech",
-      "revenue_cents": 58013675,
-      "revenue_mad": 580136.75,
-      "delivered_events": 3106,
-      "average_mad": 186.7793786220219
+      "city": "Market-3",
+      "revenue_cents": 722468,
+      "revenue_usd": 7224.68,
+      "delivered_events": 235,
+      "average_usd": 30.74331914893617
     },
     {
-      "city": "Rabat",
-      "revenue_cents": 57218657,
-      "revenue_mad": 572186.57,
-      "delivered_events": 3064,
-      "average_mad": 186.7449640992167
+      "city": "Market-4",
+      "revenue_cents": 29056648,
+      "revenue_usd": 290566.48,
+      "delivered_events": 9780,
+      "average_usd": 29.710274028629854
     },
     {
-      "city": "Tanger",
-      "revenue_cents": 56275173,
-      "revenue_mad": 562751.73,
-      "delivered_events": 2992,
-      "average_mad": 188.0854712566845
+      "city": "Market-5",
+      "revenue_cents": 924622,
+      "revenue_usd": 9246.22,
+      "delivered_events": 389,
+      "average_usd": 23.769203084832906
+    },
+    {
+      "city": "Market-6",
+      "revenue_cents": 1456181,
+      "revenue_usd": 14561.81,
+      "delivered_events": 649,
+      "average_usd": 22.437303543913714
     }
   ],
   "top5_restaurants": [
     {
-      "restaurant_id": "R-032",
-      "delivered_events": 101
+      "restaurant_id": "DD-2-6865",
+      "delivered_events": 387
     },
     {
-      "restaurant_id": "R-070",
-      "delivered_events": 97
+      "restaurant_id": "DD-2-314",
+      "delivered_events": 381
     },
     {
-      "restaurant_id": "R-059",
-      "delivered_events": 95
+      "restaurant_id": "DD-2-1311",
+      "delivered_events": 359
     },
     {
-      "restaurant_id": "R-187",
-      "delivered_events": 95
+      "restaurant_id": "DD-2-1686",
+      "delivered_events": 331
     },
     {
-      "restaurant_id": "R-097",
-      "delivered_events": 94
+      "restaurant_id": "DD-2-6074",
+      "delivered_events": 319
     }
   ],
-  "first_revenue_action_seconds": 9.989625865999642,
+  "first_revenue_action_seconds": 11.238913836999927,
   "counting_policy": "DELIVERED events, including injected duplicates, as requested in part 2. Not unique-order revenue."
 }

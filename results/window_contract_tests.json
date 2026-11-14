@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source": "explicit synthetic unit fixtures",
+  "tumbling_revenue_usd": 120,
+  "sliding_expected": {
+    "11:55": [
+      2,
+      1
+    ],
+    "12:00": [
+      3,
+      1
+    ],
+    "12:05": [
+      1,
+      0
+    ]
+  },
+  "sessions": 2,
+  "cancellation_definition": "CANCELLED / (DELIVERED + CANCELLED), by terminal-event time"
+}

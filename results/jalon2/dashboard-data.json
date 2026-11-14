@@ -1,0 +1,607 @@
+{
+  "dataset": {
+    "source": "https://www.kaggle.com/datasets/dharun4772/doordash-eta-prediction",
+    "dataset_ref": "dharun4772/doordash-eta-prediction",
+    "version": 1,
+    "license_as_declared_by_kaggle": "MIT",
+    "source_note": "DoorDash deliveries early 2015; noise added by source to obfuscate business details.",
+    "source_rows": 197428,
+    "valid_source_rows": 197418,
+    "excluded": {
+      "missing_or_invalid_required_fields": 7,
+      "delivery_over_24h": 3
+    },
+    "selection": "200 most frequent market/store pairs, first 24500 complete orders chronologically",
+    "seed": 2026,
+    "events": 50000,
+    "restaurants": 200,
+    "unique_order_status": 49000,
+    "duplicate_rows": 1000,
+    "late_original_events": 2450,
+    "late_original_ratio": 0.05,
+    "max_simulated_delay_seconds": 900,
+    "currency": "USD",
+    "city_note": "Market identifiers, not real city names; no Moroccan geography inferred.",
+    "missing_fields": [
+      "distance_km",
+      "latitude",
+      "longitude",
+      "real_customer_id",
+      "real_courier_id",
+      "PICKED_UP",
+      "CANCELLED"
+    ],
+    "simulated_fields": [
+      "customer_id",
+      "courier_id",
+      "tenant_id",
+      "arrival_delay",
+      "duplicates",
+      "graph_access_policy"
+    ],
+    "sha256": {
+      "historical_data.csv": "b87ae94bd8bf99accc8fd1873dde1ef5f5e1ce76074f22abdb734c54a1bc8d94",
+      "orders_history.jsonl": "a1343ce436d1383eb44501e2c3a058f5ad45ca463aa035aa44f46d5d019fb12f",
+      "restaurants.json": "135e6ef2c4682597e7bb5e14e049657519616ff2019997492a66c6b2aeb20a7d"
+    }
+  },
+  "streaming": {
+    "run_id": "run-kaggle-01",
+    "status": "PASS",
+    "dataset_events": 3600,
+    "sent_including_tests": 3623,
+    "bronze_rows": 3623,
+    "silver_rows": 3602,
+    "injected_duplicates": 20,
+    "late_probe_in_bronze": 1,
+    "late_probe_in_silver": 0,
+    "before_stop": 600,
+    "after_restart": 3000,
+    "producer_pause_test_seconds": 120,
+    "no_loss_or_duplicates_on_recovery": true,
+    "gold_matches_batch_oracle": true,
+    "gold_rows": 36,
+    "delta_versions": 2,
+    "paths": {
+      "bronze": "s3a://lake/bronze/orders_raw/run-kaggle-01",
+      "silver": "s3a://lake/silver/orders_clean/run-kaggle-01",
+      "gold": "s3a://lake/gold/kpi_city_10min/run-kaggle-01",
+      "sliding": "s3a://lake/gold/cancellation_sliding/run-kaggle-01",
+      "sessions": "s3a://lake/gold/courier_sessions/run-kaggle-01",
+      "cp": "s3a://lake/checkpoints/run-kaggle-01"
+    },
+    "application_id": "app-20261114110009-0003",
+    "currency": "USD",
+    "replay_clock": "one second per source event; original timestamp retained in source_event_time",
+    "sliding_rows": 49,
+    "session_rows": 152
+  },
+  "metrics": {
+    "bronze": {
+      "batches": 22,
+      "nonempty_batches": 21,
+      "max_trigger_ms": 11724,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    },
+    "silver": {
+      "batches": 25,
+      "nonempty_batches": 19,
+      "max_trigger_ms": 17882,
+      "rows_dropped_by_watermark": 1,
+      "duplicates_dropped": 20
+    },
+    "raw_console": {
+      "batches": 6,
+      "nonempty_batches": 4,
+      "max_trigger_ms": 8999,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    },
+    "counts_console": {
+      "batches": 6,
+      "nonempty_batches": 5,
+      "max_trigger_ms": 15170,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    },
+    "gold": {
+      "batches": 3,
+      "nonempty_batches": 1,
+      "max_trigger_ms": 23234,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    },
+    "sliding": {
+      "batches": 3,
+      "nonempty_batches": 1,
+      "max_trigger_ms": 25148,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    },
+    "sessions": {
+      "batches": 3,
+      "nonempty_batches": 1,
+      "max_trigger_ms": 25279,
+      "rows_dropped_by_watermark": 0,
+      "duplicates_dropped": 0
+    }
+  },
+  "graph": {
+    "application_id": "app-20261114110822-0004",
+    "vertices": 290,
+    "edges": 884,
+    "tenants": [
+      {
+        "tenant_id": "tenant-1",
+        "vertices": 33,
+        "edges": 86,
+        "resources": 18
+      },
+      {
+        "tenant_id": "tenant-2",
+        "vertices": 106,
+        "edges": 378,
+        "resources": 91
+      },
+      {
+        "tenant_id": "tenant-3",
+        "vertices": 17,
+        "edges": 22,
+        "resources": 2
+      },
+      {
+        "tenant_id": "tenant-4",
+        "vertices": 91,
+        "edges": 318,
+        "resources": 76
+      },
+      {
+        "tenant_id": "tenant-5",
+        "vertices": 20,
+        "edges": 34,
+        "resources": 5
+      },
+      {
+        "tenant_id": "tenant-6",
+        "vertices": 23,
+        "edges": 46,
+        "resources": 8
+      }
+    ],
+    "motifs": 2800,
+    "inter_tenant_edges": 0,
+    "negative_tests_rejected": [
+      "cross_tenant",
+      "duplicate_id",
+      "orphan_edge"
+    ],
+    "degree_seconds": 6.65946768799995,
+    "motif_seconds": 2.914014031999841,
+    "source": "Kaggle restaurant identifiers; users, roles and access relations are an explicit simulation as required by part 6.",
+    "thresholds": {
+      "user_roles": 3,
+      "resource_role_access": 3
+    },
+    "version": "0.8.4-spark3.5-s_2.12"
+  },
+  "kpi_sample": [
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 2,
+      "orders_delivered": 2,
+      "revenue_usd": "31.24"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 10,
+      "orders_delivered": 7,
+      "revenue_usd": "161.15"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 15,
+      "orders_delivered": 15,
+      "revenue_usd": "285.90"
+    },
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 0,
+      "orders_delivered": 1,
+      "revenue_usd": "77.23"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 104,
+      "orders_delivered": 106,
+      "revenue_usd": "2554.19"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 7,
+      "orders_delivered": 15,
+      "revenue_usd": "402.92"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 8,
+      "orders_delivered": 8,
+      "revenue_usd": "258.32"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 31,
+      "orders_delivered": 21,
+      "revenue_usd": "673.58"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 10,
+      "orders_delivered": 9,
+      "revenue_usd": "142.75"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 131,
+      "orders_delivered": 127,
+      "revenue_usd": "3803.05"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 22,
+      "orders_delivered": 16,
+      "revenue_usd": "489.30"
+    },
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 1,
+      "orders_delivered": 4,
+      "revenue_usd": "114.13"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 21,
+      "orders_delivered": 37,
+      "revenue_usd": "1311.60"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 5,
+      "orders_delivered": 10,
+      "revenue_usd": "232.53"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 5,
+      "orders_delivered": 3,
+      "revenue_usd": "46.12"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 9,
+      "orders_delivered": 2,
+      "revenue_usd": "38.98"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 152,
+      "orders_delivered": 166,
+      "revenue_usd": "3676.88"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 13,
+      "orders_delivered": 17,
+      "revenue_usd": "442.53"
+    },
+    {
+      "tenant_id": "__control__",
+      "city": "__control__",
+      "window": {
+        "start": "2026-11-14 13:20:00",
+        "end": "2026-11-14 13:30:00"
+      },
+      "orders_created": 1,
+      "orders_delivered": 0,
+      "revenue_usd": "0.00"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 138,
+      "orders_delivered": 121,
+      "revenue_usd": "4293.35"
+    },
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:50:00",
+        "end": "2026-11-14 13:00:00"
+      },
+      "orders_created": 4,
+      "orders_delivered": 0,
+      "revenue_usd": "0.00"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 9,
+      "orders_delivered": 8,
+      "revenue_usd": "152.22"
+    },
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 3,
+      "orders_delivered": 2,
+      "revenue_usd": "41.85"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 7,
+      "orders_delivered": 11,
+      "revenue_usd": "247.33"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 3,
+      "orders_delivered": 2,
+      "revenue_usd": "23.88"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 142,
+      "orders_delivered": 92,
+      "revenue_usd": "3163.04"
+    },
+    {
+      "tenant_id": "tenant-6",
+      "city": "Market-6",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 5,
+      "orders_delivered": 7,
+      "revenue_usd": "171.06"
+    },
+    {
+      "tenant_id": "tenant-1",
+      "city": "Market-1",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 20,
+      "orders_delivered": 7,
+      "revenue_usd": "252.60"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 192,
+      "orders_delivered": 125,
+      "revenue_usd": "3637.01"
+    },
+    {
+      "tenant_id": "tenant-3",
+      "city": "Market-3",
+      "window": {
+        "start": "2026-11-14 12:30:00",
+        "end": "2026-11-14 12:40:00"
+      },
+      "orders_created": 3,
+      "orders_delivered": 0,
+      "revenue_usd": "0.00"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 114,
+      "orders_delivered": 81,
+      "revenue_usd": "1865.10"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 85,
+      "orders_delivered": 160,
+      "revenue_usd": "4948.93"
+    },
+    {
+      "tenant_id": "tenant-5",
+      "city": "Market-5",
+      "window": {
+        "start": "2026-11-14 12:20:00",
+        "end": "2026-11-14 12:30:00"
+      },
+      "orders_created": 6,
+      "orders_delivered": 3,
+      "revenue_usd": "88.38"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:10:00",
+        "end": "2026-11-14 12:20:00"
+      },
+      "orders_created": 167,
+      "orders_delivered": 167,
+      "revenue_usd": "3267.16"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:40:00",
+        "end": "2026-11-14 12:50:00"
+      },
+      "orders_created": 101,
+      "orders_delivered": 158,
+      "revenue_usd": "4278.22"
+    },
+    {
+      "tenant_id": "tenant-4",
+      "city": "Market-4",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 147,
+      "orders_delivered": 127,
+      "revenue_usd": "3570.76"
+    },
+    {
+      "tenant_id": "tenant-2",
+      "city": "Market-2",
+      "window": {
+        "start": "2026-11-14 12:00:00",
+        "end": "2026-11-14 12:10:00"
+      },
+      "orders_created": 157,
+      "orders_delivered": 114,
+      "revenue_usd": "2527.50"
+    }
+  ],
+  "graph_validation": {
+    "status": "PASS",
+    "matched_vertices": 290,
+    "degree_mismatches": 0,
+    "components_match_independent_DFS": true,
+    "components": 6,
+    "tenants": 6,
+    "pagerank_positive": true,
+    "note": "Degrees compared on identical directed multigraphs; connected components independently checked as weak connectivity."
+  }
+}

@@ -1,0 +1,4245 @@
+{
+  "bronze": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:00:21.039Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 7655,
+        "commitOffsets": 190,
+        "getBatch": 159,
+        "latestOffset": 1884,
+        "queryPlanning": 1392,
+        "triggerExecution": 11724,
+        "walCommit": 319
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": null,
+          "endOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:00:32.768Z",
+      "numInputRows": 178,
+      "inputRowsPerSecond": 15.176059340097195,
+      "processedRowsPerSecond": 29.42635146305174,
+      "durationMs": {
+        "addBatch": 5279,
+        "commitOffsets": 423,
+        "getBatch": 1,
+        "latestOffset": 22,
+        "queryPlanning": 64,
+        "triggerExecution": 6049,
+        "walCommit": 251
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 87,
+              "1": 45,
+              "0": 46
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 87,
+              "1": 45,
+              "0": 46
+            }
+          },
+          "numInputRows": 178,
+          "inputRowsPerSecond": 15.176059340097195,
+          "processedRowsPerSecond": 29.42635146305174,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:00:38.826Z",
+      "numInputRows": 122,
+      "inputRowsPerSecond": 20.138659623638166,
+      "processedRowsPerSecond": 59.309674282936314,
+      "durationMs": {
+        "addBatch": 1327,
+        "commitOffsets": 300,
+        "getBatch": 1,
+        "latestOffset": 41,
+        "queryPlanning": 30,
+        "triggerExecution": 2057,
+        "walCommit": 347
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 87,
+              "1": 45,
+              "0": 46
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 142,
+              "1": 87,
+              "0": 71
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 142,
+              "1": 87,
+              "0": 71
+            }
+          },
+          "numInputRows": 122,
+          "inputRowsPerSecond": 20.138659623638166,
+          "processedRowsPerSecond": 59.309674282936314,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 3,
+      "timestamp": "2026-11-14T11:00:40.885Z",
+      "numInputRows": 40,
+      "inputRowsPerSecond": 19.42690626517727,
+      "processedRowsPerSecond": 18.621973929236496,
+      "durationMs": {
+        "addBatch": 1551,
+        "commitOffsets": 250,
+        "getBatch": 1,
+        "latestOffset": 16,
+        "queryPlanning": 29,
+        "triggerExecution": 2148,
+        "walCommit": 296
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 142,
+              "1": 87,
+              "0": 71
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 155,
+              "1": 96,
+              "0": 89
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 155,
+              "1": 96,
+              "0": 89
+            }
+          },
+          "numInputRows": 40,
+          "inputRowsPerSecond": 19.42690626517727,
+          "processedRowsPerSecond": 18.621973929236496,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 4,
+      "timestamp": "2026-11-14T11:00:45.000Z",
+      "numInputRows": 83,
+      "inputRowsPerSecond": 20.17010935601458,
+      "processedRowsPerSecond": 31.69148529973272,
+      "durationMs": {
+        "addBatch": 2237,
+        "commitOffsets": 197,
+        "getBatch": 0,
+        "latestOffset": 13,
+        "queryPlanning": 16,
+        "triggerExecution": 2618,
+        "walCommit": 150
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 155,
+              "1": 96,
+              "0": 89
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 185,
+              "1": 126,
+              "0": 112
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 185,
+              "1": 126,
+              "0": 112
+            }
+          },
+          "numInputRows": 83,
+          "inputRowsPerSecond": 20.17010935601458,
+          "processedRowsPerSecond": 31.69148529973272,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 5,
+      "timestamp": "2026-11-14T11:00:50.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 75.35795026375283,
+      "durationMs": {
+        "addBatch": 837,
+        "commitOffsets": 260,
+        "getBatch": 0,
+        "latestOffset": 30,
+        "queryPlanning": 16,
+        "triggerExecution": 1327,
+        "walCommit": 178
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 185,
+              "1": 126,
+              "0": 112
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 75.35795026375283,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 6,
+      "timestamp": "2026-11-14T11:00:55.000Z",
+      "numInputRows": 97,
+      "inputRowsPerSecond": 19.4,
+      "processedRowsPerSecond": 65.8520027155465,
+      "durationMs": {
+        "addBatch": 1073,
+        "commitOffsets": 183,
+        "getBatch": 0,
+        "latestOffset": 9,
+        "queryPlanning": 16,
+        "triggerExecution": 1473,
+        "walCommit": 190
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 97,
+          "inputRowsPerSecond": 19.4,
+          "processedRowsPerSecond": 65.8520027155465,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 7,
+      "timestamp": "2026-11-14T11:03:22.725Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 472.58979206049145,
+      "durationMs": {
+        "addBatch": 625,
+        "commitOffsets": 136,
+        "getBatch": 0,
+        "latestOffset": 42,
+        "queryPlanning": 36,
+        "triggerExecution": 1058,
+        "walCommit": 136
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 436,
+              "1": 338,
+              "0": 346
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 472.58979206049145,
+          "metrics": {
+            "avgOffsetsBehindLatest": "633.3333333333334",
+            "maxOffsetsBehindLatest": "684",
+            "minOffsetsBehindLatest": "570"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 8,
+      "timestamp": "2026-11-14T11:03:25.000Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 219.7802197802198,
+      "processedRowsPerSecond": 399.68025579536373,
+      "durationMs": {
+        "addBatch": 882,
+        "commitOffsets": 114,
+        "getBatch": 0,
+        "latestOffset": 27,
+        "queryPlanning": 38,
+        "triggerExecution": 1251,
+        "walCommit": 181
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 436,
+              "1": 338,
+              "0": 346
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 616,
+              "1": 488,
+              "0": 516
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 219.7802197802198,
+          "processedRowsPerSecond": 399.68025579536373,
+          "metrics": {
+            "avgOffsetsBehindLatest": "466.6666666666667",
+            "maxOffsetsBehindLatest": "504",
+            "minOffsetsBehindLatest": "420"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 9,
+      "timestamp": "2026-11-14T11:03:30.000Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 100.0,
+      "processedRowsPerSecond": 318.06615776081424,
+      "durationMs": {
+        "addBatch": 1271,
+        "commitOffsets": 139,
+        "getBatch": 1,
+        "latestOffset": 7,
+        "queryPlanning": 16,
+        "triggerExecution": 1572,
+        "walCommit": 134
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 616,
+              "1": 488,
+              "0": 516
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 796,
+              "1": 638,
+              "0": 686
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 100.0,
+          "processedRowsPerSecond": 318.06615776081424,
+          "metrics": {
+            "avgOffsetsBehindLatest": "300.0",
+            "maxOffsetsBehindLatest": "324",
+            "minOffsetsBehindLatest": "270"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 10,
+      "timestamp": "2026-11-14T11:03:35.001Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 99.98000399920015,
+      "processedRowsPerSecond": 292.22676797194623,
+      "durationMs": {
+        "addBatch": 1124,
+        "commitOffsets": 333,
+        "getBatch": 1,
+        "latestOffset": 21,
+        "queryPlanning": 24,
+        "triggerExecution": 1711,
+        "walCommit": 201
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 796,
+              "1": 638,
+              "0": 686
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 976,
+              "1": 788,
+              "0": 856
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 99.98000399920015,
+          "processedRowsPerSecond": 292.22676797194623,
+          "metrics": {
+            "avgOffsetsBehindLatest": "133.33333333333334",
+            "maxOffsetsBehindLatest": "144",
+            "minOffsetsBehindLatest": "120"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 11,
+      "timestamp": "2026-11-14T11:03:40.000Z",
+      "numInputRows": 400,
+      "inputRowsPerSecond": 80.01600320064013,
+      "processedRowsPerSecond": 325.2032520325203,
+      "durationMs": {
+        "addBatch": 866,
+        "commitOffsets": 174,
+        "getBatch": 0,
+        "latestOffset": 12,
+        "queryPlanning": 16,
+        "triggerExecution": 1230,
+        "walCommit": 159
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 976,
+              "1": 788,
+              "0": 856
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 400,
+          "inputRowsPerSecond": 80.01600320064013,
+          "processedRowsPerSecond": 325.2032520325203,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 12,
+      "timestamp": "2026-11-14T11:03:55.000Z",
+      "numInputRows": 28,
+      "inputRowsPerSecond": 5.6,
+      "processedRowsPerSecond": 23.7892948173322,
+      "durationMs": {
+        "addBatch": 838,
+        "commitOffsets": 173,
+        "getBatch": 1,
+        "latestOffset": 8,
+        "queryPlanning": 16,
+        "triggerExecution": 1177,
+        "walCommit": 139
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "numInputRows": 28,
+          "inputRowsPerSecond": 5.6,
+          "processedRowsPerSecond": 23.7892948173322,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 13,
+      "timestamp": "2026-11-14T11:04:00.001Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 19.99600079984003,
+      "processedRowsPerSecond": 103.09278350515464,
+      "durationMs": {
+        "addBatch": 686,
+        "commitOffsets": 175,
+        "getBatch": 0,
+        "latestOffset": 7,
+        "queryPlanning": 11,
+        "triggerExecution": 970,
+        "walCommit": 88
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 19.99600079984003,
+          "processedRowsPerSecond": 103.09278350515464,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 14,
+      "timestamp": "2026-11-14T11:04:05.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.004000800160032,
+      "processedRowsPerSecond": 88.261253309797,
+      "durationMs": {
+        "addBatch": 762,
+        "commitOffsets": 179,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 14,
+        "triggerExecution": 1133,
+        "walCommit": 167
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.004000800160032,
+          "processedRowsPerSecond": 88.261253309797,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 15,
+      "timestamp": "2026-11-14T11:04:10.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 82.23684210526316,
+      "durationMs": {
+        "addBatch": 958,
+        "commitOffsets": 138,
+        "getBatch": 1,
+        "latestOffset": 18,
+        "queryPlanning": 10,
+        "triggerExecution": 1216,
+        "walCommit": 90
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 82.23684210526316,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 16,
+      "timestamp": "2026-11-14T11:04:15.001Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 19.99600079984003,
+      "processedRowsPerSecond": 124.22360248447204,
+      "durationMs": {
+        "addBatch": 529,
+        "commitOffsets": 152,
+        "getBatch": 1,
+        "latestOffset": 8,
+        "queryPlanning": 10,
+        "triggerExecution": 804,
+        "walCommit": 102
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 19.99600079984003,
+          "processedRowsPerSecond": 124.22360248447204,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 17,
+      "timestamp": "2026-11-14T11:04:20.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.004000800160032,
+      "processedRowsPerSecond": 114.41647597254004,
+      "durationMs": {
+        "addBatch": 588,
+        "commitOffsets": 156,
+        "getBatch": 0,
+        "latestOffset": 6,
+        "queryPlanning": 12,
+        "triggerExecution": 874,
+        "walCommit": 109
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.004000800160032,
+          "processedRowsPerSecond": 114.41647597254004,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 18,
+      "timestamp": "2026-11-14T11:04:25.000Z",
+      "numInputRows": 72,
+      "inputRowsPerSecond": 14.4,
+      "processedRowsPerSecond": 62.55430060816681,
+      "durationMs": {
+        "addBatch": 889,
+        "commitOffsets": 137,
+        "getBatch": 0,
+        "latestOffset": 7,
+        "queryPlanning": 11,
+        "triggerExecution": 1151,
+        "walCommit": 103
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "numInputRows": 72,
+          "inputRowsPerSecond": 14.4,
+          "processedRowsPerSecond": 62.55430060816681,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 19,
+      "timestamp": "2026-11-14T11:04:40.001Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.2,
+      "processedRowsPerSecond": 0.9107468123861566,
+      "durationMs": {
+        "addBatch": 817,
+        "commitOffsets": 164,
+        "getBatch": 0,
+        "latestOffset": 7,
+        "queryPlanning": 13,
+        "triggerExecution": 1098,
+        "walCommit": 95
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.2,
+          "processedRowsPerSecond": 0.9107468123861566,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 20,
+      "timestamp": "2026-11-14T11:04:55.000Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.2,
+      "processedRowsPerSecond": 0.9000900090009001,
+      "durationMs": {
+        "addBatch": 763,
+        "commitOffsets": 222,
+        "getBatch": 0,
+        "latestOffset": 6,
+        "queryPlanning": 10,
+        "triggerExecution": 1111,
+        "walCommit": 107
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.2,
+          "processedRowsPerSecond": 0.9000900090009001,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 21,
+      "timestamp": "2026-11-14T11:05:10.000Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.2,
+      "processedRowsPerSecond": 0.8503401360544218,
+      "durationMs": {
+        "addBatch": 786,
+        "commitOffsets": 200,
+        "getBatch": 0,
+        "latestOffset": 19,
+        "queryPlanning": 9,
+        "triggerExecution": 1176,
+        "walCommit": 159
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.2,
+          "processedRowsPerSecond": 0.8503401360544218,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "silver": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:00:22.432Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 14471,
+        "commitOffsets": 259,
+        "getBatch": 163,
+        "latestOffset": 551,
+        "queryPlanning": 2050,
+        "triggerExecution": 17882,
+        "walCommit": 300
+      },
+      "eventTime": {
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 0,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 1867,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 6,
+          "commitTimeMs": 1454,
+          "memoryUsedBytes": 896,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 320
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": null,
+          "endOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:00:40.320Z",
+      "numInputRows": 329,
+      "inputRowsPerSecond": 18.392218246869408,
+      "processedRowsPerSecond": 50.865800865800864,
+      "durationMs": {
+        "addBatch": 5735,
+        "commitOffsets": 240,
+        "getBatch": 1,
+        "latestOffset": 21,
+        "queryPlanning": 198,
+        "triggerExecution": 6468,
+        "walCommit": 262
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:02:44.000Z",
+        "max": "2026-11-14T12:05:28.000Z",
+        "min": "2026-11-14T12:00:00.000Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 329,
+          "numRowsUpdated": 329,
+          "allUpdatesTimeMs": 554,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 918,
+          "memoryUsedBytes": 78136,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 4,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 76920
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 151,
+              "1": 94,
+              "0": 84
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 151,
+              "1": 94,
+              "0": 84
+            }
+          },
+          "numInputRows": 329,
+          "inputRowsPerSecond": 18.392218246869408,
+          "processedRowsPerSecond": 50.865800865800864,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:00:46.810Z",
+      "numInputRows": 130,
+      "inputRowsPerSecond": 20.03081664098613,
+      "processedRowsPerSecond": 43.78578646008757,
+      "durationMs": {
+        "addBatch": 2463,
+        "commitOffsets": 103,
+        "getBatch": 1,
+        "latestOffset": 29,
+        "queryPlanning": 210,
+        "triggerExecution": 2969,
+        "walCommit": 145
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:06:33.499Z",
+        "max": "2026-11-14T12:07:38.000Z",
+        "min": "2026-11-14T12:05:29.000Z",
+        "watermark": "2026-11-14T11:55:28.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 459,
+          "numRowsUpdated": 130,
+          "allUpdatesTimeMs": 394,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 919,
+          "memoryUsedBytes": 121064,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 101144
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 151,
+              "1": 94,
+              "0": 84
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 200,
+              "1": 135,
+              "0": 124
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 200,
+              "1": 135,
+              "0": 124
+            }
+          },
+          "numInputRows": 130,
+          "inputRowsPerSecond": 20.03081664098613,
+          "processedRowsPerSecond": 43.78578646008757,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 3,
+      "timestamp": "2026-11-14T11:00:50.001Z",
+      "numInputRows": 64,
+      "inputRowsPerSecond": 20.05640864932623,
+      "processedRowsPerSecond": 23.038156947444204,
+      "durationMs": {
+        "addBatch": 2296,
+        "commitOffsets": 96,
+        "getBatch": 1,
+        "latestOffset": 14,
+        "queryPlanning": 161,
+        "triggerExecution": 2778,
+        "walCommit": 200
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:08:10.500Z",
+        "max": "2026-11-14T12:08:42.000Z",
+        "min": "2026-11-14T12:07:39.000Z",
+        "watermark": "2026-11-14T11:57:38.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 523,
+          "numRowsUpdated": 64,
+          "allUpdatesTimeMs": 311,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 804,
+          "memoryUsedBytes": 134184,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 12,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 104024
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 200,
+              "1": 135,
+              "0": 124
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "numInputRows": 64,
+          "inputRowsPerSecond": 20.05640864932623,
+          "processedRowsPerSecond": 23.038156947444204,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 4,
+      "timestamp": "2026-11-14T11:00:55.000Z",
+      "numInputRows": 97,
+      "inputRowsPerSecond": 19.403880776155233,
+      "processedRowsPerSecond": 33.85689354275741,
+      "durationMs": {
+        "addBatch": 2441,
+        "commitOffsets": 123,
+        "getBatch": 0,
+        "latestOffset": 21,
+        "queryPlanning": 93,
+        "triggerExecution": 2865,
+        "walCommit": 182
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:07:47.907Z",
+        "max": "2026-11-14T12:09:59.000Z",
+        "min": "2026-11-14T12:01:40.000Z",
+        "watermark": "2026-11-14T11:58:42.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 600,
+          "numRowsUpdated": 77,
+          "allUpdatesTimeMs": 384,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 10,
+          "commitTimeMs": 930,
+          "memoryUsedBytes": 139056,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 16,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 20,
+            "stateOnCurrentVersionSizeBytes": 118208
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 97,
+          "inputRowsPerSecond": 19.403880776155233,
+          "processedRowsPerSecond": 33.85689354275741,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 5,
+      "timestamp": "2026-11-14T11:01:00.001Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 2031,
+        "commitOffsets": 236,
+        "getBatch": 0,
+        "latestOffset": 10,
+        "queryPlanning": 57,
+        "triggerExecution": 2460,
+        "walCommit": 122
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T11:59:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 600,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 190,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 852,
+          "memoryUsedBytes": 143104,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 20,
+            "loadedMapCacheMissCount": 0,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 118208
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 6,
+      "timestamp": "2026-11-14T11:03:23.147Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 160.20506247997437,
+      "durationMs": {
+        "addBatch": 2536,
+        "commitOffsets": 103,
+        "getBatch": 0,
+        "latestOffset": 46,
+        "queryPlanning": 125,
+        "triggerExecution": 3121,
+        "walCommit": 197
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:14:09.762Z",
+        "max": "2026-11-14T12:18:38.000Z",
+        "min": "2026-11-14T12:10:00.000Z",
+        "watermark": "2026-11-14T11:59:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 1100,
+          "numRowsUpdated": 500,
+          "allUpdatesTimeMs": 309,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 515,
+          "memoryUsedBytes": 274496,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 228592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 436,
+              "1": 338,
+              "0": 346
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 160.20506247997437,
+          "metrics": {
+            "avgOffsetsBehindLatest": "633.3333333333334",
+            "maxOffsetsBehindLatest": "684",
+            "minOffsetsBehindLatest": "570"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 7,
+      "timestamp": "2026-11-14T11:03:26.269Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 160.15374759769378,
+      "processedRowsPerSecond": 234.85204321277595,
+      "durationMs": {
+        "addBatch": 1823,
+        "commitOffsets": 138,
+        "getBatch": 0,
+        "latestOffset": 12,
+        "queryPlanning": 60,
+        "triggerExecution": 2129,
+        "walCommit": 92
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:22:31.066Z",
+        "max": "2026-11-14T12:27:29.000Z",
+        "min": "2026-11-14T12:18:04.000Z",
+        "watermark": "2026-11-14T12:08:38.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 1600,
+          "numRowsUpdated": 500,
+          "allUpdatesTimeMs": 384,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 885,
+          "memoryUsedBytes": 499008,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 4,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 320680
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 436,
+              "1": 338,
+              "0": 346
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 616,
+              "1": 488,
+              "0": 516
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 160.15374759769378,
+          "processedRowsPerSecond": 234.85204321277595,
+          "metrics": {
+            "avgOffsetsBehindLatest": "466.6666666666667",
+            "maxOffsetsBehindLatest": "504",
+            "minOffsetsBehindLatest": "420"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 8,
+      "timestamp": "2026-11-14T11:03:30.000Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 134.01232913428035,
+      "processedRowsPerSecond": 145.01160092807424,
+      "durationMs": {
+        "addBatch": 3039,
+        "commitOffsets": 167,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 70,
+        "triggerExecution": 3448,
+        "walCommit": 144
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:30:48.963Z",
+        "max": "2026-11-14T12:35:38.000Z",
+        "min": "2026-11-14T12:25:44.000Z",
+        "watermark": "2026-11-14T12:17:29.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 2100,
+          "numRowsUpdated": 500,
+          "allUpdatesTimeMs": 309,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 797,
+          "memoryUsedBytes": 780448,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 511592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 616,
+              "1": 488,
+              "0": 516
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 796,
+              "1": 638,
+              "0": 686
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 134.01232913428035,
+          "processedRowsPerSecond": 145.01160092807424,
+          "metrics": {
+            "avgOffsetsBehindLatest": "300.0",
+            "maxOffsetsBehindLatest": "324",
+            "minOffsetsBehindLatest": "270"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 9,
+      "timestamp": "2026-11-14T11:03:35.001Z",
+      "numInputRows": 500,
+      "inputRowsPerSecond": 99.98000399920015,
+      "processedRowsPerSecond": 152.8117359413203,
+      "durationMs": {
+        "addBatch": 2785,
+        "commitOffsets": 159,
+        "getBatch": 1,
+        "latestOffset": 18,
+        "queryPlanning": 84,
+        "triggerExecution": 3272,
+        "walCommit": 218
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:39:08.398Z",
+        "max": "2026-11-14T12:43:34.000Z",
+        "min": "2026-11-14T12:34:17.000Z",
+        "watermark": "2026-11-14T12:25:38.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 2600,
+          "numRowsUpdated": 500,
+          "allUpdatesTimeMs": 291,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 719,
+          "memoryUsedBytes": 709328,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 12,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 617744
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 796,
+              "1": 638,
+              "0": 686
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 976,
+              "1": 788,
+              "0": 856
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 500,
+          "inputRowsPerSecond": 99.98000399920015,
+          "processedRowsPerSecond": 152.8117359413203,
+          "metrics": {
+            "avgOffsetsBehindLatest": "133.33333333333334",
+            "maxOffsetsBehindLatest": "144",
+            "minOffsetsBehindLatest": "120"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 10,
+      "timestamp": "2026-11-14T11:03:40.001Z",
+      "numInputRows": 400,
+      "inputRowsPerSecond": 80.0,
+      "processedRowsPerSecond": 151.05740181268882,
+      "durationMs": {
+        "addBatch": 2240,
+        "commitOffsets": 148,
+        "getBatch": 1,
+        "latestOffset": 11,
+        "queryPlanning": 115,
+        "triggerExecution": 2647,
+        "walCommit": 118
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:46:39.262Z",
+        "max": "2026-11-14T12:49:59.000Z",
+        "min": "2026-11-14T12:43:01.000Z",
+        "watermark": "2026-11-14T12:33:34.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3000,
+          "numRowsUpdated": 400,
+          "allUpdatesTimeMs": 309,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 662,
+          "memoryUsedBytes": 936696,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 16,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 714944
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 976,
+              "1": 788,
+              "0": 856
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 400,
+          "inputRowsPerSecond": 80.0,
+          "processedRowsPerSecond": 151.05740181268882,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 11,
+      "timestamp": "2026-11-14T11:03:45.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 1031,
+        "commitOffsets": 166,
+        "getBatch": 0,
+        "latestOffset": 12,
+        "queryPlanning": 47,
+        "triggerExecution": 1386,
+        "walCommit": 125
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T12:39:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3000,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 130,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 722,
+          "memoryUsedBytes": 1288048,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 20,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 762392
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 12,
+      "timestamp": "2026-11-14T11:03:55.000Z",
+      "numInputRows": 28,
+      "inputRowsPerSecond": 5.6,
+      "processedRowsPerSecond": 14.105793450881611,
+      "durationMs": {
+        "addBatch": 1577,
+        "commitOffsets": 163,
+        "getBatch": 1,
+        "latestOffset": 7,
+        "queryPlanning": 59,
+        "triggerExecution": 1985,
+        "walCommit": 174
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:50:13.500Z",
+        "max": "2026-11-14T12:50:27.000Z",
+        "min": "2026-11-14T12:50:00.000Z",
+        "watermark": "2026-11-14T12:39:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3028,
+          "numRowsUpdated": 28,
+          "allUpdatesTimeMs": 264,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 685,
+          "memoryUsedBytes": 927104,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 24,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 762624
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1120,
+              "1": 908,
+              "0": 992
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "numInputRows": 28,
+          "inputRowsPerSecond": 5.6,
+          "processedRowsPerSecond": 14.105793450881611,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 13,
+      "timestamp": "2026-11-14T11:04:00.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 51.38746145940391,
+      "durationMs": {
+        "addBatch": 1549,
+        "commitOffsets": 174,
+        "getBatch": 1,
+        "latestOffset": 8,
+        "queryPlanning": 66,
+        "triggerExecution": 1946,
+        "walCommit": 145
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:51:17.500Z",
+        "max": "2026-11-14T12:52:07.000Z",
+        "min": "2026-11-14T12:50:28.000Z",
+        "watermark": "2026-11-14T12:40:27.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3128,
+          "numRowsUpdated": 100,
+          "allUpdatesTimeMs": 203,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 681,
+          "memoryUsedBytes": 937328,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 28,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 780720
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1127,
+              "1": 922,
+              "0": 999
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 51.38746145940391,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 14,
+      "timestamp": "2026-11-14T11:04:05.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 39.43217665615142,
+      "durationMs": {
+        "addBatch": 2138,
+        "commitOffsets": 162,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 62,
+        "triggerExecution": 2536,
+        "walCommit": 161
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:52:57.500Z",
+        "max": "2026-11-14T12:53:47.000Z",
+        "min": "2026-11-14T12:52:08.000Z",
+        "watermark": "2026-11-14T12:42:07.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3228,
+          "numRowsUpdated": 100,
+          "allUpdatesTimeMs": 313,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 959,
+          "memoryUsedBytes": 954488,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 32,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 807240
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1158,
+              "1": 948,
+              "0": 1042
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 39.43217665615142,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 15,
+      "timestamp": "2026-11-14T11:04:10.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 48.47309743092583,
+      "durationMs": {
+        "addBatch": 1741,
+        "commitOffsets": 127,
+        "getBatch": 0,
+        "latestOffset": 10,
+        "queryPlanning": 79,
+        "triggerExecution": 2063,
+        "walCommit": 103
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:54:37.500Z",
+        "max": "2026-11-14T12:55:27.000Z",
+        "min": "2026-11-14T12:53:48.000Z",
+        "watermark": "2026-11-14T12:43:47.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3328,
+          "numRowsUpdated": 100,
+          "allUpdatesTimeMs": 337,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 3,
+          "commitTimeMs": 977,
+          "memoryUsedBytes": 1006200,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 36,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 844264
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1195,
+              "1": 979,
+              "0": 1074
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 48.47309743092583,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 16,
+      "timestamp": "2026-11-14T11:04:15.001Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 19.99600079984003,
+      "processedRowsPerSecond": 53.59056806002143,
+      "durationMs": {
+        "addBatch": 1562,
+        "commitOffsets": 111,
+        "getBatch": 0,
+        "latestOffset": 7,
+        "queryPlanning": 63,
+        "triggerExecution": 1866,
+        "walCommit": 104
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:56:17.500Z",
+        "max": "2026-11-14T12:57:07.000Z",
+        "min": "2026-11-14T12:55:28.000Z",
+        "watermark": "2026-11-14T12:45:27.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3428,
+          "numRowsUpdated": 100,
+          "allUpdatesTimeMs": 245,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 714,
+          "memoryUsedBytes": 1026712,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 40,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 862360
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1234,
+              "1": 1008,
+              "0": 1106
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 19.99600079984003,
+          "processedRowsPerSecond": 53.59056806002143,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 17,
+      "timestamp": "2026-11-14T11:04:20.000Z",
+      "numInputRows": 100,
+      "inputRowsPerSecond": 20.004000800160032,
+      "processedRowsPerSecond": 47.52851711026616,
+      "durationMs": {
+        "addBatch": 1752,
+        "commitOffsets": 164,
+        "getBatch": 1,
+        "latestOffset": 7,
+        "queryPlanning": 61,
+        "triggerExecution": 2104,
+        "walCommit": 116
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:57:57.500Z",
+        "max": "2026-11-14T12:58:47.000Z",
+        "min": "2026-11-14T12:57:08.000Z",
+        "watermark": "2026-11-14T12:47:07.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3528,
+          "numRowsUpdated": 100,
+          "allUpdatesTimeMs": 212,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 638,
+          "memoryUsedBytes": 1046528,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 44,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 889104
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1278,
+              "1": 1024,
+              "0": 1146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "numInputRows": 100,
+          "inputRowsPerSecond": 20.004000800160032,
+          "processedRowsPerSecond": 47.52851711026616,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 18,
+      "timestamp": "2026-11-14T11:04:25.001Z",
+      "numInputRows": 72,
+      "inputRowsPerSecond": 14.397120575884822,
+      "processedRowsPerSecond": 30.1129234629862,
+      "durationMs": {
+        "addBatch": 2100,
+        "commitOffsets": 132,
+        "getBatch": 0,
+        "latestOffset": 6,
+        "queryPlanning": 48,
+        "triggerExecution": 2391,
+        "walCommit": 99
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:59:23.500Z",
+        "max": "2026-11-14T12:59:59.000Z",
+        "min": "2026-11-14T12:58:48.000Z",
+        "watermark": "2026-11-14T12:48:47.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3600,
+          "numRowsUpdated": 72,
+          "allUpdatesTimeMs": 209,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 529,
+          "memoryUsedBytes": 1086096,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 48,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1322,
+              "1": 1050,
+              "0": 1176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "numInputRows": 72,
+          "inputRowsPerSecond": 14.397120575884822,
+          "processedRowsPerSecond": 30.1129234629862,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 19,
+      "timestamp": "2026-11-14T11:04:30.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 1017,
+        "commitOffsets": 205,
+        "getBatch": 0,
+        "latestOffset": 8,
+        "queryPlanning": 37,
+        "triggerExecution": 1362,
+        "walCommit": 91
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T12:49:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3600,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 101,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 758,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 52,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 20,
+      "timestamp": "2026-11-14T11:04:40.000Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.2,
+      "processedRowsPerSecond": 0.6131207847946045,
+      "durationMs": {
+        "addBatch": 1339,
+        "commitOffsets": 127,
+        "getBatch": 0,
+        "latestOffset": 10,
+        "queryPlanning": 58,
+        "triggerExecution": 1631,
+        "walCommit": 92
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:44:59.000Z",
+        "max": "2026-11-14T12:44:59.000Z",
+        "min": "2026-11-14T12:44:59.000Z",
+        "watermark": "2026-11-14T12:49:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3600,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 74,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 747,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 1,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 56,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1201
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.2,
+          "processedRowsPerSecond": 0.6131207847946045,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 21,
+      "timestamp": "2026-11-14T11:04:55.000Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.20004000800160032,
+      "processedRowsPerSecond": 0.5865102639296187,
+      "durationMs": {
+        "addBatch": 1371,
+        "commitOffsets": 171,
+        "getBatch": 0,
+        "latestOffset": 11,
+        "queryPlanning": 45,
+        "triggerExecution": 1705,
+        "walCommit": 102
+      },
+      "eventTime": {
+        "avg": "2026-11-14T13:20:00.000Z",
+        "max": "2026-11-14T13:20:00.000Z",
+        "min": "2026-11-14T13:20:00.000Z",
+        "watermark": "2026-11-14T12:49:59.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3601,
+          "numRowsUpdated": 1,
+          "allUpdatesTimeMs": 174,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 785,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 60,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1202
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.20004000800160032,
+          "processedRowsPerSecond": 0.5865102639296187,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 22,
+      "timestamp": "2026-11-14T11:05:00.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 657,
+        "commitOffsets": 139,
+        "getBatch": 0,
+        "latestOffset": 7,
+        "queryPlanning": 33,
+        "triggerExecution": 963,
+        "walCommit": 122
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:10:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3601,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 73,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 712,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 64,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 23,
+      "timestamp": "2026-11-14T11:05:10.000Z",
+      "numInputRows": 1,
+      "inputRowsPerSecond": 0.20004000800160032,
+      "processedRowsPerSecond": 0.5988023952095809,
+      "durationMs": {
+        "addBatch": 1376,
+        "commitOffsets": 101,
+        "getBatch": 0,
+        "latestOffset": 9,
+        "queryPlanning": 69,
+        "triggerExecution": 1670,
+        "walCommit": 112
+      },
+      "eventTime": {
+        "avg": "2026-11-14T13:40:00.000Z",
+        "max": "2026-11-14T13:40:00.000Z",
+        "min": "2026-11-14T13:40:00.000Z",
+        "watermark": "2026-11-14T13:10:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3602,
+          "numRowsUpdated": 1,
+          "allUpdatesTimeMs": 118,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 655,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 68,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1203
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "numInputRows": 1,
+          "inputRowsPerSecond": 0.20004000800160032,
+          "processedRowsPerSecond": 0.5988023952095809,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 24,
+      "timestamp": "2026-11-14T11:05:15.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 722,
+        "commitOffsets": 188,
+        "getBatch": 0,
+        "latestOffset": 9,
+        "queryPlanning": 36,
+        "triggerExecution": 1115,
+        "walCommit": 158
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:30:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "dedupe",
+          "numRowsTotal": 3602,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 82,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 810,
+          "memoryUsedBytes": 1111792,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 72,
+            "loadedMapCacheMissCount": 4,
+            "numDroppedDuplicateRows": 0,
+            "stateOnCurrentVersionSizeBytes": 924592
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 1352,
+              "1": 1067,
+              "0": 1204
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "raw_console": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:00:22.979Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 2643,
+        "commitOffsets": 357,
+        "getBatch": 74,
+        "latestOffset": 492,
+        "queryPlanning": 1111,
+        "triggerExecution": 4947,
+        "walCommit": 205
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": null,
+          "endOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:00:30.001Z",
+      "numInputRows": 123,
+      "inputRowsPerSecond": 17.516377100541156,
+      "processedRowsPerSecond": 13.666666666666666,
+      "durationMs": {
+        "addBatch": 8129,
+        "commitOffsets": 420,
+        "getBatch": 2,
+        "latestOffset": 28,
+        "queryPlanning": 111,
+        "triggerExecution": 8999,
+        "walCommit": 302
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 0,
+              "1": 0,
+              "0": 0
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 67,
+              "1": 28,
+              "0": 28
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 67,
+              "1": 28,
+              "0": 28
+            }
+          },
+          "numInputRows": 123,
+          "inputRowsPerSecond": 17.516377100541156,
+          "processedRowsPerSecond": 13.666666666666666,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:00:40.000Z",
+      "numInputRows": 200,
+      "inputRowsPerSecond": 20.00200020002,
+      "processedRowsPerSecond": 116.0092807424594,
+      "durationMs": {
+        "addBatch": 1110,
+        "commitOffsets": 273,
+        "getBatch": 3,
+        "latestOffset": 26,
+        "queryPlanning": 55,
+        "triggerExecution": 1724,
+        "walCommit": 254
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 67,
+              "1": 28,
+              "0": 28
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 149,
+              "1": 92,
+              "0": 82
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 149,
+              "1": 92,
+              "0": 82
+            }
+          },
+          "numInputRows": 200,
+          "inputRowsPerSecond": 20.00200020002,
+          "processedRowsPerSecond": 116.0092807424594,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 3,
+      "timestamp": "2026-11-14T11:00:50.000Z",
+      "numInputRows": 200,
+      "inputRowsPerSecond": 20.0,
+      "processedRowsPerSecond": 144.19610670511895,
+      "durationMs": {
+        "addBatch": 905,
+        "commitOffsets": 245,
+        "getBatch": 0,
+        "latestOffset": 30,
+        "queryPlanning": 27,
+        "triggerExecution": 1387,
+        "walCommit": 178
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 149,
+              "1": 92,
+              "0": 82
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "numInputRows": 200,
+          "inputRowsPerSecond": 20.0,
+          "processedRowsPerSecond": 144.19610670511895,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 4,
+      "timestamp": "2026-11-14T11:01:00.000Z",
+      "numInputRows": 97,
+      "inputRowsPerSecond": 9.7,
+      "processedRowsPerSecond": 79.31316434995911,
+      "durationMs": {
+        "addBatch": 856,
+        "commitOffsets": 168,
+        "getBatch": 1,
+        "latestOffset": 40,
+        "queryPlanning": 35,
+        "triggerExecution": 1223,
+        "walCommit": 122
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 97,
+          "inputRowsPerSecond": 9.7,
+          "processedRowsPerSecond": 79.31316434995911,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 5,
+      "timestamp": "2026-11-14T11:01:20.001Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "latestOffset": 32,
+        "triggerExecution": 32
+      },
+      "eventTime": null,
+      "stateOperators": [],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "counts_console": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:00:23.742Z",
+      "numInputRows": 8,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.5273218640827896,
+      "durationMs": {
+        "addBatch": 13544,
+        "commitOffsets": 380,
+        "getBatch": 34,
+        "latestOffset": 473,
+        "queryPlanning": 406,
+        "triggerExecution": 15170,
+        "walCommit": 255
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 3,
+          "numRowsUpdated": 3,
+          "allUpdatesTimeMs": 801,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 1363,
+          "memoryUsedBytes": 1744,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 1168
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": null,
+          "endOffset": {
+            "orders": {
+              "2": 4,
+              "1": 2,
+              "0": 2
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 4,
+              "1": 2,
+              "0": 2
+            }
+          },
+          "numInputRows": 8,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.5273218640827896,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:00:38.941Z",
+      "numInputRows": 294,
+      "inputRowsPerSecond": 19.34337785380617,
+      "processedRowsPerSecond": 81.21546961325967,
+      "durationMs": {
+        "addBatch": 2978,
+        "commitOffsets": 245,
+        "getBatch": 1,
+        "latestOffset": 32,
+        "queryPlanning": 77,
+        "triggerExecution": 3620,
+        "walCommit": 283
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 8,
+          "numRowsUpdated": 8,
+          "allUpdatesTimeMs": 743,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 1155,
+          "memoryUsedBytes": 3856,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 2088
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 4,
+              "1": 2,
+              "0": 2
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 143,
+              "1": 87,
+              "0": 72
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 143,
+              "1": 87,
+              "0": 72
+            }
+          },
+          "numInputRows": 294,
+          "inputRowsPerSecond": 19.34337785380617,
+          "processedRowsPerSecond": 81.21546961325967,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:00:42.564Z",
+      "numInputRows": 72,
+      "inputRowsPerSecond": 19.87303339773668,
+      "processedRowsPerSecond": 16.363636363636363,
+      "durationMs": {
+        "addBatch": 3875,
+        "commitOffsets": 191,
+        "getBatch": 2,
+        "latestOffset": 28,
+        "queryPlanning": 67,
+        "triggerExecution": 4399,
+        "walCommit": 235
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 9,
+          "numRowsUpdated": 8,
+          "allUpdatesTimeMs": 357,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 1061,
+          "memoryUsedBytes": 4472,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 16,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 2352
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 143,
+              "1": 87,
+              "0": 72
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 170,
+              "1": 107,
+              "0": 97
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 170,
+              "1": 107,
+              "0": 97
+            }
+          },
+          "numInputRows": 72,
+          "inputRowsPerSecond": 19.87303339773668,
+          "processedRowsPerSecond": 16.363636363636363,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 3,
+      "timestamp": "2026-11-14T11:00:50.000Z",
+      "numInputRows": 149,
+      "inputRowsPerSecond": 20.03765465303927,
+      "processedRowsPerSecond": 70.78384798099762,
+      "durationMs": {
+        "addBatch": 1677,
+        "commitOffsets": 188,
+        "getBatch": 1,
+        "latestOffset": 34,
+        "queryPlanning": 35,
+        "triggerExecution": 2105,
+        "walCommit": 169
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 11,
+          "numRowsUpdated": 9,
+          "allUpdatesTimeMs": 303,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 903,
+          "memoryUsedBytes": 4984,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 24,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 2768
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 170,
+              "1": 107,
+              "0": 97
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "numInputRows": 149,
+          "inputRowsPerSecond": 20.03765465303927,
+          "processedRowsPerSecond": 70.78384798099762,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 4,
+      "timestamp": "2026-11-14T11:01:00.000Z",
+      "numInputRows": 97,
+      "inputRowsPerSecond": 9.7,
+      "processedRowsPerSecond": 38.03921568627451,
+      "durationMs": {
+        "addBatch": 2222,
+        "commitOffsets": 113,
+        "getBatch": 0,
+        "latestOffset": 30,
+        "queryPlanning": 57,
+        "triggerExecution": 2550,
+        "walCommit": 121
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 12,
+          "numRowsUpdated": 8,
+          "allUpdatesTimeMs": 183,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 908,
+          "memoryUsedBytes": 5256,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 32,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 2976
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 215,
+              "1": 162,
+              "0": 146
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 97,
+          "inputRowsPerSecond": 9.7,
+          "processedRowsPerSecond": 38.03921568627451,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    },
+    {
+      "batchId": 5,
+      "timestamp": "2026-11-14T11:01:20.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "latestOffset": 43,
+        "triggerExecution": 44
+      },
+      "eventTime": null,
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 12,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 183,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 0,
+          "commitTimeMs": 908,
+          "memoryUsedBytes": 5256,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 32,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 2976
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "KafkaV2[Subscribe[orders]]",
+          "startOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "endOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "latestOffset": {
+            "orders": {
+              "2": 256,
+              "1": 188,
+              "0": 176
+            }
+          },
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0,
+          "metrics": {
+            "avgOffsetsBehindLatest": "0.0",
+            "maxOffsetsBehindLatest": "0",
+            "minOffsetsBehindLatest": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "gold": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:05:33.663Z",
+      "numInputRows": 3602,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 155.03141947146423,
+      "durationMs": {
+        "addBatch": 19545,
+        "commitOffsets": 180,
+        "getBatch": 2724,
+        "latestOffset": 315,
+        "queryPlanning": 198,
+        "triggerExecution": 23234,
+        "walCommit": 167
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:30:01.499Z",
+        "max": "2026-11-14T13:40:00.000Z",
+        "min": "2026-11-14T12:00:00.000Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 38,
+          "numRowsUpdated": 38,
+          "allUpdatesTimeMs": 293,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 1608,
+          "commitTimeMs": 615,
+          "memoryUsedBytes": 11712,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 11136
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": null,
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 3602,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 155.03141947146423
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:05:56.913Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 8695,
+        "commitOffsets": 146,
+        "getBatch": 0,
+        "latestOffset": 174,
+        "queryPlanning": 39,
+        "triggerExecution": 9286,
+        "walCommit": 222
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:30:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 1,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 39,
+          "numRowsRemoved": 37,
+          "allRemovalsTimeMs": 404,
+          "commitTimeMs": 821,
+          "memoryUsedBytes": 13088,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 1376
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:06:30.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "latestOffset": 134,
+        "triggerExecution": 137
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:30:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 1,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 39,
+          "numRowsRemoved": 37,
+          "allRemovalsTimeMs": 404,
+          "commitTimeMs": 821,
+          "memoryUsedBytes": 13088,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 1376
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    }
+  ],
+  "sliding": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:05:34.078Z",
+      "numInputRows": 3493,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 138.89772546524574,
+      "durationMs": {
+        "addBatch": 18827,
+        "commitOffsets": 264,
+        "getBatch": 5191,
+        "latestOffset": 423,
+        "queryPlanning": 191,
+        "triggerExecution": 25148,
+        "walCommit": 219
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:31:36.826Z",
+        "max": "2026-11-14T12:59:54.000Z",
+        "min": "2026-11-14T12:00:03.000Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 71,
+          "numRowsUpdated": 71,
+          "allUpdatesTimeMs": 247,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 549,
+          "commitTimeMs": 967,
+          "memoryUsedBytes": 18576,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 18000
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": null,
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 3493,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 138.89772546524574
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:05:59.228Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 5923,
+        "commitOffsets": 170,
+        "getBatch": 0,
+        "latestOffset": 261,
+        "queryPlanning": 69,
+        "triggerExecution": 6675,
+        "walCommit": 249
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T12:49:54.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 22,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 35,
+          "numRowsRemoved": 49,
+          "allRemovalsTimeMs": 360,
+          "commitTimeMs": 783,
+          "memoryUsedBytes": 21008,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 6752
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:06:30.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "latestOffset": 167,
+        "triggerExecution": 167
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T12:49:54.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "stateStoreSave",
+          "numRowsTotal": 22,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 35,
+          "numRowsRemoved": 49,
+          "allRemovalsTimeMs": 360,
+          "commitTimeMs": 783,
+          "memoryUsedBytes": 21008,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 6752
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "batchId": 0,
+      "timestamp": "2026-11-14T11:05:34.606Z",
+      "numInputRows": 3602,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 142.4898136793386,
+      "durationMs": {
+        "addBatch": 17099,
+        "commitOffsets": 168,
+        "getBatch": 7313,
+        "latestOffset": 406,
+        "queryPlanning": 114,
+        "triggerExecution": 25279,
+        "walCommit": 143
+      },
+      "eventTime": {
+        "avg": "2026-11-14T12:30:01.499Z",
+        "max": "2026-11-14T13:40:00.000Z",
+        "min": "2026-11-14T12:00:00.000Z",
+        "watermark": "1970-01-01T00:00:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "defaultName",
+          "numRowsTotal": 153,
+          "numRowsUpdated": 153,
+          "allUpdatesTimeMs": 330,
+          "numRowsRemoved": 0,
+          "allRemovalsTimeMs": 393,
+          "commitTimeMs": 862,
+          "memoryUsedBytes": 73848,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 0,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 73272
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": null,
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 3602,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 142.4898136793386
+        }
+      ]
+    },
+    {
+      "batchId": 1,
+      "timestamp": "2026-11-14T11:05:59.890Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "addBatch": 6157,
+        "commitOffsets": 138,
+        "getBatch": 0,
+        "latestOffset": 140,
+        "queryPlanning": 45,
+        "triggerExecution": 6643,
+        "walCommit": 158
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:30:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "defaultName",
+          "numRowsTotal": 1,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 0,
+          "numRowsRemoved": 152,
+          "allRemovalsTimeMs": 318,
+          "commitTimeMs": 677,
+          "memoryUsedBytes": 80336,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 7848
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    },
+    {
+      "batchId": 2,
+      "timestamp": "2026-11-14T11:06:30.000Z",
+      "numInputRows": 0,
+      "inputRowsPerSecond": 0.0,
+      "processedRowsPerSecond": 0.0,
+      "durationMs": {
+        "latestOffset": 144,
+        "triggerExecution": 144
+      },
+      "eventTime": {
+        "watermark": "2026-11-14T13:30:00.000Z"
+      },
+      "stateOperators": [
+        {
+          "operatorName": "defaultName",
+          "numRowsTotal": 1,
+          "numRowsUpdated": 0,
+          "allUpdatesTimeMs": 0,
+          "numRowsRemoved": 152,
+          "allRemovalsTimeMs": 318,
+          "commitTimeMs": 677,
+          "memoryUsedBytes": 80336,
+          "numRowsDroppedByWatermark": 0,
+          "numShufflePartitions": 4,
+          "numStateStoreInstances": 4,
+          "customMetrics": {
+            "loadedMapCacheHitCount": 8,
+            "loadedMapCacheMissCount": 0,
+            "stateOnCurrentVersionSizeBytes": 7848
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "FileStreamSource[s3a://lake/silver/orders_clean/run-kaggle-01]",
+          "startOffset": {
+            "logOffset": 0
+          },
+          "endOffset": {
+            "logOffset": 0
+          },
+          "latestOffset": null,
+          "numInputRows": 0,
+          "inputRowsPerSecond": 0.0,
+          "processedRowsPerSecond": 0.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,37 +1,37 @@
 == Parsed Logical Plan ==
 'Join UsingJoin(Inner, [restaurant_id])
-:- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_mad#5,items_count#6,distance_km#7,courier_id#8,event_time#9] json
+:- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_usd#5,items_count#6,distance_km#7,courier_id#8,event_time#9,tenant_id#10,source_event_time#11,source_row#12,source_dataset#13,source_subtotal_cents#14,simulated_fields#15,run_id#16,scenario#17] json
 +- ResolvedHint (strategy=broadcast)
-   +- Project [restaurant_id#20, name#21 AS restaurant_name#100, restaurant_city#93, category#23, latitude#24, longitude#25]
-      +- Project [restaurant_id#20, name#21, city#22 AS restaurant_city#93, category#23, latitude#24, longitude#25]
-         +- Relation [restaurant_id#20,name#21,city#22,category#23,latitude#24,longitude#25] json
+   +- Project [restaurant_id#36, name#37 AS restaurant_name#124, restaurant_city#117, category#39, latitude#40, longitude#41]
+      +- Project [restaurant_id#36, name#37, city#38 AS restaurant_city#117, category#39, latitude#40, longitude#41]
+         +- Relation [restaurant_id#36,name#37,city#38,category#39,latitude#40,longitude#41] json
 
 == Analyzed Logical Plan ==
-restaurant_id: string, order_id: string, customer_id: string, city: string, status: string, amount_mad: decimal(12,2), items_count: int, distance_km: double, courier_id: string, event_time: timestamp, restaurant_name: string, restaurant_city: string, category: string, latitude: double, longitude: double
-Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_mad#5, items_count#6, distance_km#7, courier_id#8, event_time#9, restaurant_name#100, restaurant_city#93, category#23, latitude#24, longitude#25]
-+- Join Inner, (restaurant_id#1 = restaurant_id#20)
-   :- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_mad#5,items_count#6,distance_km#7,courier_id#8,event_time#9] json
+restaurant_id: string, order_id: string, customer_id: string, city: string, status: string, amount_usd: decimal(12,2), items_count: int, distance_km: double, courier_id: string, event_time: timestamp, tenant_id: string, source_event_time: string, source_row: int, source_dataset: string, source_subtotal_cents: int, simulated_fields: string, run_id: string, scenario: string, restaurant_name: string, restaurant_city: string, category: string, latitude: double, longitude: double
+Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_usd#5, items_count#6, distance_km#7, courier_id#8, event_time#9, tenant_id#10, source_event_time#11, source_row#12, source_dataset#13, source_subtotal_cents#14, simulated_fields#15, run_id#16, scenario#17, restaurant_name#124, restaurant_city#117, category#39, latitude#40, longitude#41]
++- Join Inner, (restaurant_id#1 = restaurant_id#36)
+   :- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_usd#5,items_count#6,distance_km#7,courier_id#8,event_time#9,tenant_id#10,source_event_time#11,source_row#12,source_dataset#13,source_subtotal_cents#14,simulated_fields#15,run_id#16,scenario#17] json
    +- ResolvedHint (strategy=broadcast)
-      +- Project [restaurant_id#20, name#21 AS restaurant_name#100, restaurant_city#93, category#23, latitude#24, longitude#25]
-         +- Project [restaurant_id#20, name#21, city#22 AS restaurant_city#93, category#23, latitude#24, longitude#25]
-            +- Relation [restaurant_id#20,name#21,city#22,category#23,latitude#24,longitude#25] json
+      +- Project [restaurant_id#36, name#37 AS restaurant_name#124, restaurant_city#117, category#39, latitude#40, longitude#41]
+         +- Project [restaurant_id#36, name#37, city#38 AS restaurant_city#117, category#39, latitude#40, longitude#41]
+            +- Relation [restaurant_id#36,name#37,city#38,category#39,latitude#40,longitude#41] json
 
 == Optimized Logical Plan ==
-Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_mad#5, items_count#6, distance_km#7, courier_id#8, event_time#9, restaurant_name#100, restaurant_city#93, category#23, latitude#24, longitude#25]
-+- Join Inner, (restaurant_id#1 = restaurant_id#20), rightHint=(strategy=broadcast)
+Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_usd#5, items_count#6, distance_km#7, courier_id#8, event_time#9, tenant_id#10, source_event_time#11, source_row#12, source_dataset#13, source_subtotal_cents#14, simulated_fields#15, run_id#16, scenario#17, restaurant_name#124, restaurant_city#117, category#39, latitude#40, longitude#41]
++- Join Inner, (restaurant_id#1 = restaurant_id#36), rightHint=(strategy=broadcast)
    :- Filter isnotnull(restaurant_id#1)
-   :  +- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_mad#5,items_count#6,distance_km#7,courier_id#8,event_time#9] json
-   +- Project [restaurant_id#20, name#21 AS restaurant_name#100, city#22 AS restaurant_city#93, category#23, latitude#24, longitude#25]
-      +- Filter isnotnull(restaurant_id#20)
-         +- Relation [restaurant_id#20,name#21,city#22,category#23,latitude#24,longitude#25] json
+   :  +- Relation [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_usd#5,items_count#6,distance_km#7,courier_id#8,event_time#9,tenant_id#10,source_event_time#11,source_row#12,source_dataset#13,source_subtotal_cents#14,simulated_fields#15,run_id#16,scenario#17] json
+   +- Project [restaurant_id#36, name#37 AS restaurant_name#124, city#38 AS restaurant_city#117, category#39, latitude#40, longitude#41]
+      +- Filter isnotnull(restaurant_id#36)
+         +- Relation [restaurant_id#36,name#37,city#38,category#39,latitude#40,longitude#41] json
 
 == Physical Plan ==
 AdaptiveSparkPlan isFinalPlan=false
-+- Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_mad#5, items_count#6, distance_km#7, courier_id#8, event_time#9, restaurant_name#100, restaurant_city#93, category#23, latitude#24, longitude#25]
-   +- BroadcastHashJoin [restaurant_id#1], [restaurant_id#20], Inner, BuildRight, false
++- Project [restaurant_id#1, order_id#0, customer_id#2, city#3, status#4, amount_usd#5, items_count#6, distance_km#7, courier_id#8, event_time#9, tenant_id#10, source_event_time#11, source_row#12, source_dataset#13, source_subtotal_cents#14, simulated_fields#15, run_id#16, scenario#17, restaurant_name#124, restaurant_city#117, category#39, latitude#40, longitude#41]
+   +- BroadcastHashJoin [restaurant_id#1], [restaurant_id#36], Inner, BuildRight, false
       :- Filter isnotnull(restaurant_id#1)
-      :  +- FileScan json [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_mad#5,items_count#6,distance_km#7,courier_id#8,event_time#9] Batched: false, DataFilters: [isnotnull(restaurant_id#1)], Format: JSON, Location: InMemoryFileIndex(1 paths)[s3a://lake/bronze/history/orders_history.jsonl], PartitionFilters: [], PushedFilters: [IsNotNull(restaurant_id)], ReadSchema: struct<order_id:string,restaurant_id:string,customer_id:string,city:string,status:string,amount_m...
+      :  +- FileScan json [order_id#0,restaurant_id#1,customer_id#2,city#3,status#4,amount_usd#5,items_count#6,distance_km#7,courier_id#8,event_time#9,tenant_id#10,source_event_time#11,source_row#12,source_dataset#13,source_subtotal_cents#14,simulated_fields#15,run_id#16,scenario#17] Batched: false, DataFilters: [isnotnull(restaurant_id#1)], Format: JSON, Location: InMemoryFileIndex(1 paths)[s3a://lake/bronze/history/orders_history.jsonl], PartitionFilters: [], PushedFilters: [IsNotNull(restaurant_id)], ReadSchema: struct<order_id:string,restaurant_id:string,customer_id:string,city:string,status:string,amount_u...
       +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, true]),false), [plan_id=244]
-         +- Project [restaurant_id#20, name#21 AS restaurant_name#100, city#22 AS restaurant_city#93, category#23, latitude#24, longitude#25]
-            +- Filter isnotnull(restaurant_id#20)
-               +- FileScan json [restaurant_id#20,name#21,city#22,category#23,latitude#24,longitude#25] Batched: false, DataFilters: [isnotnull(restaurant_id#20)], Format: JSON, Location: InMemoryFileIndex(1 paths)[s3a://lake/bronze/reference/restaurants.json], PartitionFilters: [], PushedFilters: [IsNotNull(restaurant_id)], ReadSchema: struct<restaurant_id:string,name:string,city:string,category:string,latitude:double,longitude:dou...
+         +- Project [restaurant_id#36, name#37 AS restaurant_name#124, city#38 AS restaurant_city#117, category#39, latitude#40, longitude#41]
+            +- Filter isnotnull(restaurant_id#36)
+               +- FileScan json [restaurant_id#36,name#37,city#38,category#39,latitude#40,longitude#41] Batched: false, DataFilters: [isnotnull(restaurant_id#36)], Format: JSON, Location: InMemoryFileIndex(1 paths)[s3a://lake/bronze/reference/restaurants.json], PartitionFilters: [], PushedFilters: [IsNotNull(restaurant_id)], ReadSchema: struct<restaurant_id:string,name:string,city:string,category:string,latitude:double,longitude:dou...

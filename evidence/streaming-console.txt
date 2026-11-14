@@ -1,0 +1,180 @@
++ docker compose exec -T jupyter python3 src/demo_streaming.py --run-id ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------+-------------+-----------+----+------+----------+-----------+-----------+----------+----------+---------+-----------------+----------+--------------+---------------------+----------------+------+--------+
+|order_id|restaurant_id|customer_id|city|status|amount_usd|items_count|distance_km|courier_id|event_time|tenant_id|source_event_time|source_row|source_dataset|source_subtotal_cents|simulated_fields|run_id|scenario|
++--------+-------------+-----------+----+------+----------+-----------+-----------+----------+----------+---------+-----------------+----------+--------------+---------------------+----------------+------+--------+
++--------+-------------+-----------+----+------+----------+-----------+-----------+----------+----------+---------+-----------------+----------+--------------+---------------------+----------------+------+--------+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------+---------+-----+
+|city    |status   |count|
++--------+---------+-----+
+|Market-2|DELIVERED|1    |
+|Market-2|CREATED  |5    |
+|Market-4|CREATED  |2    |
++--------+---------+-----+
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|            order_id|restaurant_id|  customer_id|    city|   status|amount_usd|items_count|distance_km|courier_id|         event_time|tenant_id|   source_event_time|source_row|    source_dataset|source_subtotal_cents|    simulated_fields|       run_id|            scenario|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|run-kaggle-01:DD-...|    DD-2-6865|SIM-C-0034081|Market-2|  CREATED|      7.49|          1|       NULL|SIM-L-2-01|2026-11-14 12:00:00| tenant-2|2015-01-21T15:54:48Z|     34081|kaggle-doordash-v1|                  749|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-6313|SIM-C-0003781|Market-4|  CREATED|     11.95|          1|       NULL|SIM-L-4-01|2026-11-14 12:00:01| tenant-4|2015-01-21T16:07:57Z|      3781|kaggle-doordash-v1|                 1195|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-2-6865|SIM-C-0034081|Market-2|DELIVERED|      7.49|          1|       NULL|SIM-L-2-01|2026-11-14 12:00:03| tenant-2|2015-01-21T16:22:29Z|     34081|kaggle-doordash-v1|                  749|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|     DD-2-810|SIM-C-0073285|Market-2|  CREATED|     23.00|          2|       NULL|SIM-L-2-01|2026-11-14 12:00:05| tenant-2|2015-01-21T16:42:40Z|     73285|kaggle-doordash-v1|                 2300|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-6313|SIM-C-0003781|Market-4|DELIVERED|     11.95|          1|       NULL|SIM-L-4-01|2026-11-14 12:00:09| tenant-4|2015-01-21T16:55:01Z|      3781|kaggle-doordash-v1|                 1195|customer_id,couri...|run-kaggle-01|test_clock_datase...|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|            order_id|restaurant_id|  customer_id|    city|   status|amount_usd|items_count|distance_km|courier_id|         event_time|tenant_id|   source_event_time|source_row|    source_dataset|source_subtotal_cents|    simulated_fields|       run_id|            scenario|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|run-kaggle-01:DD-...|    DD-2-6865|SIM-C-0034070|Market-2|  CREATED|     12.59|          2|       NULL|SIM-L-2-02|2026-11-14 12:02:04| tenant-2|2015-01-21T19:20:19Z|     34070|kaggle-doordash-v1|                 1259|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-4367|SIM-C-0172028|Market-4|  CREATED|     24.15|          4|       NULL|SIM-L-4-08|2026-11-14 12:02:07| tenant-4|2015-01-21T19:21:03Z|    172028|kaggle-doordash-v1|                 2415|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|     DD-2-441|SIM-C-0062660|Market-2|DELIVERED|     17.20|          2|       NULL|SIM-L-2-08|2026-11-14 12:02:11| tenant-2|2015-01-21T19:23:04Z|     62660|kaggle-doordash-v1|                 1720|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-4367|SIM-C-0171792|Market-4|  CREATED|     14.45|          2|       NULL|SIM-L-4-00|2026-11-14 12:02:12| tenant-4|2015-01-21T19:23:21Z|    171792|kaggle-doordash-v1|                 1445|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-3380|SIM-C-0035458|Market-4|  CREATED|     14.40|          3|       NULL|SIM-L-4-10|2026-11-14 12:02:15| tenant-4|2015-01-21T19:24:29Z|     35458|kaggle-doordash-v1|                 1440|customer_id,couri...|run-kaggle-01|test_clock_datase...|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++--------+---------+-----+
+|city    |status   |count|
++--------+---------+-----+
+|Market-2|DELIVERED|53   |
+|Market-6|CREATED  |3    |
+|Market-1|CREATED  |13   |
+|Market-3|CREATED  |2    |
+|Market-2|CREATED  |88   |
+|Market-4|DELIVERED|34   |
+|Market-1|DELIVERED|4    |
+|Market-4|CREATED  |105  |
++--------+---------+-----+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++--------+---------+-----+
+|city    |status   |count|
++--------+---------+-----+
+|Market-2|DELIVERED|63   |
+|Market-5|CREATED  |2    |
+|Market-6|CREATED  |4    |
+|Market-1|CREATED  |17   |
+|Market-3|CREATED  |2    |
+|Market-2|CREATED  |108  |
+|Market-4|DELIVERED|52   |
+|Market-1|DELIVERED|5    |
+|Market-4|CREATED  |121  |
++--------+---------+-----+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|            order_id|restaurant_id|  customer_id|    city|   status|amount_usd|items_count|distance_km|courier_id|         event_time|tenant_id|   source_event_time|source_row|    source_dataset|source_subtotal_cents|    simulated_fields|       run_id|            scenario|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|run-kaggle-01:DD-...|    DD-4-6313|SIM-C-0008595|Market-4|  CREATED|     20.45|          2|       NULL|SIM-L-4-03|2026-11-14 12:05:25| tenant-4|2015-01-21T20:12:24Z|      8595|kaggle-doordash-v1|                 2045|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-3380|SIM-C-0035458|Market-4|DELIVERED|     14.40|          3|       NULL|SIM-L-4-10|2026-11-14 12:05:28| tenant-4|2015-01-21T20:13:25Z|     35458|kaggle-doordash-v1|                 1440|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-6-4360|SIM-C-0154681|Market-6|  CREATED|     14.89|          1|       NULL|SIM-L-6-01|2026-11-14 12:05:29| tenant-6|2015-01-21T20:13:47Z|    154681|kaggle-doordash-v1|                 1489|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-2-6149|SIM-C-0177343|Market-2|  CREATED|     12.50|          1|       NULL|SIM-L-2-07|2026-11-14 12:05:33| tenant-2|2015-01-21T20:15:51Z|    177343|kaggle-doordash-v1|                 1250|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|     DD-2-810|SIM-C-0073267|Market-2|DELIVERED|     12.00|          1|       NULL|SIM-L-2-07|2026-11-14 12:05:36| tenant-2|2015-01-21T20:16:55Z|     73267|kaggle-doordash-v1|                 1200|customer_id,couri...|run-kaggle-01|test_clock_datase...|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++--------+---------+-----+
+|city    |status   |count|
++--------+---------+-----+
+|Market-6|DELIVERED|3    |
+|Market-2|DELIVERED|91   |
+|Market-5|CREATED  |3    |
+|Market-6|CREATED  |4    |
+|Market-1|CREATED  |19   |
+|Market-3|CREATED  |2    |
+|Market-2|CREATED  |141  |
+|Market-4|DELIVERED|105  |
+|Market-1|DELIVERED|15   |
+|Market-3|DELIVERED|2    |
+|Market-4|CREATED  |138  |
++--------+---------+-----+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|            order_id|restaurant_id|  customer_id|    city|   status|amount_usd|items_count|distance_km|courier_id|         event_time|tenant_id|   source_event_time|source_row|    source_dataset|source_subtotal_cents|    simulated_fields|       run_id|            scenario|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+|run-kaggle-01:DD-...|    DD-2-3041|SIM-C-0034482|Market-2|  CREATED|     13.85|          1|       NULL|SIM-L-2-06|2026-11-14 12:08:47| tenant-2|2015-01-21T20:58:16Z|     34482|kaggle-doordash-v1|                 1385|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-2-1123|SIM-C-0064610|Market-2|  CREATED|     16.05|          3|       NULL|SIM-L-2-02|2026-11-14 12:08:48| tenant-2|2015-01-21T20:58:34Z|     64610|kaggle-doordash-v1|                 1605|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-2056|SIM-C-0126172|Market-4|DELIVERED|     17.90|          2|       NULL|SIM-L-4-04|2026-11-14 12:08:50| tenant-4|2015-01-21T20:59:23Z|    126172|kaggle-doordash-v1|                 1790|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-4-2341|SIM-C-0083590|Market-4|DELIVERED|     14.00|          2|       NULL|SIM-L-4-10|2026-11-14 12:08:54| tenant-4|2015-01-21T20:59:41Z|     83590|kaggle-doordash-v1|                 1400|customer_id,couri...|run-kaggle-01|test_clock_datase...|
+|run-kaggle-01:DD-...|    DD-2-1703|SIM-C-0081917|Market-2|  CREATED|     19.00|          2|       NULL|SIM-L-2-05|2026-11-14 12:08:56| tenant-2|2015-01-21T21:00:13Z|     81917|kaggle-doordash-v1|                 1900|customer_id,couri...|run-kaggle-01|test_clock_datase...|
++--------------------+-------------+-------------+--------+---------+----------+-----------+-----------+----------+-------------------+---------+--------------------+----------+------------------+---------------------+--------------------+-------------+--------------------+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++--------+---------+-----+
+|city    |status   |count|
++--------+---------+-----+
+|Market-6|DELIVERED|3    |
+|Market-2|DELIVERED|116  |
+|Market-5|CREATED  |3    |
+|Market-5|DELIVERED|2    |
+|Market-6|CREATED  |5    |
+|Market-1|CREATED  |23   |
+|Market-3|CREATED  |2    |
+|Market-2|CREATED  |162  |
+|Market-4|DELIVERED|127  |
+|Market-1|DELIVERED|16   |
+|Market-3|DELIVERED|2    |
+|Market-4|CREATED  |159  |
++--------+---------+-----+
+EXPERIMENT {"phase": "before_stop", "utc": "2026-11-14T11:01:21.945172+00:00", "silver_rows": 600, "produced": 620, "seconds": 31.001727976999973}
+EXPERIMENT {"phase": "consumer_stopped", "utc": "2026-11-14T11:01:22.221350+00:00", "producer_rate": 20, "planned_seconds": 120}
+EXPERIMENT {"phase": "producer_during_stop", "utc": "2026-11-14T11:03:22.327972+00:00", "produced": 2400, "seconds": 120.00132721299997}
+EXPERIMENT {"phase": "after_restart", "utc": "2026-11-14T11:03:53.342347+00:00", "silver_rows": 3000, "recovery_seconds": 30.924771575000022}
++-------+-------------------+------+--------+----------------+-------------------------------------------------------------------------------------+----+--------+---------+-----------+--------------+-------------+----------------------------------------------------------------------------------------+------------+-----------------------------------+
+|version|timestamp          |userId|userName|operation       |operationParameters                                                                  |job |notebook|clusterId|readVersion|isolationLevel|isBlindAppend|operationMetrics                                                                        |userMetadata|engineInfo                         |
++-------+-------------------+------+--------+----------------+-------------------------------------------------------------------------------------+----+--------+---------+-----------+--------------+-------------+----------------------------------------------------------------------------------------+------------+-----------------------------------+
+|1      |2026-11-14 11:06:05|NULL  |NULL    |STREAMING UPDATE|{outputMode -> Append, queryId -> 4bf20850-572c-4f83-b36c-290f8f2a69ba, epochId -> 1}|NULL|NULL    |NULL     |0          |Serializable  |true         |{numRemovedFiles -> 0, numOutputRows -> 37, numOutputBytes -> 10281, numAddedFiles -> 4}|NULL        |Apache-Spark/3.5.6 Delta-Lake/3.3.2|
+|0      |2026-11-14 11:05:53|NULL  |NULL    |STREAMING UPDATE|{outputMode -> Append, queryId -> 4bf20850-572c-4f83-b36c-290f8f2a69ba, epochId -> 0}|NULL|NULL    |NULL     |NULL       |Serializable  |true         |{numRemovedFiles -> 0, numOutputRows -> 0, numOutputBytes -> 1016, numAddedFiles -> 0}  |NULL        |Apache-Spark/3.5.6 Delta-Lake/3.3.2|
++-------+-------------------+------+--------+----------------+-------------------------------------------------------------------------------------+----+--------+---------+-----------+--------------+-------------+----------------------------------------------------------------------------------------+------------+-----------------------------------+
++---------+--------+------------------------------------------+--------------+----------------+-----------+
+|tenant_id|city    |window                                    |orders_created|orders_delivered|revenue_usd|
++---------+--------+------------------------------------------+--------------+----------------+-----------+
+|tenant-1 |Market-1|{2026-11-14 12:00:00, 2026-11-14 12:10:00}|22            |16              |489.30     |
+|tenant-1 |Market-1|{2026-11-14 12:10:00, 2026-11-14 12:20:00}|13            |17              |442.53     |
+|tenant-1 |Market-1|{2026-11-14 12:20:00, 2026-11-14 12:30:00}|20            |7               |252.60     |
+|tenant-1 |Market-1|{2026-11-14 12:30:00, 2026-11-14 12:40:00}|31            |21              |673.58     |
+|tenant-1 |Market-1|{2026-11-14 12:40:00, 2026-11-14 12:50:00}|21            |37              |1311.60    |
+|tenant-1 |Market-1|{2026-11-14 12:50:00, 2026-11-14 13:00:00}|7             |15              |402.92     |
+|tenant-2 |Market-2|{2026-11-14 12:00:00, 2026-11-14 12:10:00}|157           |114             |2527.50    |
+|tenant-2 |Market-2|{2026-11-14 12:10:00, 2026-11-14 12:20:00}|167           |167             |3267.16    |
+|tenant-2 |Market-2|{2026-11-14 12:20:00, 2026-11-14 12:30:00}|192           |125             |3637.01    |
+|tenant-2 |Market-2|{2026-11-14 12:30:00, 2026-11-14 12:40:00}|131           |127             |3803.05    |
+|tenant-2 |Market-2|{2026-11-14 12:40:00, 2026-11-14 12:50:00}|101           |158             |4278.22    |
+|tenant-2 |Market-2|{2026-11-14 12:50:00, 2026-11-14 13:00:00}|152           |166             |3676.88    |
+|tenant-3 |Market-3|{2026-11-14 12:00:00, 2026-11-14 12:10:00}|2             |2               |31.24      |
+|tenant-3 |Market-3|{2026-11-14 12:10:00, 2026-11-14 12:20:00}|3             |2               |41.85      |
+|tenant-3 |Market-3|{2026-11-14 12:20:00, 2026-11-14 12:30:00}|0             |1               |77.23      |
+|tenant-3 |Market-3|{2026-11-14 12:30:00, 2026-11-14 12:40:00}|3             |0               |0.00       |
+|tenant-3 |Market-3|{2026-11-14 12:40:00, 2026-11-14 12:50:00}|1             |4               |114.13     |
+|tenant-3 |Market-3|{2026-11-14 12:50:00, 2026-11-14 13:00:00}|4             |0               |0.00       |
+|tenant-4 |Market-4|{2026-11-14 12:00:00, 2026-11-14 12:10:00}|147           |127             |3570.76    |
+|tenant-4 |Market-4|{2026-11-14 12:10:00, 2026-11-14 12:20:00}|114           |81              |1865.10    |
+|tenant-4 |Market-4|{2026-11-14 12:20:00, 2026-11-14 12:30:00}|142           |92              |3163.04    |
+|tenant-4 |Market-4|{2026-11-14 12:30:00, 2026-11-14 12:40:00}|138           |121             |4293.35    |
+|tenant-4 |Market-4|{2026-11-14 12:40:00, 2026-11-14 12:50:00}|85            |160             |4948.93    |
+|tenant-4 |Market-4|{2026-11-14 12:50:00, 2026-11-14 13:00:00}|104           |106             |2554.19    |
+|tenant-5 |Market-5|{2026-11-14 12:00:00, 2026-11-14 12:10:00}|3             |2               |23.88      |
+|tenant-5 |Market-5|{2026-11-14 12:10:00, 2026-11-14 12:20:00}|10            |9               |142.75     |
+|tenant-5 |Market-5|{2026-11-14 12:20:00, 2026-11-14 12:30:00}|6             |3               |88.38      |
+|tenant-5 |Market-5|{2026-11-14 12:30:00, 2026-11-14 12:40:00}|10            |7               |161.15     |
+|tenant-5 |Market-5|{2026-11-14 12:40:00, 2026-11-14 12:50:00}|5             |10              |232.53     |
+|tenant-5 |Market-5|{2026-11-14 12:50:00, 2026-11-14 13:00:00}|8             |8               |258.32     |
++---------+--------+------------------------------------------+--------------+----------------+-----------+
+EXPERIMENT {"phase": "validation_passed", "utc": "2026-11-14T11:06:51.603964+00:00", "run_id": "run-kaggle-01", "status": "PASS", "dataset_events": 3600, "sent_including_tests": 3623, "bronze_rows": 3623, "silver_rows": 3602, "injected_duplicates": 20, "late_probe_in_bronze": 1, "late_probe_in_silver": 0, "before_stop": 600, "after_restart": 3000, "producer_pause_test_seconds": 120, "no_loss_or_duplicates_on_recovery": true, "gold_matches_batch_oracle": true, "gold_rows": 36, "delta_versions": 2, "paths": {"bronze": "s3a://lake/bronze/orders_raw/run-kaggle-01", "silver": "s3a://lake/silver/orders_clean/run-kaggle-01", "gold": "s3a://lake/gold/kpi_city_10min/run-kaggle-01", "sliding": "s3a://lake/gold/cancellation_sliding/run-kaggle-01", "sessions": "s3a://lake/gold/courier_sessions/run-kaggle-01", "cp": "s3a://lake/checkpoints/run-kaggle-01"}, "application_id": "app-20261114110009-0003", "currency": "USD", "replay_clock": "one second per source event; original timestamp retained in source_event_time", "sliding_rows": 49, "session_rows": 152}

@@ -1,0 +1,602 @@
+[
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-11",
+    "session_window": {
+      "start": "2026-11-14 12:10:31",
+      "end": "2026-11-14 12:21:28"
+    },
+    "events": 6,
+    "first_event": "2026-11-14 12:10:31",
+    "last_event": "2026-11-14 12:16:28",
+    "observed_duration_seconds": 357
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-03",
+    "session_window": {
+      "start": "2026-11-14 12:42:40",
+      "end": "2026-11-14 12:58:50"
+    },
+    "events": 10,
+    "first_event": "2026-11-14 12:42:40",
+    "last_event": "2026-11-14 12:53:50",
+    "observed_duration_seconds": 670
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-03",
+    "session_window": {
+      "start": "2026-11-14 12:54:01",
+      "end": "2026-11-14 12:59:01"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:54:01",
+    "last_event": "2026-11-14 12:54:01",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-08",
+    "session_window": {
+      "start": "2026-11-14 12:46:07",
+      "end": "2026-11-14 12:56:31"
+    },
+    "events": 3,
+    "first_event": "2026-11-14 12:46:07",
+    "last_event": "2026-11-14 12:51:31",
+    "observed_duration_seconds": 324
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-11",
+    "session_window": {
+      "start": "2026-11-14 12:33:27",
+      "end": "2026-11-14 12:47:29"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:33:27",
+    "last_event": "2026-11-14 12:42:29",
+    "observed_duration_seconds": 542
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-01",
+    "session_window": {
+      "start": "2026-11-14 12:39:59",
+      "end": "2026-11-14 12:49:35"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:39:59",
+    "last_event": "2026-11-14 12:44:35",
+    "observed_duration_seconds": 276
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-00",
+    "session_window": {
+      "start": "2026-11-14 12:26:06",
+      "end": "2026-11-14 12:31:06"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:26:06",
+    "last_event": "2026-11-14 12:26:06",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-08",
+    "session_window": {
+      "start": "2026-11-14 12:32:37",
+      "end": "2026-11-14 12:50:05"
+    },
+    "events": 7,
+    "first_event": "2026-11-14 12:32:37",
+    "last_event": "2026-11-14 12:45:05",
+    "observed_duration_seconds": 748
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-03",
+    "session_window": {
+      "start": "2026-11-14 12:42:06",
+      "end": "2026-11-14 12:56:00"
+    },
+    "events": 5,
+    "first_event": "2026-11-14 12:42:06",
+    "last_event": "2026-11-14 12:51:00",
+    "observed_duration_seconds": 534
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-08",
+    "session_window": {
+      "start": "2026-11-14 12:39:01",
+      "end": "2026-11-14 12:44:01"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:39:01",
+    "last_event": "2026-11-14 12:39:01",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-03",
+    "session_window": {
+      "start": "2026-11-14 12:18:15",
+      "end": "2026-11-14 12:29:10"
+    },
+    "events": 3,
+    "first_event": "2026-11-14 12:18:15",
+    "last_event": "2026-11-14 12:24:10",
+    "observed_duration_seconds": 355
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-11",
+    "session_window": {
+      "start": "2026-11-14 12:52:10",
+      "end": "2026-11-14 12:58:46"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:52:10",
+    "last_event": "2026-11-14 12:53:46",
+    "observed_duration_seconds": 96
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-03",
+    "session_window": {
+      "start": "2026-11-14 12:34:59",
+      "end": "2026-11-14 12:39:59"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:34:59",
+    "last_event": "2026-11-14 12:34:59",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-11",
+    "session_window": {
+      "start": "2026-11-14 12:58:57",
+      "end": "2026-11-14 13:03:57"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:58:57",
+    "last_event": "2026-11-14 12:58:57",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-02",
+    "session_window": {
+      "start": "2026-11-14 12:32:38",
+      "end": "2026-11-14 12:37:38"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:32:38",
+    "last_event": "2026-11-14 12:32:38",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-04",
+    "session_window": {
+      "start": "2026-11-14 12:59:50",
+      "end": "2026-11-14 13:04:50"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:59:50",
+    "last_event": "2026-11-14 12:59:50",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-04",
+    "session_window": {
+      "start": "2026-11-14 12:44:16",
+      "end": "2026-11-14 12:49:16"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:44:16",
+    "last_event": "2026-11-14 12:44:16",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-02",
+    "session_window": {
+      "start": "2026-11-14 12:12:52",
+      "end": "2026-11-14 12:20:48"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:12:52",
+    "last_event": "2026-11-14 12:15:48",
+    "observed_duration_seconds": 176
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-06",
+    "session_window": {
+      "start": "2026-11-14 12:35:47",
+      "end": "2026-11-14 12:49:38"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:35:47",
+    "last_event": "2026-11-14 12:44:38",
+    "observed_duration_seconds": 531
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-02",
+    "session_window": {
+      "start": "2026-11-14 12:40:23",
+      "end": "2026-11-14 12:45:23"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:40:23",
+    "last_event": "2026-11-14 12:40:23",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-00",
+    "session_window": {
+      "start": "2026-11-14 12:40:28",
+      "end": "2026-11-14 12:45:28"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:40:28",
+    "last_event": "2026-11-14 12:40:28",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-03",
+    "session_window": {
+      "start": "2026-11-14 12:03:40",
+      "end": "2026-11-14 12:13:18"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:03:40",
+    "last_event": "2026-11-14 12:08:18",
+    "observed_duration_seconds": 278
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-09",
+    "session_window": {
+      "start": "2026-11-14 12:03:09",
+      "end": "2026-11-14 12:21:57"
+    },
+    "events": 8,
+    "first_event": "2026-11-14 12:03:09",
+    "last_event": "2026-11-14 12:16:57",
+    "observed_duration_seconds": 828
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-00",
+    "session_window": {
+      "start": "2026-11-14 12:34:03",
+      "end": "2026-11-14 12:39:03"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:34:03",
+    "last_event": "2026-11-14 12:34:03",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-09",
+    "session_window": {
+      "start": "2026-11-14 12:24:21",
+      "end": "2026-11-14 12:29:21"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:24:21",
+    "last_event": "2026-11-14 12:24:21",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-08",
+    "session_window": {
+      "start": "2026-11-14 12:18:38",
+      "end": "2026-11-14 12:27:31"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:18:38",
+    "last_event": "2026-11-14 12:22:31",
+    "observed_duration_seconds": 233
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-11",
+    "session_window": {
+      "start": "2026-11-14 12:47:27",
+      "end": "2026-11-14 12:55:33"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:47:27",
+    "last_event": "2026-11-14 12:50:33",
+    "observed_duration_seconds": 186
+  },
+  {
+    "tenant_id": "tenant-2",
+    "courier_id": "SIM-L-2-00",
+    "session_window": {
+      "start": "2026-11-14 12:00:54",
+      "end": "2026-11-14 13:03:47"
+    },
+    "events": 131,
+    "first_event": "2026-11-14 12:00:54",
+    "last_event": "2026-11-14 12:58:47",
+    "observed_duration_seconds": 3473
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-01",
+    "session_window": {
+      "start": "2026-11-14 12:58:15",
+      "end": "2026-11-14 13:03:15"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:58:15",
+    "last_event": "2026-11-14 12:58:15",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-06",
+    "session_window": {
+      "start": "2026-11-14 12:42:49",
+      "end": "2026-11-14 12:56:18"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:42:49",
+    "last_event": "2026-11-14 12:51:18",
+    "observed_duration_seconds": 509
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-08",
+    "session_window": {
+      "start": "2026-11-14 12:10:50",
+      "end": "2026-11-14 12:17:44"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:10:50",
+    "last_event": "2026-11-14 12:12:44",
+    "observed_duration_seconds": 114
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-09",
+    "session_window": {
+      "start": "2026-11-14 12:56:44",
+      "end": "2026-11-14 13:02:08"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:56:44",
+    "last_event": "2026-11-14 12:57:08",
+    "observed_duration_seconds": 24
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-04",
+    "session_window": {
+      "start": "2026-11-14 12:49:40",
+      "end": "2026-11-14 12:54:40"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:49:40",
+    "last_event": "2026-11-14 12:49:40",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-11",
+    "session_window": {
+      "start": "2026-11-14 12:27:22",
+      "end": "2026-11-14 12:32:33"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:27:22",
+    "last_event": "2026-11-14 12:27:33",
+    "observed_duration_seconds": 11
+  },
+  {
+    "tenant_id": "tenant-3",
+    "courier_id": "SIM-L-3-03",
+    "session_window": {
+      "start": "2026-11-14 12:16:43",
+      "end": "2026-11-14 12:23:28"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:16:43",
+    "last_event": "2026-11-14 12:18:28",
+    "observed_duration_seconds": 105
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-03",
+    "session_window": {
+      "start": "2026-11-14 12:28:55",
+      "end": "2026-11-14 12:34:26"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:28:55",
+    "last_event": "2026-11-14 12:29:26",
+    "observed_duration_seconds": 31
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-11",
+    "session_window": {
+      "start": "2026-11-14 12:39:46",
+      "end": "2026-11-14 12:44:46"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:39:46",
+    "last_event": "2026-11-14 12:39:46",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-00",
+    "session_window": {
+      "start": "2026-11-14 12:16:17",
+      "end": "2026-11-14 12:22:28"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:16:17",
+    "last_event": "2026-11-14 12:17:28",
+    "observed_duration_seconds": 71
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-11",
+    "session_window": {
+      "start": "2026-11-14 12:12:01",
+      "end": "2026-11-14 12:25:50"
+    },
+    "events": 8,
+    "first_event": "2026-11-14 12:12:01",
+    "last_event": "2026-11-14 12:20:50",
+    "observed_duration_seconds": 529
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-00",
+    "session_window": {
+      "start": "2026-11-14 12:46:56",
+      "end": "2026-11-14 13:04:39"
+    },
+    "events": 7,
+    "first_event": "2026-11-14 12:46:56",
+    "last_event": "2026-11-14 12:59:39",
+    "observed_duration_seconds": 763
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-06",
+    "session_window": {
+      "start": "2026-11-14 12:29:28",
+      "end": "2026-11-14 12:34:28"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:29:28",
+    "last_event": "2026-11-14 12:29:28",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-03",
+    "session_window": {
+      "start": "2026-11-14 12:31:50",
+      "end": "2026-11-14 12:36:50"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:31:50",
+    "last_event": "2026-11-14 12:31:50",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-03",
+    "session_window": {
+      "start": "2026-11-14 12:48:13",
+      "end": "2026-11-14 12:53:13"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:48:13",
+    "last_event": "2026-11-14 12:48:13",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-08",
+    "session_window": {
+      "start": "2026-11-14 12:05:23",
+      "end": "2026-11-14 12:14:21"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:05:23",
+    "last_event": "2026-11-14 12:09:21",
+    "observed_duration_seconds": 238
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-06",
+    "session_window": {
+      "start": "2026-11-14 12:09:13",
+      "end": "2026-11-14 12:21:10"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:09:13",
+    "last_event": "2026-11-14 12:16:10",
+    "observed_duration_seconds": 417
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-11",
+    "session_window": {
+      "start": "2026-11-14 12:01:33",
+      "end": "2026-11-14 12:09:08"
+    },
+    "events": 4,
+    "first_event": "2026-11-14 12:01:33",
+    "last_event": "2026-11-14 12:04:08",
+    "observed_duration_seconds": 155
+  },
+  {
+    "tenant_id": "tenant-1",
+    "courier_id": "SIM-L-1-09",
+    "session_window": {
+      "start": "2026-11-14 12:29:48",
+      "end": "2026-11-14 12:53:05"
+    },
+    "events": 13,
+    "first_event": "2026-11-14 12:29:48",
+    "last_event": "2026-11-14 12:48:05",
+    "observed_duration_seconds": 1097
+  },
+  {
+    "tenant_id": "tenant-5",
+    "courier_id": "SIM-L-5-03",
+    "session_window": {
+      "start": "2026-11-14 12:11:27",
+      "end": "2026-11-14 12:17:28"
+    },
+    "events": 2,
+    "first_event": "2026-11-14 12:11:27",
+    "last_event": "2026-11-14 12:12:28",
+    "observed_duration_seconds": 61
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-03",
+    "session_window": {
+      "start": "2026-11-14 12:31:44",
+      "end": "2026-11-14 12:36:44"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:31:44",
+    "last_event": "2026-11-14 12:31:44",
+    "observed_duration_seconds": 0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "courier_id": "SIM-L-6-06",
+    "session_window": {
+      "start": "2026-11-14 12:21:35",
+      "end": "2026-11-14 12:26:35"
+    },
+    "events": 1,
+    "first_event": "2026-11-14 12:21:35",
+    "last_event": "2026-11-14 12:21:35",
+    "observed_duration_seconds": 0
+  }
+]

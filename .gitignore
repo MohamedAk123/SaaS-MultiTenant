@@ -9,3 +9,11 @@ __pycache__/
 report/archives/
 data/orders_history.jsonl
 evidence/raw/
+data/external/
+data/replay*.jsonl
+data/graph_*.jsonl
+docker/spark/vendor/
+artifacts/
+results/jalon2/run-*/
+results/graphx_*/*.crc
+results/graphx_*/_SUCCESS

@@ -1,0 +1,54 @@
+[
+  {
+    "version": 1,
+    "timestamp": "2026-11-14 11:06:05",
+    "userId": null,
+    "userName": null,
+    "operation": "STREAMING UPDATE",
+    "operationParameters": {
+      "epochId": "1",
+      "outputMode": "Append",
+      "queryId": "4bf20850-572c-4f83-b36c-290f8f2a69ba"
+    },
+    "job": null,
+    "notebook": null,
+    "clusterId": null,
+    "readVersion": 0,
+    "isolationLevel": "Serializable",
+    "isBlindAppend": true,
+    "operationMetrics": {
+      "numOutputRows": "37",
+      "numRemovedFiles": "0",
+      "numAddedFiles": "4",
+      "numOutputBytes": "10281"
+    },
+    "userMetadata": null,
+    "engineInfo": "Apache-Spark/3.5.6 Delta-Lake/3.3.2"
+  },
+  {
+    "version": 0,
+    "timestamp": "2026-11-14 11:05:53",
+    "userId": null,
+    "userName": null,
+    "operation": "STREAMING UPDATE",
+    "operationParameters": {
+      "epochId": "0",
+      "outputMode": "Append",
+      "queryId": "4bf20850-572c-4f83-b36c-290f8f2a69ba"
+    },
+    "job": null,
+    "notebook": null,
+    "clusterId": null,
+    "readVersion": null,
+    "isolationLevel": "Serializable",
+    "isBlindAppend": true,
+    "operationMetrics": {
+      "numOutputRows": "0",
+      "numRemovedFiles": "0",
+      "numAddedFiles": "0",
+      "numOutputBytes": "1016"
+    },
+    "userMetadata": null,
+    "engineInfo": "Apache-Spark/3.5.6 Delta-Lake/3.3.2"
+  }
+]

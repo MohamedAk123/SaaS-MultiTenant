@@ -1,0 +1,541 @@
+[
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 140,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 3,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 11:55:00",
+      "end": "2026-11-14 12:05:00"
+    },
+    "terminal_orders": 34,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 8,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 141,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 92,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 6,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 7,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 6,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:25:00",
+      "end": "2026-11-14 12:35:00"
+    },
+    "terminal_orders": 140,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 2,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 117,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:25:00",
+      "end": "2026-11-14 12:35:00"
+    },
+    "terminal_orders": 101,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 2,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 7,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 136,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 2,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "terminal_orders": 7,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:25:00",
+      "end": "2026-11-14 12:35:00"
+    },
+    "terminal_orders": 15,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 8,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 2,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 1,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 11:55:00",
+      "end": "2026-11-14 12:05:00"
+    },
+    "terminal_orders": 53,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "terminal_orders": 21,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "terminal_orders": 127,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 9,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 16,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:25:00",
+      "end": "2026-11-14 12:35:00"
+    },
+    "terminal_orders": 4,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-3",
+    "city": "Market-3",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 3,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 125,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 25,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 160,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 167,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 82,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-2",
+    "city": "Market-2",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 114,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 33,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 81,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:20:00",
+      "end": "2026-11-14 12:30:00"
+    },
+    "terminal_orders": 3,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:25:00",
+      "end": "2026-11-14 12:35:00"
+    },
+    "terminal_orders": 6,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 127,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 11:55:00",
+      "end": "2026-11-14 12:05:00"
+    },
+    "terminal_orders": 4,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:00:00",
+      "end": "2026-11-14 12:10:00"
+    },
+    "terminal_orders": 3,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:05:00",
+      "end": "2026-11-14 12:15:00"
+    },
+    "terminal_orders": 7,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "terminal_orders": 2,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-1",
+    "city": "Market-1",
+    "window": {
+      "start": "2026-11-14 12:10:00",
+      "end": "2026-11-14 12:20:00"
+    },
+    "terminal_orders": 17,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:15:00",
+      "end": "2026-11-14 12:25:00"
+    },
+    "terminal_orders": 5,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-5",
+    "city": "Market-5",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 8,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-6",
+    "city": "Market-6",
+    "window": {
+      "start": "2026-11-14 12:35:00",
+      "end": "2026-11-14 12:45:00"
+    },
+    "terminal_orders": 8,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  },
+  {
+    "tenant_id": "tenant-4",
+    "city": "Market-4",
+    "window": {
+      "start": "2026-11-14 12:30:00",
+      "end": "2026-11-14 12:40:00"
+    },
+    "terminal_orders": 121,
+    "cancelled_orders": 0,
+    "cancellation_rate": 0.0
+  }
+]

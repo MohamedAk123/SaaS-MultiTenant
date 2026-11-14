@@ -18,12 +18,12 @@ def run():
         orders = spark.read.schema(ORDER_SCHEMA).option("mode", "FAILFAST").json(HISTORY)
         restaurants = spark.read.schema(RESTAURANT_SCHEMA).option("mode", "FAILFAST").json(RESTAURANTS)
         delivered = orders.filter(F.col("status") == "DELIVERED")
-        revenue = delivered.groupBy("city").agg(F.sum("amount_mad").alias("revenue_mad"))
-        df_revenue = {r.city: int(r.revenue_mad * 100) for r in revenue.collect()}
+        revenue = delivered.groupBy("city").agg(F.sum("amount_usd").alias("revenue_usd"))
+        df_revenue = {r.city: int(r.revenue_usd * 100) for r in revenue.collect()}
         first_seconds = perf_counter() - start
         orders.createOrReplaceTempView("orders")
-        sql_text = "SELECT city, SUM(amount_mad) AS revenue_mad FROM orders WHERE status='DELIVERED' GROUP BY city"
-        sql_revenue = {r.city: int(r.revenue_mad * 100) for r in spark.sql(sql_text).collect()}
+        sql_text = "SELECT city, SUM(amount_usd) AS revenue_usd FROM orders WHERE status='DELIVERED' GROUP BY city"
+        sql_revenue = {r.city: int(r.revenue_usd * 100) for r in spark.sql(sql_text).collect()}
         part2 = json.loads((RESULTS / "part2_rdd.json").read_text(encoding="utf-8"))
         rdd_revenue = {r["city"]: r["revenue_cents"] for r in part2["cities"]}
         assert df_revenue == sql_revenue == rdd_revenue
@@ -45,7 +45,7 @@ def run():
         assert joined_count == input_count, "Missing restaurants or row multiplication"
         assert joined.filter(F.col("city") != F.col("restaurant_city")).count() == 0
         category_revenue = (joined.filter(F.col("status") == "DELIVERED")
-            .groupBy("city", "category").agg(F.sum("amount_mad").alias("revenue_mad"))
+            .groupBy("city", "category").agg(F.sum("amount_usd").alias("revenue_usd"))
             .orderBy("city", "category").collect())
 
         udf_band = F.udf(distance_band, StringType())
@@ -70,10 +70,10 @@ def run():
                 .filter(lambda r: r["status"] == "DELIVERED")
                 .map(lambda r: (r["city"], cents(r))).reduceByKey(lambda a, b: a + b).collect())
         def df_action():
-            return {r.city: int(r.revenue_mad * 100) for r in delivered.groupBy("city")
-                .agg(F.sum("amount_mad").alias("revenue_mad")).collect()}
+            return {r.city: int(r.revenue_usd * 100) for r in delivered.groupBy("city")
+                .agg(F.sum("amount_usd").alias("revenue_usd")).collect()}
         def sql_action():
-            return {r.city: int(r.revenue_mad * 100) for r in spark.sql(sql_text).collect()}
+            return {r.city: int(r.revenue_usd * 100) for r in spark.sql(sql_text).collect()}
         actions = {"RDD": rdd_action, "DataFrame": df_action, "SQL": sql_action,
                    "UDF": lambda: band_action(True), "Native": lambda: band_action(False)}
         expected = {name: action() for name, action in actions.items()}  # warm-up
@@ -94,7 +94,7 @@ def run():
         clean = joined.filter(
             F.col("order_id").isNotNull() & F.col("event_time").isNotNull()
             & F.col("status").isin("CREATED", "PICKED_UP", "DELIVERED", "CANCELLED")
-            & (F.col("amount_mad") >= 0) & (F.col("items_count") > 0) & (F.col("distance_km") >= 0)
+            & (F.col("amount_usd") >= 0) & (F.col("items_count") > 0) & (F.col("distance_km").isNull() | (F.col("distance_km") >= 0))
         ).withColumn("distance_band", native_band()).drop("restaurant_city")
         cleaned_count = clean.count()
         # Re-running replaces this project's derived batch output only.
@@ -102,9 +102,9 @@ def run():
         restored = spark.read.parquet(SILVER)
         restored_count = restored.count()
         assert restored_count == cleaned_count == input_count
-        assert restored.select("city").distinct().count() == 5
-        assert {r.city: int(r.revenue_mad * 100) for r in restored.filter(F.col("status") == "DELIVERED")
-            .groupBy("city").agg(F.sum("amount_mad").alias("revenue_mad")).collect()} == df_revenue
+        assert restored.select("city").distinct().count() == orders.select("city").distinct().count()
+        assert {r.city: int(r.revenue_usd * 100) for r in restored.filter(F.col("status") == "DELIVERED")
+            .groupBy("city").agg(F.sum("amount_usd").alias("revenue_usd")).collect()} == df_revenue
         result = {"application_id": sc.applicationId, "input_events": input_count,
             "restaurant_rows": restaurant_rows, "joined_rows": joined_count, "silver_rows": restored_count,
             "revenue_cents_dataframe": df_revenue, "revenue_cents_sql": sql_revenue,

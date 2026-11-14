@@ -15,9 +15,13 @@ SILVER = "s3a://lake/silver/orders_history/"
 ORDER_SCHEMA = StructType([
     StructField("order_id", StringType()), StructField("restaurant_id", StringType()),
     StructField("customer_id", StringType()), StructField("city", StringType()),
-    StructField("status", StringType()), StructField("amount_mad", DecimalType(12, 2)),
+    StructField("status", StringType()), StructField("amount_usd", DecimalType(12, 2)),
     StructField("items_count", IntegerType()), StructField("distance_km", DoubleType()),
     StructField("courier_id", StringType()), StructField("event_time", TimestampType()),
+    StructField("tenant_id", StringType()), StructField("source_event_time", StringType()),
+    StructField("source_row", IntegerType()), StructField("source_dataset", StringType()),
+    StructField("source_subtotal_cents", IntegerType()), StructField("simulated_fields", StringType()),
+    StructField("run_id", StringType()), StructField("scenario", StringType()),
 ])
 RESTAURANT_SCHEMA = StructType([
     StructField("restaurant_id", StringType()), StructField("name", StringType()),
@@ -38,6 +42,9 @@ def session(name):
         .config("spark.sql.shuffle.partitions", "4")
         .config("spark.default.parallelism", "4")
         .config("spark.sql.session.timeZone", "UTC")
+        .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+        .config("spark.databricks.delta.snapshotPartitions", "4")
         .config("spark.eventLog.enabled", "true")
         .config("spark.eventLog.dir", "file:///opt/spark/events")
         .config("spark.hadoop.fs.s3a.endpoint", os.environ.get("S3_ENDPOINT", "http://minio:9000"))
@@ -61,7 +68,7 @@ def parse_event(line):
 
 
 def cents(row):
-    return int(row["amount_mad"] * 100)
+    return int(row["amount_usd"] * 100)
 
 
 def add_pair(a, b):
