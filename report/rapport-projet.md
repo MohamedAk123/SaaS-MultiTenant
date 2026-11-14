@@ -223,7 +223,7 @@ Les 200 restaurants Kaggle fournissent les ressources. La politique de droits es
 | tenant-5 | 20 | 34 | 5 |
 | tenant-6 | 23 | 46 | 8 |
 
-![Sous-graphe réel de la politique simulée](../evidence/graph-subgraph.svg)
+![Sous-graphe réel de la politique simulée](../jalon-2/evidence/graph-subgraph.svg)
 
 ```text
 g.find("(u)-[ur]->(r); (r)-[rr]->(s)")

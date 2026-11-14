@@ -12,12 +12,14 @@ from reportlab.graphics.shapes import Drawing,Rect,String,Line,Polygon
 from reportlab.graphics import renderSVG
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'report';OUT.mkdir(exist_ok=True)
+BATCH=ROOT.parent/'jalon-1'
+OUT=ROOT.parent/'report';OUT.mkdir(exist_ok=True)
 E=ROOT/'evidence';E.mkdir(exist_ok=True)
 def load(p): return json.loads((ROOT/p).read_text(encoding='utf-8'))
-m=load('data/generation_manifest.json');p1=load('results/part1_cluster.json');p2=load('results/part2_rdd.json');p3=load('results/part3_sql.json')
+def load_batch(p): return json.loads((BATCH/p).read_text(encoding='utf-8'))
+m=load('data/generation_manifest.json');p1=load_batch('results/part1_cluster.json');p2=load_batch('results/part2_rdd.json');p3=load_batch('results/part3_sql.json')
 sv=load('results/jalon2/latest.json');metrics=load('results/jalon2/streaming-metrics.json');gf=load('results/graphframes.json');gv=load('results/graph_validation.json')
-stages=load('results/execution_metrics.json');history=load('results/jalon2/delta-history.json');gold=load('results/jalon2/gold-sample.json')
+stages=load_batch('results/execution_metrics.json');history=load('results/jalon2/delta-history.json');gold=load('results/jalon2/gold-sample.json')
 gx=[];times=[]
 for file in (ROOT/'results/graphx_results').glob('part-*.json'): gx.extend(json.loads(x) for x in file.read_text().splitlines())
 for file in (ROOT/'results/graphx_timings').glob('part-*.json'): times.extend(json.loads(x) for x in file.read_text().splitlines())
@@ -138,7 +140,7 @@ page();title('Partie 6 | Modèle et GraphFrames')
 p('Les 200 restaurants Kaggle fournissent les ressources. La politique de droits est générée pour l’exercice : utilisateurs et rôles simulés, provenance explicite. Chaque tenant est un marché ; aucun lien non autorisé entre tenants ne peut passer le validateur.')
 table(['Objet','Schéma'],[['Sommet','id, vertex_id: Long unique, tenant_id, type, label, provenance'],['Arête','src, dst, tenant_id, relationship, provenance'],['Relations','HAS_ROLE : utilisateur -> rôle ; CAN_ACCESS : rôle -> ressource ; ACCESSED : accès de démonstration.']],[90,409])
 table(['Tenant','Sommets','Arêtes','Ressources'],[[x['tenant_id'],x['vertices'],x['edges'],x['resources']] for x in gf['tenants']],[130,123,123,123])
-story.append(diagram());md.append('![Sous-graphe réel de la politique simulée](../evidence/graph-subgraph.svg)\n')
+story.append(diagram());md.append('![Sous-graphe réel de la politique simulée](../jalon-2/evidence/graph-subgraph.svg)\n')
 code('g.find("(u)-[ur]->(r); (r)-[rr]->(s)")\n  .filter(HAS_ROLE, CAN_ACCESS, meme tenant)')
 p(f"GraphFrames : <b>{gf['vertices']} sommets, {gf['edges']} arêtes et {gf['motifs']} motifs</b>. Degrés en {gf['degree_seconds']:.3f} s ; motifs en {gf['motif_seconds']:.3f} s. Les identifiants incluent tenant et type, puis un VertexId numérique est attribué sans collision.")
 

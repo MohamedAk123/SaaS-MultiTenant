@@ -1,6 +1,10 @@
-﻿param([switch]$Build)
+﻿﻿param([switch]$Build)
 $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
+$otherEnv = Join-Path $PSScriptRoot '../jalon-2/.env'
+if ((-not (Test-Path -LiteralPath '.env')) -and (Test-Path -LiteralPath $otherEnv)) {
+    Copy-Item -LiteralPath $otherEnv -Destination '.env'
+}
 if (-not (Test-Path -LiteralPath '.env')) {
     $localPassword = [guid]::NewGuid().ToString('N')
     $localToken = [guid]::NewGuid().ToString('N')

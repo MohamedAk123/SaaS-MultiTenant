@@ -1,0 +1,46 @@
+{
+  "source": "https://www.kaggle.com/datasets/dharun4772/doordash-eta-prediction",
+  "dataset_ref": "dharun4772/doordash-eta-prediction",
+  "version": 1,
+  "license_as_declared_by_kaggle": "MIT",
+  "source_note": "DoorDash deliveries early 2015; noise added by source to obfuscate business details.",
+  "source_rows": 197428,
+  "valid_source_rows": 197418,
+  "excluded": {
+    "missing_or_invalid_required_fields": 7,
+    "delivery_over_24h": 3
+  },
+  "selection": "200 most frequent market/store pairs, first 24500 complete orders chronologically",
+  "seed": 2026,
+  "events": 50000,
+  "restaurants": 200,
+  "unique_order_status": 49000,
+  "duplicate_rows": 1000,
+  "late_original_events": 2450,
+  "late_original_ratio": 0.05,
+  "max_simulated_delay_seconds": 900,
+  "currency": "USD",
+  "city_note": "Market identifiers, not real city names; no Moroccan geography inferred.",
+  "missing_fields": [
+    "distance_km",
+    "latitude",
+    "longitude",
+    "real_customer_id",
+    "real_courier_id",
+    "PICKED_UP",
+    "CANCELLED"
+  ],
+  "simulated_fields": [
+    "customer_id",
+    "courier_id",
+    "tenant_id",
+    "arrival_delay",
+    "duplicates",
+    "graph_access_policy"
+  ],
+  "sha256": {
+    "historical_data.csv": "b87ae94bd8bf99accc8fd1873dde1ef5f5e1ce76074f22abdb734c54a1bc8d94",
+    "orders_history.jsonl": "a1343ce436d1383eb44501e2c3a058f5ad45ca463aa035aa44f46d5d019fb12f",
+    "restaurants.json": "135e6ef2c4682597e7bb5e14e049657519616ff2019997492a66c6b2aeb20a7d"
+  }
+}
