@@ -1,0 +1,32 @@
++---------+---------------+------------------------+---------------------------+
+|tenant_id|user_id        |role_id                 |resource_id                |
++---------+---------------+------------------------+---------------------------+
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-684 |
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-6025|
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-568 |
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-4967|
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-294 |
+|tenant-1 |tenant-1:user:0|tenant-1:role:analyst   |tenant-1:resource:DD-1-1145|
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-724 |
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-61  |
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-5761|
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-501 |
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-3078|
+|tenant-1 |tenant-1:user:0|tenant-1:role:dispatcher|tenant-1:resource:DD-1-1469|
++---------+---------------+------------------------+---------------------------+
++------------------------+---------+---------+------+--------+---------+
+|id                      |tenant_id|vertex_id|degree|inDegree|outDegree|
++------------------------+---------+---------+------+--------+---------+
+|tenant-2:role:manager   |tenant-2 |127      |96    |5       |91       |
+|tenant-4:role:manager   |tenant-4 |235      |81    |5       |76       |
+|tenant-2:role:dispatcher|tenant-2 |126      |36    |5       |31       |
+|tenant-2:role:analyst   |tenant-2 |125      |35    |4       |31       |
+|tenant-4:role:dispatcher|tenant-4 |234      |31    |5       |26       |
+|tenant-4:role:analyst   |tenant-4 |233      |30    |4       |26       |
+|tenant-1:role:manager   |tenant-1 |21       |23    |5       |18       |
+|tenant-6:role:manager   |tenant-6 |278      |13    |5       |8        |
+|tenant-1:role:dispatcher|tenant-1 |20       |12    |5       |7        |
+|tenant-2:user:0         |tenant-2 |128      |11    |0       |11       |
+|tenant-4:user:0         |tenant-4 |236      |10    |0       |10       |
+|tenant-1:role:analyst   |tenant-1 |19       |10    |4       |6        |
++------------------------+---------+---------+------+--------+---------+

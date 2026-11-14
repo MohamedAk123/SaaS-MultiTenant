@@ -1,0 +1,25 @@
++---------+---------------------------+---------+------+---------+------------------+
+|tenant_id|id                         |vertex_id|degree|component|pagerank          |
++---------+---------------------------+---------+------+---------+------------------+
+|tenant-3 |tenant-3:resource:DD-3-3164|140      |4     |140      |3.658064516129032 |
+|tenant-3 |tenant-3:resource:DD-3-5470|141      |3     |140      |2.318092566619916 |
+|tenant-5 |tenant-5:resource:DD-5-5221|248      |4     |248      |2.215817771565286 |
+|tenant-5 |tenant-5:role:manager      |255      |10    |248      |2.1045687989822683|
+|tenant-6 |tenant-6:role:manager      |278      |13    |268      |2.0747111797054116|
+|tenant-3 |tenant-3:role:manager      |144      |7     |140      |2.070126227208976 |
+|tenant-5 |tenant-5:role:dispatcher   |254      |8     |248      |1.890970771622874 |
+|tenant-3 |tenant-3:role:dispatcher   |143      |7     |140      |1.8793828892005608|
+|tenant-6 |tenant-6:role:dispatcher   |277      |9     |268      |1.8403584218649327|
+|tenant-5 |tenant-5:resource:DD-5-6440|251      |3     |248      |1.7868417332851694|
+|tenant-6 |tenant-6:resource:DD-6-1319|268      |4     |268      |1.7351437982928013|
+|tenant-1 |tenant-1:role:dispatcher   |20       |12    |1        |1.7225247283330698|
+|tenant-1 |tenant-1:role:manager      |21       |23    |1        |1.7225247283330698|
+|tenant-3 |tenant-3:role:analyst      |142      |5     |140      |1.6886395511921461|
+|tenant-5 |tenant-5:role:analyst      |253      |6     |248      |1.6773727442634796|
+|tenant-5 |tenant-5:resource:DD-5-6693|252      |3     |248      |1.6097333689330044|
+|tenant-5 |tenant-5:resource:DD-5-5536|249      |3     |248      |1.6097333689330044|
+|tenant-6 |tenant-6:role:analyst      |276      |7     |268      |1.6060056640244547|
+|tenant-1 |tenant-1:role:analyst      |19       |10    |1        |1.5338461176264835|
+|tenant-6 |tenant-6:resource:DD-6-5045|274      |3     |268      |1.461244012566742 |
++---------+---------------------------+---------+------+---------+------------------+
+GRAPHX_APPLICATION_ID=app-20261114165038-0002

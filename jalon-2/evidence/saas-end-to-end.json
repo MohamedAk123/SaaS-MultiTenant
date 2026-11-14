@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "testedAt": "2026-11-14T16:49:29.155Z",
+  "definition": "PostgreSQL created_at to first appearance in authenticated dashboard API (1 s polling)",
+  "events": [
+    {
+      "id": "cf2b3a9f-c4fe-484c-a2ce-7e3438fb9c66",
+      "kind": "ACCESS",
+      "milliseconds": 47362
+    },
+    {
+      "id": "f7d157b3-a682-4f7f-9499-ab9d14da2b8d",
+      "kind": "ERROR",
+      "milliseconds": 47388
+    },
+    {
+      "id": "cb6f4bdd-45ff-4461-9af8-f331b4c8b4ee",
+      "kind": "ACTION",
+      "milliseconds": 47426
+    }
+  ],
+  "median_ms": 47388,
+  "max_ms": 47426,
+  "persisted_and_published": 3,
+  "cross_tenant_access_blocked": true
+}

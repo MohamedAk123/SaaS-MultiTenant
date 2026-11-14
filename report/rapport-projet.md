@@ -216,12 +216,12 @@ Les 200 restaurants Kaggle fournissent les ressources. La politique de droits es
 
 | Tenant | Sommets | Arêtes | Ressources |
 | --- | --- | --- | --- |
-| tenant-1 | 33 | 86 | 18 |
-| tenant-2 | 106 | 378 | 91 |
-| tenant-3 | 17 | 22 | 2 |
-| tenant-4 | 91 | 318 | 76 |
-| tenant-5 | 20 | 34 | 5 |
-| tenant-6 | 23 | 46 | 8 |
+| tenant-1 | 33 | 63 | 18 |
+| tenant-2 | 106 | 258 | 91 |
+| tenant-3 | 17 | 21 | 2 |
+| tenant-4 | 91 | 218 | 76 |
+| tenant-5 | 20 | 29 | 5 |
+| tenant-6 | 23 | 37 | 8 |
 
 ![Sous-graphe réel de la politique simulée](../jalon-2/evidence/graph-subgraph.svg)
 
@@ -230,7 +230,7 @@ g.find("(u)-[ur]->(r); (r)-[rr]->(s)")
   .filter(HAS_ROLE, CAN_ACCESS, meme tenant)
 ```
 
-GraphFrames : <b>290 sommets, 884 arêtes et 2800 motifs</b>. Degrés en 6.659 s ; motifs en 2.914 s. Les identifiants incluent tenant et type, puis un VertexId numérique est attribué sans collision.
+GraphFrames : <b>290 sommets, 626 arêtes et 1641 motifs</b>. Degrés en 5.871 s ; motifs en 2.639 s. Les identifiants incluent tenant et type, puis un VertexId numérique est attribué sans collision.
 
 # Partie 6 | GraphX et contrôles
 
@@ -238,23 +238,23 @@ Les mêmes tables de sommets/arêtes sont exportées en Parquet. GraphX construi
 
 | Tenant | Degrés (s) | Composantes (s) | PageRank (s) |
 | --- | --- | --- | --- |
-| tenant-1 | 0.583 | 2.871 | 3.142 |
-| tenant-2 | 0.376 | 1.425 | 1.717 |
-| tenant-3 | 0.206 | 1.138 | 1.493 |
-| tenant-4 | 0.181 | 1.089 | 1.255 |
-| tenant-5 | 0.167 | 0.934 | 1.258 |
-| tenant-6 | 0.087 | 0.825 | 1.020 |
+| tenant-1 | 0.426 | 2.213 | 1.913 |
+| tenant-2 | 0.141 | 1.142 | 1.367 |
+| tenant-3 | 0.157 | 0.998 | 1.393 |
+| tenant-4 | 0.165 | 0.837 | 1.283 |
+| tenant-5 | 0.124 | 1.119 | 1.172 |
+| tenant-6 | 0.113 | 0.887 | 0.897 |
 
 <b>290 sommets comparés ; zéro différence de degré.</b> Les composantes GraphX sont aussi comparées à un parcours Python indépendant : 6 composantes, correspondant aux six tenants. PageRank est positif sur tous les sommets.
 
 | Sommet (extrait) | Tenant | Degré | PageRank |
 | --- | --- | --- | --- |
-| t-3:resource:DD-3-5470 | tenant-3 | 4 | 3.03576 |
-| t-3:resource:DD-3-3164 | tenant-3 | 4 | 2.94039 |
+| t-3:resource:DD-3-3164 | tenant-3 | 4 | 3.65806 |
+| t-3:resource:DD-3-5470 | tenant-3 | 3 | 2.31809 |
+| t-5:resource:DD-5-5221 | tenant-5 | 4 | 2.21582 |
 | t-5:role:manager | tenant-5 | 10 | 2.10457 |
 | t-6:role:manager | tenant-6 | 13 | 2.07471 |
 | t-3:role:manager | tenant-3 | 7 | 2.07013 |
-| t-5:role:dispatcher | tenant-5 | 10 | 1.89097 |
 
 GraphFrames manipule des DataFrames et des motifs déclaratifs, avec l’optimiseur SQL. GraphX utilise Scala/RDD et des algorithmes de graphe distribués. Les degrés sont identiques sur le même graphe. Les chronométrages ont des périmètres différents : une mesure globale GraphFrames contre six graphes GraphX ; ils ne prouvent pas qu’une API est toujours plus rapide.
 
@@ -262,13 +262,13 @@ GraphFrames manipule des DataFrames et des motifs déclaratifs, avec l’optimis
 
 | Règle | Cas |
 | --- | --- |
-| incoming CAN_ACCESS >= 3 | 200 |
+| incoming CAN_ACCESS >= 3 | 6 |
 | roles >= 3 | 6 |
 | Liens inter-tenant acceptés | 0 |
 
 Un opérateur simulé cumulant au moins trois rôles et une ressource accessible par au moins trois rôles sont signalés pour revue. Les droits étendus sont construits par le scénario : ils ne constituent pas des fraudes réelles. Les tests négatifs rejettent séparément collision d’identifiant, arête orpheline et lien inter-tenant.
 
-Exports partitionnés par tenant dans lake/gold/graph_analysis/ : vertices, edges, motifs, anomalies, graphframes_degrees et graphx. Les métriques sont également exposées en JSON pour une interface Next.js.
+Exports partitionnés par tenant dans lake/gold/graph_analysis/ : vertices, edges, motifs, anomalies, graphframes_degrees et graphx. Next.js affiche les alertes et les premiers scores PageRank du tenant connecté.
 
 # Reproductibilité, preuves et limites
 
@@ -305,3 +305,34 @@ La reprise testée est un arrêt propre de requêtes. Les durées de trigger dé
 ## Sources
 
 Kaggle : <link href="https://www.kaggle.com/datasets/dharun4772/doordash-eta-prediction">DoorDash ETA Prediction v1</link>. Apache Spark : <link href="https://spark.apache.org/docs/3.5.6/structured-streaming-programming-guide.html">Structured Streaming 3.5.6</link>, <link href="https://spark.apache.org/docs/3.5.6/structured-streaming-kafka-integration.html">intégration Kafka</link>, <link href="https://spark.apache.org/docs/3.5.6/graphx-programming-guide.html">GraphX</link>. <link href="https://docs.delta.io/releases/">Compatibilité Delta</link> et <link href="https://docs.delta.io/delta-streaming/">sink streaming Delta</link>. <link href="https://graphframes.io/">GraphFrames</link>. Cahier des charges fourni : parties 1 à 6.
+
+# Application SaaS | Tableau de bord
+
+```text
+Next.js -> transaction PostgreSQL : activity + outbox
+        -> Kafka saas-events (3 partitions)
+        -> Spark Structured Streaming -> Delta sur MinIO
+        -> vue par tenant -> API Next.js -> navigateur
+```
+
+La session PostgreSQL associe un cookie HTTP-only à un tenant. Les routes déduisent le tenant de la session et filtrent les fenêtres de commandes, les indicateurs d’activité et les graphes côté serveur. Le tableau de bord affiche le chiffre d’affaires DoorDash, les actions, les erreurs, les accès, PageRank et les alertes de la simulation.
+
+La transaction PostgreSQL enregistre l’activité et le message à publier. Le service outbox attend la confirmation Kafka. Une répétition éventuelle utilise le même identifiant. Spark dédoublonne avec un watermark de 10 minutes, utilise le couple application/lot pour la transaction Delta et remplace la vue locale après le commit.
+
+## Mesures de bout en bout
+
+| Essai | Événements | Médiane (s) | Maximum (s) |
+| --- | --- | --- | --- |
+| Premier traitement | 3 | 47.39 | 47.43 |
+| Après démarrage | 3 | 9.79 | 9.82 |
+
+Temps mesuré du created_at PostgreSQL à la première réponse authentifiée de l’API qui contient l’événement, avec une interrogation chaque seconde. Le navigateur interroge l’API toutes les trois secondes et affiche aussi son propre délai. Le test vérifie les trois catégories et l’absence de fuite entre deux sessions de tenants.
+
+## Lancement et preuves
+
+```text
+.\run-dashboard.ps1
+http://localhost:3000
+```
+
+Next.js 16.4.6, PostgreSQL 16 et KafkaJS 2.2.4. Les preuves API sont dans jalon-2/evidence/saas-end-to-end.json et saas-warm-run.json. mc-ls-recursive.txt contient la sortie officielle des couches Bronze, Silver et Gold. kafka-consumer-groups.txt montre la commande et le résultat du broker.

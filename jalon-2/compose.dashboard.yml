@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: saas
+      POSTGRES_USER: saas
+      POSTGRES_PASSWORD: ${SAAS_SECRET:?Start with run-dashboard.ps1}
+    volumes: [saas-db:/var/lib/postgresql/data]
+    networks: [bigdata]
+    healthcheck:
+      test: [CMD, pg_isready, -U, saas, -d, saas]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  dashboard:
+    build: ../dashboard
+    image: saas-multi-tenant-dashboard:local
+    environment: &saas-env
+      PGHOST: postgres
+      SAAS_SECRET: ${SAAS_SECRET:?Start with run-dashboard.ps1}
+      KAFKA_BROKER: kafka:19092
+    ports: ["127.0.0.1:3000:3000"]
+    volumes: [./results:/results:ro]
+    networks: [bigdata]
+    depends_on:
+      postgres: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 10s
+      timeout: 4s
+      retries: 10
+  outbox:
+    image: saas-multi-tenant-dashboard:local
+    command: [node, worker.mjs]
+    environment: *saas-env
+    networks: [bigdata]
+    depends_on:
+      postgres: {condition: service_healthy}
+      kafka: {condition: service_healthy}
+      dashboard: {condition: service_started}
+    restart: unless-stopped
+  activity-stream:
+    image: saas-jalon1-spark:3.5.6
+    hostname: activity-stream
+    command: [python3, -u, src/saas_activity.py]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Create .env first}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Create .env first}
+      SPARK_DRIVER_HOST: activity-stream
+      SPARK_MAX_CORES: "2"
+    volumes: [./:/workspace, spark-events:/opt/spark/events]
+    networks: [bigdata]
+    depends_on:
+      spark-master: {condition: service_healthy}
+      outbox: {condition: service_started}
+      minio: {condition: service_healthy}
+    mem_limit: 1400m
+    restart: unless-stopped
+volumes:
+  saas-db:

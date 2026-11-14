@@ -29,6 +29,12 @@ def run():
                 visited.add(x);pending.extend(adj[x]-visited)
             for x in visited: components[x]=min(visited)
         rows=gx.collect()
+        rankings = {}
+        for row in sorted(rows, key=lambda row: (-row.pagerank, row.id)):
+            leaders = rankings.setdefault(row.tenant_id, [])
+            if len(leaders) < 5:
+                leaders.append({'id': row.id, 'degree': row.degree, 'pagerank': row.pagerank})
+        save('graphx-dashboard.json', rankings)
         assert all(r.component==components[r.vertex_id] for r in rows)
         assert all(r.pagerank>0 for r in rows)
         result={'status':'PASS','matched_vertices':len(rows),'degree_mismatches':0,

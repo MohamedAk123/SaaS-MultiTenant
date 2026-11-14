@@ -1,0 +1,164 @@
+{
+  "tenant-3": [
+    {
+      "id": "tenant-3:resource:DD-3-3164",
+      "degree": 4,
+      "pagerank": 3.658064516129032
+    },
+    {
+      "id": "tenant-3:resource:DD-3-5470",
+      "degree": 3,
+      "pagerank": 2.318092566619916
+    },
+    {
+      "id": "tenant-3:role:manager",
+      "degree": 7,
+      "pagerank": 2.070126227208976
+    },
+    {
+      "id": "tenant-3:role:dispatcher",
+      "degree": 7,
+      "pagerank": 1.8793828892005608
+    },
+    {
+      "id": "tenant-3:role:analyst",
+      "degree": 5,
+      "pagerank": 1.6886395511921461
+    }
+  ],
+  "tenant-5": [
+    {
+      "id": "tenant-5:resource:DD-5-5221",
+      "degree": 4,
+      "pagerank": 2.215817771565286
+    },
+    {
+      "id": "tenant-5:role:manager",
+      "degree": 10,
+      "pagerank": 2.1045687989822683
+    },
+    {
+      "id": "tenant-5:role:dispatcher",
+      "degree": 8,
+      "pagerank": 1.890970771622874
+    },
+    {
+      "id": "tenant-5:resource:DD-5-6440",
+      "degree": 3,
+      "pagerank": 1.7868417332851694
+    },
+    {
+      "id": "tenant-5:role:analyst",
+      "degree": 6,
+      "pagerank": 1.6773727442634796
+    }
+  ],
+  "tenant-6": [
+    {
+      "id": "tenant-6:role:manager",
+      "degree": 13,
+      "pagerank": 2.0747111797054116
+    },
+    {
+      "id": "tenant-6:role:dispatcher",
+      "degree": 9,
+      "pagerank": 1.8403584218649327
+    },
+    {
+      "id": "tenant-6:resource:DD-6-1319",
+      "degree": 4,
+      "pagerank": 1.7351437982928013
+    },
+    {
+      "id": "tenant-6:role:analyst",
+      "degree": 7,
+      "pagerank": 1.6060056640244547
+    },
+    {
+      "id": "tenant-6:resource:DD-6-2350",
+      "degree": 3,
+      "pagerank": 1.461244012566742
+    }
+  ],
+  "tenant-1": [
+    {
+      "id": "tenant-1:role:dispatcher",
+      "degree": 12,
+      "pagerank": 1.7225247283330698
+    },
+    {
+      "id": "tenant-1:role:manager",
+      "degree": 23,
+      "pagerank": 1.7225247283330698
+    },
+    {
+      "id": "tenant-1:role:analyst",
+      "degree": 10,
+      "pagerank": 1.5338461176264835
+    },
+    {
+      "id": "tenant-1:resource:DD-1-1145",
+      "degree": 4,
+      "pagerank": 1.2869317039803803
+    },
+    {
+      "id": "tenant-1:resource:DD-1-4967",
+      "degree": 3,
+      "pagerank": 1.2475787366044353
+    }
+  ],
+  "tenant-4": [
+    {
+      "id": "tenant-4:role:dispatcher",
+      "degree": 31,
+      "pagerank": 1.3473174063858213
+    },
+    {
+      "id": "tenant-4:role:manager",
+      "degree": 81,
+      "pagerank": 1.3473174063858213
+    },
+    {
+      "id": "tenant-4:role:analyst",
+      "degree": 30,
+      "pagerank": 1.2421428183543257
+    },
+    {
+      "id": "tenant-4:resource:DD-4-1229",
+      "degree": 4,
+      "pagerank": 1.0394899897067618
+    },
+    {
+      "id": "tenant-4:resource:DD-4-1409",
+      "degree": 3,
+      "pagerank": 1.0304338509007804
+    }
+  ],
+  "tenant-2": [
+    {
+      "id": "tenant-2:role:dispatcher",
+      "degree": 36,
+      "pagerank": 1.3074555577085527
+    },
+    {
+      "id": "tenant-2:role:manager",
+      "degree": 96,
+      "pagerank": 1.3074555577085527
+    },
+    {
+      "id": "tenant-2:role:analyst",
+      "degree": 35,
+      "pagerank": 1.2135076581430375
+    },
+    {
+      "id": "tenant-2:resource:DD-2-1076",
+      "degree": 4,
+      "pagerank": 1.033876952379428
+    },
+    {
+      "id": "tenant-2:resource:DD-2-1390",
+      "degree": 3,
+      "pagerank": 1.026225509728271
+    }
+  ]
+}

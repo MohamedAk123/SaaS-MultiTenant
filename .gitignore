@@ -17,3 +17,6 @@
 /jalon-*/results/jalon2/run-*/
 /jalon-*/results/graphx_*/*.crc
 /jalon-*/results/graphx_*/_SUCCESS
+node_modules/
+.next/
+/jalon-2/results/live-dashboard.json

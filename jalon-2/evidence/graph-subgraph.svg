@@ -24,16 +24,10 @@
 			<polygon points="357 163, 351 166, 351 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
 			<path d="M 295,43 L 356,163 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
 			<polygon points="357 163, 351 166, 351 160" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
-			<path d="M 295,163 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
-			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
 			<path d="M 295,103 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
 			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
 			<path d="M 295,43 L 356,103 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
 			<polygon points="357 103, 351 106, 351 100" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
-			<path d="M 295,163 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
-			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
-			<path d="M 295,103 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
-			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
 			<path d="M 295,43 L 356,43 Z" style="stroke: rgb(46%,58%,65%); stroke-linecap: butt; stroke-width: 0.8;"/>
 			<polygon points="357 43, 351 46, 351 40" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,51%,56%); fill-rule: evenodd;"/>
 			<rect x="12" y="90" width="115" height="27" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(83%,91%,97%); fill-rule: evenodd;"/>

@@ -1,4 +1,4 @@
-"""Build a compact, evidence-driven report (nine A4 pages, no invented screenshots)."""
+"""Build the report from saved batch, streaming, graph and SaaS evidence."""
 import json,math
 from collections import Counter
 from pathlib import Path
@@ -154,7 +154,7 @@ h('Alertes explicites et tests négatifs')
 rules=Counter(x['rule'] for x in gf['anomalies'])
 table(['Règle','Cas'],[[k,v] for k,v in rules.items()]+[['Liens inter-tenant acceptés',0]],[370,129])
 p('Un opérateur simulé cumulant au moins trois rôles et une ressource accessible par au moins trois rôles sont signalés pour revue. Les droits étendus sont construits par le scénario : ils ne constituent pas des fraudes réelles. Les tests négatifs rejettent séparément collision d’identifiant, arête orpheline et lien inter-tenant.')
-p('Exports partitionnés par tenant dans lake/gold/graph_analysis/ : vertices, edges, motifs, anomalies, graphframes_degrees et graphx. Les métriques sont également exposées en JSON pour une interface Next.js.',True)
+p('Exports partitionnés par tenant dans lake/gold/graph_analysis/ : vertices, edges, motifs, anomalies, graphframes_degrees et graphx. Next.js affiche les alertes et les premiers scores PageRank du tenant connecté.',True)
 
 page();title('Reproductibilité, preuves et limites')
 h('Lancer et présenter')
@@ -168,6 +168,23 @@ p('L’échantillon favorise les restaurants les plus actifs ; le dataset est hi
 p('La reprise testée est un arrêt propre de requêtes. Les durées de trigger décrivent la latence de calcul du micro-batch, pas la latence bout en bout pour chaque message. Les captures historiques du jalon 1 ne sont pas utilisées comme preuves des nouvelles valeurs Kaggle. Les captures UI actualisées restent à réaliser manuellement si nécessaire ; les journaux, résultats et traces Spark de cette exécution sont conservés.')
 h('Sources')
 p('Kaggle : <link href="https://www.kaggle.com/datasets/dharun4772/doordash-eta-prediction">DoorDash ETA Prediction v1</link>. Apache Spark : <link href="https://spark.apache.org/docs/3.5.6/structured-streaming-programming-guide.html">Structured Streaming 3.5.6</link>, <link href="https://spark.apache.org/docs/3.5.6/structured-streaming-kafka-integration.html">intégration Kafka</link>, <link href="https://spark.apache.org/docs/3.5.6/graphx-programming-guide.html">GraphX</link>. <link href="https://docs.delta.io/releases/">Compatibilité Delta</link> et <link href="https://docs.delta.io/delta-streaming/">sink streaming Delta</link>. <link href="https://graphframes.io/">GraphFrames</link>. Cahier des charges fourni : parties 1 à 6.',True)
+
+page();title('Application SaaS | Tableau de bord')
+code('Next.js -> transaction PostgreSQL : activity + outbox\n        -> Kafka saas-events (3 partitions)\n        -> Spark Structured Streaming -> Delta sur MinIO\n        -> vue par tenant -> API Next.js -> navigateur')
+p('La session PostgreSQL associe un cookie HTTP-only à un tenant. Les routes déduisent le tenant de la session et filtrent les fenêtres de commandes, les indicateurs d’activité et les graphes côté serveur. Le tableau de bord affiche le chiffre d’affaires DoorDash, les actions, les erreurs, les accès, PageRank et les alertes de la simulation.')
+p('La transaction PostgreSQL enregistre l’activité et le message à publier. Le service outbox attend la confirmation Kafka. Une répétition éventuelle utilise le même identifiant. Spark dédoublonne avec un watermark de 10 minutes, utilise le couple application/lot pour la transaction Delta et remplace la vue locale après le commit.')
+h('Mesures de bout en bout')
+trials=[]
+for label,name in [('Premier traitement','saas-end-to-end.json'),('Après démarrage','saas-warm-run.json')]:
+    proof=E/name
+    if proof.exists():
+        recorded=json.loads(proof.read_text(encoding='utf-8-sig'))
+        trials.append([label,len(recorded['events']),f"{recorded['median_ms']/1000:.2f}",f"{recorded['max_ms']/1000:.2f}"])
+table(['Essai','Événements','Médiane (s)','Maximum (s)'],trials,[200,85,107,107])
+p('Temps mesuré du created_at PostgreSQL à la première réponse authentifiée de l’API qui contient l’événement, avec une interrogation chaque seconde. Le navigateur interroge l’API toutes les trois secondes et affiche aussi son propre délai. Le test vérifie les trois catégories et l’absence de fuite entre deux sessions de tenants.')
+h('Lancement et preuves')
+code('.\\run-dashboard.ps1\nhttp://localhost:3000')
+p('Next.js 16.4.6, PostgreSQL 16 et KafkaJS 2.2.4. Les preuves API sont dans jalon-2/evidence/saas-end-to-end.json et saas-warm-run.json. mc-ls-recursive.txt contient la sortie officielle des couches Bronze, Silver et Gold. kafka-consumer-groups.txt montre la commande et le résultat du broker.')
 
 def footer(c,doc):
     c.setStrokeColor(teal);c.line(48,35,547,35);c.setFont('Helvetica',7);c.setFillColor(navy)

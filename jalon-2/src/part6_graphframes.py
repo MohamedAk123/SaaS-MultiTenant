@@ -37,7 +37,9 @@ def run():
             for role in assigned: edge(uid,tenant+':role:'+role,tenant,'HAS_ROLE')
         for j,ref in enumerate(sorted(refs,key=lambda r:r['restaurant_id'])):
             rid=tenant+':resource:'+ref['restaurant_id'];vertex(rid,tenant,'resource',ref['restaurant_id'])
-            for role in roles: edge(tenant+':role:'+role,rid,tenant,'CAN_ACCESS')
+            allowed = roles if j == 0 else sorted({'manager', roles[j % len(roles)]})
+            for role in allowed:
+                edge(tenant+':role:'+role,rid,tenant,'CAN_ACCESS')
             edge(tenant+':user:'+str(j%12),rid,tenant,'ACCESSED')
     vertices.sort(key=lambda x:x['id'])
     for i,v in enumerate(vertices,start=1): v['vertex_id']=i
@@ -75,7 +77,8 @@ def run():
             roles=sum(x['relationship']=='HAS_ROLE' and x['src']==r.id for x in edges)
             access=sum(x['relationship']=='CAN_ACCESS' and x['dst']==r.id for x in edges)
             if vertex_type=='user' and roles>=3: anomalies.append({'id':r.id,'tenant_id':r.tenant_id,'rule':'roles >= 3','value':roles,'reason':'Simulated broad-role operator; review required, not evidence of fraud.'})
-            if vertex_type=='resource' and access>=3: anomalies.append({'id':r.id,'tenant_id':r.tenant_id,'rule':'incoming CAN_ACCESS >= 3','value':access,'reason':'Three roles can access this resource under the simulated policy.'})
+            if vertex_type=='resource' and access>=3: anomalies.append({'id':r.id,'tenant_id':r.tenant_id,'rule':'incoming CAN_ACCESS >= 3','value':access,'reason':'All three roles can access this resource; ordinary resources allow one or two roles.'})
+        assert sum(a['rule']=='incoming CAN_ACCESS >= 3' for a in anomalies) == len(grouped)
         for label,df in [('vertices',v),('edges',e),('graphframes_degrees',degrees),('motifs',flat),('anomalies',spark.createDataFrame(anomalies))]:
             df.write.mode('overwrite').partitionBy('tenant_id').parquet(BASE+'/'+label)
             if label in ('vertices','edges'): df.write.mode('overwrite').parquet('/workspace/artifacts/graph/'+label)

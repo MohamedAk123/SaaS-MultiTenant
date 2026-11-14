@@ -1,6 +1,0 @@
-{"tenant_id":"tenant-1","degree_seconds":0.582837785,"connected_components_seconds":2.870872447,"pagerank_seconds":3.141571387}
-{"tenant_id":"tenant-2","degree_seconds":0.375867207,"connected_components_seconds":1.425492881,"pagerank_seconds":1.717013474}
-{"tenant_id":"tenant-3","degree_seconds":0.205834119,"connected_components_seconds":1.138335511,"pagerank_seconds":1.492913097}
-{"tenant_id":"tenant-4","degree_seconds":0.180599297,"connected_components_seconds":1.08904148,"pagerank_seconds":1.255300057}
-{"tenant_id":"tenant-5","degree_seconds":0.166549349,"connected_components_seconds":0.934185514,"pagerank_seconds":1.257621607}
-{"tenant_id":"tenant-6","degree_seconds":0.086755,"connected_components_seconds":0.824666644,"pagerank_seconds":1.019845855}
