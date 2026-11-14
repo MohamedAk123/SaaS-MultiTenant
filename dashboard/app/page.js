@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { AccessGraph, Ranking, Trend } from './charts.js';
 
 const number = new Intl.NumberFormat('fr-FR');
-const money = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'USD' });
 const labels = { ACTION: 'Action', ERROR: 'Erreur', ACCESS: 'Accès' };
 const clock = value => new Date(value).toLocaleTimeString('fr-FR', { timeZone: 'UTC' });
 
@@ -91,7 +91,10 @@ export default function Dashboard() {
   </main>;
 
   const { historical, activity, graph, alerts } = data;
-  const maxRevenue = Math.max(1, ...historical.map(row => Number(row.revenue_usd)));
+  const orderWindows = historical.map(row => ({ time: row.window.start, revenue: Number(row.revenue_usd), delivered: row.orders_delivered, created: row.orders_created }));
+  const activityWindows = activity.windows.map(row => ({ time: row.start, total: row.total, errors: row.errors }))
+    .sort((a,b) => a.time.localeCompare(b.time));
+  const eventMix = Object.entries(labels).map(([kind,label]) => ({ label, count: activity.counts[kind] ?? 0 }));
   const actions = activity.counts.ACTION ?? 0;
   const errors = activity.counts.ERROR ?? 0;
   const access = activity.counts.ACCESS ?? 0;
@@ -103,20 +106,29 @@ export default function Dashboard() {
       <section id="activity">
         <h2>Activité de l’application</h2>
         <div className="cards"><Metric label="Actions" value={actions}/><Metric label="Accès aux ressources" value={access}/><Metric label="Erreurs" value={errors}/><Metric label="Part des erreurs" value={new Intl.NumberFormat('fr-FR', {style:'percent', maximumFractionDigits:1}).format(errorRate)}/></div>
+        <div className="active-charts">
+          <Trend title="Activité et erreurs" unit="Événements" rows={activityWindows} series={[{key:'total', label:'Total'}, {key:'errors', label:'Erreurs'}]}/>
+          <Ranking title="Répartition des événements" rows={eventMix} name={row => row.label} value={row => row.count}/>
+        </div>
         <div className="panel">
           <div className="panelhead"><h3>Événements récents</h3><div className="buttons">{Object.entries(labels).map(([kind, label]) => <button key={kind} onClick={() => publish(kind)}>Simuler {label.toLowerCase()}</button>)}</div></div>
           <p className="muted" role="status">{notice || (waiting ? 'Événement enregistré. En attente du calcul Spark…' : latency !== null ? `Visible après ${(latency/1000).toFixed(2)} s depuis l’enregistrement.` : 'La vue se rafraîchit toutes les trois secondes.')}</p>
           {activity.events.length ? <div className="scroll"><table><thead><tr><th>Heure UTC</th><th>Type</th><th>Ressource</th></tr></thead><tbody>{activity.events.slice(0,8).map(row => <tr key={row.id}><td>{clock(row.eventTime)}</td><td>{labels[row.kind]}</td><td>{row.resource}</td></tr>)}</tbody></table></div> : <p className="empty">Les événements traités par Spark apparaîtront ici.</p>}
         </div>
-        {activity.windows.length > 0 && <div className="panel"><h3>Activité par fenêtre de 10 minutes</h3><table><thead><tr><th>Début UTC</th><th>Événements</th><th>Erreurs</th></tr></thead><tbody>{activity.windows.map(row => <tr key={row.start}><td>{row.start}</td><td>{row.total}</td><td>{row.errors}</td></tr>)}</tbody></table></div>}
       </section>
-      <section id="orders"><h2>Commandes · historique DoorDash</h2><div className="panel"><h3>Chiffre d’affaires par fenêtre de 10 minutes</h3>
-        {historical.length ? historical.map(row => <div className="bar-row" key={row.window.start}><time>{row.window.start.slice(11,16)} UTC</time><div className="bar"><div style={{ width: `${100 * Number(row.revenue_usd) / maxRevenue}%` }} /></div><strong>{money.format(Number(row.revenue_usd))}</strong><span>{row.orders_delivered} livrées</span></div>) : <p className="empty">Aucune fenêtre disponible pour ce tenant.</p>}
-      </div></section>
+      <section id="orders"><h2>Commandes · historique DoorDash</h2>
+        <div className="paired-charts">
+          <Trend title="Chiffre d’affaires" unit="USD" rows={orderWindows} series={[{key:'revenue', label:'Chiffre d’affaires'}]}/>
+          <Trend title="Volume de commandes" unit="Commandes" rows={orderWindows} series={[{key:'delivered', label:'Livrées'}, {key:'created', label:'Créées'}]}/>
+        </div>
+      </section>
       <section id="graph"><h2>Graphe des accès</h2>
         {graph && <div className="cards"><Metric label="Sommets" value={graph.vertices}/><Metric label="Arêtes" value={graph.edges}/><Metric label="Ressources" value={graph.resources}/><Metric label="Alertes de simulation" value={alerts.length}/></div>}
         <div className="panel"><h3>Alertes à examiner</h3>{alerts.length ? <ul>{alerts.slice(0,8).map(row => <li key={row.id}><code>{row.id}</code> · {row.rule}</li>)}</ul> : <p className="empty">Aucune alerte pour ce tenant.</p>}</div>
-        {data.rankings.length > 0 && <div className="panel"><h3>Sommets les plus centraux (GraphX)</h3><div className="scroll"><table><thead><tr><th>Sommet</th><th>Degré</th><th>PageRank</th></tr></thead><tbody>{data.rankings.map(row => <tr key={row.id}><td>{row.id}</td><td>{row.degree}</td><td>{row.pagerank.toFixed(4)}</td></tr>)}</tbody></table></div></div>}
+        <div className="active-charts">
+          <AccessGraph graph={data.accessGraph}/>
+          <Ranking title="Sommets les plus centraux · PageRank" rows={data.rankings} name={row => row.id.replace(data.tenant + ':','')} value={row => row.pagerank} color="#4266af"/>
+        </div>
       </section>
     </main>
   </>;

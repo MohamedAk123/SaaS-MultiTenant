@@ -21,6 +21,20 @@ def validate(vertices,edges):
         if lookup[e['src']]!=lookup[e['dst']] or e['tenant_id']!=lookup[e['src']]: raise ValueError('cross-tenant edge')
 
 
+def dashboard_subgraphs(vertices, edges):
+    samples = {}
+    for tenant in sorted({v['tenant_id'] for v in vertices}):
+        user = tenant + ':user:0'
+        tenant_vertices = [v for v in vertices if v['tenant_id'] == tenant]
+        resources = [v['id'] for v in tenant_vertices if v['type'] == 'resource'][:5]
+        chosen = {user, *resources, *(v['id'] for v in tenant_vertices if v['type'] == 'role')}
+        samples[tenant] = {
+            'nodes': [v for v in tenant_vertices if v['id'] in chosen],
+            'edges': [e for e in edges if e['src'] in chosen and e['dst'] in chosen and e['relationship'] != 'ACCESSED'],
+        }
+    return samples
+
+
 def run():
     restaurants=[json.loads(x) for x in (ROOT/'data/restaurants.json').read_text().splitlines()]
     grouped=defaultdict(list)
@@ -92,6 +106,7 @@ def run():
             'source':'Kaggle restaurant identifiers; users, roles and access relations are an explicit simulation as required by part 6.',
             'thresholds':{'user_roles':3,'resource_role_access':3},'version':'0.8.4-spark3.5-s_2.12'}
         save('graphframes.json',result)
+        save('graph-access-dashboard.json', dashboard_subgraphs(vertices, edges))
         (ROOT/'data/graph_vertices.jsonl').write_text(''.join(json.dumps(x)+'\n' for x in vertices))
         (ROOT/'data/graph_edges.jsonl').write_text(''.join(json.dumps(x)+'\n' for x in edges))
         print(json.dumps({k:v for k,v in result.items() if k!='anomalies'},indent=2))

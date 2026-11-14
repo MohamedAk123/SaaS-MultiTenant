@@ -11,9 +11,10 @@ async function file(name, fallback) {
 export async function GET() {
   const tenant = await tenantFor((await cookies()).get('saas_session')?.value);
   if (!tenant) return NextResponse.json({ error: 'Connexion requise.' }, { status: 401 });
-  const [orders, live, graph, rankings] = await Promise.all([
+  const [orders, live, graph, rankings, accessGraphs] = await Promise.all([
     file('jalon2/dashboard-data.json', {}), file('live-dashboard.json', {}), file('graphframes.json', {}),
     file('graphx-dashboard.json', {}),
+    file('graph-access-dashboard.json', {}),
   ]);
   const sameTenant = row => row.tenant_id === tenant;
   return NextResponse.json({
@@ -22,6 +23,7 @@ export async function GET() {
     historical: (orders.kpi_sample ?? []).filter(sameTenant).sort((a, b) => a.window.start.localeCompare(b.window.start)),
     graph: (graph.tenants ?? orders.graph?.tenants)?.find(sameTenant) ?? null,
     rankings: rankings[tenant] ?? [],
+    accessGraph: accessGraphs[tenant] ?? null,
     alerts: (graph.anomalies ?? []).filter(sameTenant),
     activity: live[tenant] ?? { counts: {}, events: [], windows: [], updatedAt: null },
   }, { headers: { 'Cache-Control': 'private, no-store' } });

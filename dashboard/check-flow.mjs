@@ -38,6 +38,10 @@ try {
     assert(view.historical.every(row => row.tenant_id === 'tenant-1'));
     assert(view.alerts.every(row => row.tenant_id === 'tenant-1'));
     assert((view.rankings ?? []).every(row => row.id.startsWith('tenant-1:')));
+    const nodes = view.accessGraph?.nodes ?? [];
+    assert(nodes.length > 0 && nodes.every(node => node.tenant_id === 'tenant-1'));
+    const ids = new Set(nodes.map(node => node.id));
+    assert(view.accessGraph.edges.every(edge => ids.has(edge.src) && ids.has(edge.dst)));
     for (const event of view.activity.events) {
       const sent = pending.get(event.id);
       if (sent) {
@@ -52,6 +56,7 @@ try {
   const other = await (await request('/api/dashboard', { cookie: second })).json();
   assert.equal(other.tenant, 'tenant-2');
   assert(!other.activity.events.some(row => events.some(sent => sent.id === row.id)));
+  assert(other.accessGraph.nodes.every(node => node.tenant_id === 'tenant-2'));
   const { rows } = await pool.query(`SELECT count(*)::integer AS total FROM activity a JOIN outbox o ON o.event_id = a.id
     WHERE a.tenant_id = 'tenant-1' AND o.published_at IS NOT NULL AND a.id = ANY($1::uuid[])`, [events.map(event => event.id)]);
   assert.equal(rows[0].total, events.length);

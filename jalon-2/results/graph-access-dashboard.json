@@ -1,0 +1,957 @@
+{
+  "tenant-1": {
+    "nodes": [
+      {
+        "id": "tenant-1:resource:DD-1-1145",
+        "tenant_id": "tenant-1",
+        "type": "resource",
+        "label": "DD-1-1145",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 1
+      },
+      {
+        "id": "tenant-1:resource:DD-1-1469",
+        "tenant_id": "tenant-1",
+        "type": "resource",
+        "label": "DD-1-1469",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 2
+      },
+      {
+        "id": "tenant-1:resource:DD-1-2438",
+        "tenant_id": "tenant-1",
+        "type": "resource",
+        "label": "DD-1-2438",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 3
+      },
+      {
+        "id": "tenant-1:resource:DD-1-294",
+        "tenant_id": "tenant-1",
+        "type": "resource",
+        "label": "DD-1-294",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 4
+      },
+      {
+        "id": "tenant-1:resource:DD-1-3078",
+        "tenant_id": "tenant-1",
+        "type": "resource",
+        "label": "DD-1-3078",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 5
+      },
+      {
+        "id": "tenant-1:role:analyst",
+        "tenant_id": "tenant-1",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 19
+      },
+      {
+        "id": "tenant-1:role:dispatcher",
+        "tenant_id": "tenant-1",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 20
+      },
+      {
+        "id": "tenant-1:role:manager",
+        "tenant_id": "tenant-1",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 21
+      },
+      {
+        "id": "tenant-1:user:0",
+        "tenant_id": "tenant-1",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 22
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-1:user:0",
+        "dst": "tenant-1:role:analyst",
+        "tenant_id": "tenant-1",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:user:0",
+        "dst": "tenant-1:role:dispatcher",
+        "tenant_id": "tenant-1",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:user:0",
+        "dst": "tenant-1:role:manager",
+        "tenant_id": "tenant-1",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:analyst",
+        "dst": "tenant-1:resource:DD-1-1145",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:dispatcher",
+        "dst": "tenant-1:resource:DD-1-1145",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:manager",
+        "dst": "tenant-1:resource:DD-1-1145",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:dispatcher",
+        "dst": "tenant-1:resource:DD-1-1469",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:manager",
+        "dst": "tenant-1:resource:DD-1-1469",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:manager",
+        "dst": "tenant-1:resource:DD-1-2438",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:analyst",
+        "dst": "tenant-1:resource:DD-1-294",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:manager",
+        "dst": "tenant-1:resource:DD-1-294",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:dispatcher",
+        "dst": "tenant-1:resource:DD-1-3078",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-1:role:manager",
+        "dst": "tenant-1:resource:DD-1-3078",
+        "tenant_id": "tenant-1",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  },
+  "tenant-2": {
+    "nodes": [
+      {
+        "id": "tenant-2:resource:DD-2-1076",
+        "tenant_id": "tenant-2",
+        "type": "resource",
+        "label": "DD-2-1076",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 34
+      },
+      {
+        "id": "tenant-2:resource:DD-2-1116",
+        "tenant_id": "tenant-2",
+        "type": "resource",
+        "label": "DD-2-1116",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 35
+      },
+      {
+        "id": "tenant-2:resource:DD-2-1123",
+        "tenant_id": "tenant-2",
+        "type": "resource",
+        "label": "DD-2-1123",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 36
+      },
+      {
+        "id": "tenant-2:resource:DD-2-1185",
+        "tenant_id": "tenant-2",
+        "type": "resource",
+        "label": "DD-2-1185",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 37
+      },
+      {
+        "id": "tenant-2:resource:DD-2-1296",
+        "tenant_id": "tenant-2",
+        "type": "resource",
+        "label": "DD-2-1296",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 38
+      },
+      {
+        "id": "tenant-2:role:analyst",
+        "tenant_id": "tenant-2",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 125
+      },
+      {
+        "id": "tenant-2:role:dispatcher",
+        "tenant_id": "tenant-2",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 126
+      },
+      {
+        "id": "tenant-2:role:manager",
+        "tenant_id": "tenant-2",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 127
+      },
+      {
+        "id": "tenant-2:user:0",
+        "tenant_id": "tenant-2",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 128
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-2:user:0",
+        "dst": "tenant-2:role:analyst",
+        "tenant_id": "tenant-2",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:user:0",
+        "dst": "tenant-2:role:dispatcher",
+        "tenant_id": "tenant-2",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:user:0",
+        "dst": "tenant-2:role:manager",
+        "tenant_id": "tenant-2",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:analyst",
+        "dst": "tenant-2:resource:DD-2-1076",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:dispatcher",
+        "dst": "tenant-2:resource:DD-2-1076",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:manager",
+        "dst": "tenant-2:resource:DD-2-1076",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:dispatcher",
+        "dst": "tenant-2:resource:DD-2-1116",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:manager",
+        "dst": "tenant-2:resource:DD-2-1116",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:manager",
+        "dst": "tenant-2:resource:DD-2-1123",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:analyst",
+        "dst": "tenant-2:resource:DD-2-1185",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:manager",
+        "dst": "tenant-2:resource:DD-2-1185",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:dispatcher",
+        "dst": "tenant-2:resource:DD-2-1296",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-2:role:manager",
+        "dst": "tenant-2:resource:DD-2-1296",
+        "tenant_id": "tenant-2",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  },
+  "tenant-3": {
+    "nodes": [
+      {
+        "id": "tenant-3:resource:DD-3-3164",
+        "tenant_id": "tenant-3",
+        "type": "resource",
+        "label": "DD-3-3164",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 140
+      },
+      {
+        "id": "tenant-3:resource:DD-3-5470",
+        "tenant_id": "tenant-3",
+        "type": "resource",
+        "label": "DD-3-5470",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 141
+      },
+      {
+        "id": "tenant-3:role:analyst",
+        "tenant_id": "tenant-3",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 142
+      },
+      {
+        "id": "tenant-3:role:dispatcher",
+        "tenant_id": "tenant-3",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 143
+      },
+      {
+        "id": "tenant-3:role:manager",
+        "tenant_id": "tenant-3",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 144
+      },
+      {
+        "id": "tenant-3:user:0",
+        "tenant_id": "tenant-3",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 145
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-3:user:0",
+        "dst": "tenant-3:role:analyst",
+        "tenant_id": "tenant-3",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:user:0",
+        "dst": "tenant-3:role:dispatcher",
+        "tenant_id": "tenant-3",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:user:0",
+        "dst": "tenant-3:role:manager",
+        "tenant_id": "tenant-3",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:role:analyst",
+        "dst": "tenant-3:resource:DD-3-3164",
+        "tenant_id": "tenant-3",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:role:dispatcher",
+        "dst": "tenant-3:resource:DD-3-3164",
+        "tenant_id": "tenant-3",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:role:manager",
+        "dst": "tenant-3:resource:DD-3-3164",
+        "tenant_id": "tenant-3",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:role:dispatcher",
+        "dst": "tenant-3:resource:DD-3-5470",
+        "tenant_id": "tenant-3",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-3:role:manager",
+        "dst": "tenant-3:resource:DD-3-5470",
+        "tenant_id": "tenant-3",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  },
+  "tenant-4": {
+    "nodes": [
+      {
+        "id": "tenant-4:resource:DD-4-1229",
+        "tenant_id": "tenant-4",
+        "type": "resource",
+        "label": "DD-4-1229",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 157
+      },
+      {
+        "id": "tenant-4:resource:DD-4-1244",
+        "tenant_id": "tenant-4",
+        "type": "resource",
+        "label": "DD-4-1244",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 158
+      },
+      {
+        "id": "tenant-4:resource:DD-4-1270",
+        "tenant_id": "tenant-4",
+        "type": "resource",
+        "label": "DD-4-1270",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 159
+      },
+      {
+        "id": "tenant-4:resource:DD-4-1332",
+        "tenant_id": "tenant-4",
+        "type": "resource",
+        "label": "DD-4-1332",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 160
+      },
+      {
+        "id": "tenant-4:resource:DD-4-1409",
+        "tenant_id": "tenant-4",
+        "type": "resource",
+        "label": "DD-4-1409",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 161
+      },
+      {
+        "id": "tenant-4:role:analyst",
+        "tenant_id": "tenant-4",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 233
+      },
+      {
+        "id": "tenant-4:role:dispatcher",
+        "tenant_id": "tenant-4",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 234
+      },
+      {
+        "id": "tenant-4:role:manager",
+        "tenant_id": "tenant-4",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 235
+      },
+      {
+        "id": "tenant-4:user:0",
+        "tenant_id": "tenant-4",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 236
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-4:user:0",
+        "dst": "tenant-4:role:analyst",
+        "tenant_id": "tenant-4",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:user:0",
+        "dst": "tenant-4:role:dispatcher",
+        "tenant_id": "tenant-4",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:user:0",
+        "dst": "tenant-4:role:manager",
+        "tenant_id": "tenant-4",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:analyst",
+        "dst": "tenant-4:resource:DD-4-1229",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:dispatcher",
+        "dst": "tenant-4:resource:DD-4-1229",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:manager",
+        "dst": "tenant-4:resource:DD-4-1229",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:dispatcher",
+        "dst": "tenant-4:resource:DD-4-1244",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:manager",
+        "dst": "tenant-4:resource:DD-4-1244",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:manager",
+        "dst": "tenant-4:resource:DD-4-1270",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:analyst",
+        "dst": "tenant-4:resource:DD-4-1332",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:manager",
+        "dst": "tenant-4:resource:DD-4-1332",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:dispatcher",
+        "dst": "tenant-4:resource:DD-4-1409",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-4:role:manager",
+        "dst": "tenant-4:resource:DD-4-1409",
+        "tenant_id": "tenant-4",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  },
+  "tenant-5": {
+    "nodes": [
+      {
+        "id": "tenant-5:resource:DD-5-5221",
+        "tenant_id": "tenant-5",
+        "type": "resource",
+        "label": "DD-5-5221",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 248
+      },
+      {
+        "id": "tenant-5:resource:DD-5-5536",
+        "tenant_id": "tenant-5",
+        "type": "resource",
+        "label": "DD-5-5536",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 249
+      },
+      {
+        "id": "tenant-5:resource:DD-5-5923",
+        "tenant_id": "tenant-5",
+        "type": "resource",
+        "label": "DD-5-5923",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 250
+      },
+      {
+        "id": "tenant-5:resource:DD-5-6440",
+        "tenant_id": "tenant-5",
+        "type": "resource",
+        "label": "DD-5-6440",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 251
+      },
+      {
+        "id": "tenant-5:resource:DD-5-6693",
+        "tenant_id": "tenant-5",
+        "type": "resource",
+        "label": "DD-5-6693",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 252
+      },
+      {
+        "id": "tenant-5:role:analyst",
+        "tenant_id": "tenant-5",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 253
+      },
+      {
+        "id": "tenant-5:role:dispatcher",
+        "tenant_id": "tenant-5",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 254
+      },
+      {
+        "id": "tenant-5:role:manager",
+        "tenant_id": "tenant-5",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 255
+      },
+      {
+        "id": "tenant-5:user:0",
+        "tenant_id": "tenant-5",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 256
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-5:user:0",
+        "dst": "tenant-5:role:analyst",
+        "tenant_id": "tenant-5",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:user:0",
+        "dst": "tenant-5:role:dispatcher",
+        "tenant_id": "tenant-5",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:user:0",
+        "dst": "tenant-5:role:manager",
+        "tenant_id": "tenant-5",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:analyst",
+        "dst": "tenant-5:resource:DD-5-5221",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:dispatcher",
+        "dst": "tenant-5:resource:DD-5-5221",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:manager",
+        "dst": "tenant-5:resource:DD-5-5221",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:dispatcher",
+        "dst": "tenant-5:resource:DD-5-5536",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:manager",
+        "dst": "tenant-5:resource:DD-5-5536",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:manager",
+        "dst": "tenant-5:resource:DD-5-5923",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:analyst",
+        "dst": "tenant-5:resource:DD-5-6440",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:manager",
+        "dst": "tenant-5:resource:DD-5-6440",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:dispatcher",
+        "dst": "tenant-5:resource:DD-5-6693",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-5:role:manager",
+        "dst": "tenant-5:resource:DD-5-6693",
+        "tenant_id": "tenant-5",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  },
+  "tenant-6": {
+    "nodes": [
+      {
+        "id": "tenant-6:resource:DD-6-1319",
+        "tenant_id": "tenant-6",
+        "type": "resource",
+        "label": "DD-6-1319",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 268
+      },
+      {
+        "id": "tenant-6:resource:DD-6-1779",
+        "tenant_id": "tenant-6",
+        "type": "resource",
+        "label": "DD-6-1779",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 269
+      },
+      {
+        "id": "tenant-6:resource:DD-6-2090",
+        "tenant_id": "tenant-6",
+        "type": "resource",
+        "label": "DD-6-2090",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 270
+      },
+      {
+        "id": "tenant-6:resource:DD-6-2350",
+        "tenant_id": "tenant-6",
+        "type": "resource",
+        "label": "DD-6-2350",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 271
+      },
+      {
+        "id": "tenant-6:resource:DD-6-3443",
+        "tenant_id": "tenant-6",
+        "type": "resource",
+        "label": "DD-6-3443",
+        "provenance": "dataset_restaurant",
+        "vertex_id": 272
+      },
+      {
+        "id": "tenant-6:role:analyst",
+        "tenant_id": "tenant-6",
+        "type": "role",
+        "label": "analyst",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 276
+      },
+      {
+        "id": "tenant-6:role:dispatcher",
+        "tenant_id": "tenant-6",
+        "type": "role",
+        "label": "dispatcher",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 277
+      },
+      {
+        "id": "tenant-6:role:manager",
+        "tenant_id": "tenant-6",
+        "type": "role",
+        "label": "manager",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 278
+      },
+      {
+        "id": "tenant-6:user:0",
+        "tenant_id": "tenant-6",
+        "type": "user",
+        "label": "SIM-operator-0",
+        "provenance": "simulated_RBAC",
+        "vertex_id": 279
+      }
+    ],
+    "edges": [
+      {
+        "src": "tenant-6:user:0",
+        "dst": "tenant-6:role:analyst",
+        "tenant_id": "tenant-6",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:user:0",
+        "dst": "tenant-6:role:dispatcher",
+        "tenant_id": "tenant-6",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:user:0",
+        "dst": "tenant-6:role:manager",
+        "tenant_id": "tenant-6",
+        "relationship": "HAS_ROLE",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:analyst",
+        "dst": "tenant-6:resource:DD-6-1319",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:dispatcher",
+        "dst": "tenant-6:resource:DD-6-1319",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:manager",
+        "dst": "tenant-6:resource:DD-6-1319",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:dispatcher",
+        "dst": "tenant-6:resource:DD-6-1779",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:manager",
+        "dst": "tenant-6:resource:DD-6-1779",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:manager",
+        "dst": "tenant-6:resource:DD-6-2090",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:analyst",
+        "dst": "tenant-6:resource:DD-6-2350",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:manager",
+        "dst": "tenant-6:resource:DD-6-2350",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:dispatcher",
+        "dst": "tenant-6:resource:DD-6-3443",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      },
+      {
+        "src": "tenant-6:role:manager",
+        "dst": "tenant-6:resource:DD-6-3443",
+        "tenant_id": "tenant-6",
+        "relationship": "CAN_ACCESS",
+        "provenance": "simulated_RBAC"
+      }
+    ]
+  }
+}
